@@ -1,0 +1,91 @@
+package com.blueconic.browscap;
+
+import static com.blueconic.browscap.domain.Capabilities.DEFAULT;
+import static com.blueconic.browscap.UserAgentFileParser.getParts;
+import static com.blueconic.browscap.UserAgentFileParser.getValue;
+import static java.util.Arrays.asList;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
+import static org.junit.Assert.assertSame;
+
+import org.junit.Test;
+
+public class UserAgentFileParserTest {
+
+    @Test
+    public void testGetParts() {
+        assertEquals(asList("*", "a", "*"), getParts("*a*"));
+        assertEquals(asList("*", "abc", "*"), getParts("*abc*"));
+        assertEquals(asList("*"), getParts("*"));
+        assertEquals(asList("a"), getParts("a"));
+    }
+
+    @Test(expected = IllegalStateException.class)
+    public void testLiteralException() {
+        final UserAgentFileParser parser = new UserAgentFileParser();
+        parser.createRule("", DEFAULT);
+    }
+
+    @Test
+    public void testCreateRule() {
+        final UserAgentFileParser parser = new UserAgentFileParser();
+
+        final Rule exact = parser.createRule("a", DEFAULT);
+        validate(exact, "a", null, null);
+
+        final Rule wildcard = parser.createRule("*", DEFAULT);
+        validate(wildcard, null, new String[0], null);
+
+        final Rule prefix = parser.createRule("abc*", DEFAULT);
+        validate(prefix, "abc", new String[0], null);
+
+        final Rule postfix = parser.createRule("*abc", DEFAULT);
+        validate(postfix, null, new String[0], "abc");
+
+        final Rule prePost = parser.createRule("abc*def", DEFAULT);
+        validate(prePost, "abc", new String[0], "def");
+
+        final Rule suffix = parser.createRule("*abc*", DEFAULT);
+        validate(suffix, null, new String[]{"abc"}, null);
+
+        final Rule expression = parser.createRule("*a*z*", DEFAULT);
+        validate(expression, null, new String[]{"a", "z"}, null);
+    }
+
+    void validate(final Rule rule, final String prefix, final String[] subs, final String postfix) {
+        validate(prefix, rule.getPrefix());
+        validate(postfix, rule.getPostfix());
+
+        if (subs == null) {
+            assertNull(rule.getSuffixes());
+        } else {
+            final Literal[] suffixes = rule.getSuffixes();
+            assertEquals(subs.length, suffixes.length);
+            for (int i = 0; i < subs.length; i++) {
+                validate(subs[i], suffixes[i]);
+            }
+        }
+    }
+
+    void validate(final String stringValue, final Literal literal) {
+        if (stringValue == null) {
+            assertNull(literal);
+        } else {
+            assertEquals(stringValue, literal.toString());
+        }
+    }
+
+    @Test
+    public void testGetValue() {
+
+        // Test missing values
+        assertEquals("Unknown", getValue(null));
+        assertEquals("Unknown", getValue(""));
+        assertEquals("Unknown", getValue(" "));
+
+        // Test trimming and interning
+        final String input = "Test";
+        assertSame("Test", getValue(input + " "));
+        assertSame("Test", getValue(" " + input));
+    }
+}

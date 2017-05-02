@@ -3,7 +3,7 @@ A blazingly fast and memory efficient Java client on top of the BrowsCap CSV sou
 The BrowsCap version currently shipped is: 6022.
 
 ## Notes
-* Although this library very fast, a cache is advisable. Since cache strategies differ for each usecase, this library doesn't ship with one out of the box.
+* Although this library is very fast, implementing a cache is advisable. Since cache strategies differ per usecase, this library doesn't ship with one out of the box.
 * The followings BrowsCap fields are available:
   * browser (e.g. Chrome)
   * browserType (e.g. Browser or Application)

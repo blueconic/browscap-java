@@ -13,6 +13,7 @@ The BrowsCap version currently shipped is: 6022.
   * platformVersion (e.g. 4.2, 10 depending on what the platform is)
 * The fields are not configurable.
 * The CSV file is read in a streaming way, so it's processed line by line. This makes it more memory efficient than loading the whole into memory first.
+* 1000+ user agents are tested in the unit tests.
 
 ## Future
 Possible new features we're thinking of (and are not yet present):

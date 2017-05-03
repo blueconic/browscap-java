@@ -1,7 +1,7 @@
-package com.blueconic.browscap.util;
+package com.blueconic.browscap.impl;
 
 /** Util class for common String operations. */
-public final class StringUtil {
+final class StringUtil {
 
     // Hide the constructor
     private StringUtil() {
@@ -14,7 +14,7 @@ public final class StringUtil {
      * @param value the value to check, may be null
      * @return {@code true} if the value is null, empty or whitespace, {@code false} otherwise.
      */
-    public static boolean isBlank(final CharSequence value) {
+    static boolean isBlank(final CharSequence value) {
 
         // Check the argument
         if (value == null) {
@@ -45,7 +45,7 @@ public final class StringUtil {
      * @param value the value to check, may be null
      * @return {@code true} if the value is not empty and not null and not whitespace, {@code false} otherwise.
      */
-    public static boolean isNotBlank(final CharSequence value) {
+    static boolean isNotBlank(final CharSequence value) {
         return !isBlank(value);
     }
 }

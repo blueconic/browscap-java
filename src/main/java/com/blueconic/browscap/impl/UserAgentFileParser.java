@@ -1,6 +1,5 @@
-package com.blueconic.browscap;
+package com.blueconic.browscap.impl;
 
-import static com.blueconic.browscap.domain.Capabilities.UNKNOWN;
 import static java.util.Collections.singleton;
 
 import java.io.IOException;
@@ -12,18 +11,18 @@ import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
-import com.blueconic.browscap.domain.Capabilities;
-import com.blueconic.browscap.exception.ParseException;
-import com.blueconic.browscap.util.StringUtil;
+import com.blueconic.browscap.Capabilities;
+import com.blueconic.browscap.ParseException;
+import com.blueconic.browscap.UserAgentParser;
 import com.opencsv.CSVReader;
 
 /**
  * This class is responsible for parsing rules and creating the efficient java representation.
  */
-class UserAgentFileParser {
+public class UserAgentFileParser {
 
     // The default match all pattern
-    private static final Rule WILDCARD = new Rule(null, new Literal[0], null, "*", Capabilities.DEFAULT);
+    private static final Rule WILDCARD = new Rule(null, new Literal[0], null, "*", CapabilitiesImpl.DEFAULT);
 
     // Mapping substrings to unique literal for caching of lookups
     private final Map<String, Literal> myUniqueLiterals = new TreeMap<>();
@@ -36,7 +35,7 @@ class UserAgentFileParser {
      * @throws IOException If reading the stream failed.
      * @throws ParseException
      */
-    synchronized UserAgentParser parse(final Reader input) throws IOException, ParseException {
+    public synchronized UserAgentParser parse(final Reader input) throws IOException, ParseException {
 
         final List<Rule> rules = new ArrayList<>();
         try (final CSVReader csvReader = new CSVReader(input)) {
@@ -51,7 +50,7 @@ class UserAgentFileParser {
             }
         }
 
-        return new UserAgentParser(rules.toArray(new Rule[0]));
+        return new UserAgentParserImpl(rules.toArray(new Rule[0]));
     }
 
     private Rule getRule(final String[] record) throws ParseException {
@@ -70,7 +69,8 @@ class UserAgentFileParser {
             final String platform = getValue(record[13]);
             final String platformVersion = getValue(record[14]);
             final Capabilities capabilities =
-                    new Capabilities(browser, browserType, browserMajorVersion, deviceType, platform, platformVersion);
+                    new CapabilitiesImpl(browser, browserType, browserMajorVersion, deviceType, platform,
+                            platformVersion);
 
             final Rule rule = createRule(pattern, capabilities);
 
@@ -89,7 +89,7 @@ class UserAgentFileParser {
         if (StringUtil.isNotBlank(value)) {
             return value.trim().intern();
         }
-        return UNKNOWN;
+        return Capabilities.UNKNOWN_BROWSCAP_VALUE;
     }
 
     Literal getLiteral(final String value) {

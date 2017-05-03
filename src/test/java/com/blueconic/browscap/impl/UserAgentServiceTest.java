@@ -1,4 +1,4 @@
-package com.blueconic.browscap;
+package com.blueconic.browscap.impl;
 
 import static org.junit.Assert.assertEquals;
 
@@ -9,8 +9,10 @@ import java.io.InputStreamReader;
 
 import org.junit.Test;
 
-import com.blueconic.browscap.domain.Capabilities;
-import com.blueconic.browscap.exception.ParseException;
+import com.blueconic.browscap.Capabilities;
+import com.blueconic.browscap.ParseException;
+import com.blueconic.browscap.UserAgentParser;
+import com.blueconic.browscap.UserAgentService;
 
 public class UserAgentServiceTest {
 

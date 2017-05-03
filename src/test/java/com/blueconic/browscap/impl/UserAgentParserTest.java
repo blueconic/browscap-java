@@ -6,10 +6,10 @@
  *
  * Copyright 2014 BlueConic Inc./BlueConic B.V. All rights reserved.
  */
-package com.blueconic.browscap;
+package com.blueconic.browscap.impl;
 
-import static com.blueconic.browscap.domain.Capabilities.DEFAULT;
-import static com.blueconic.browscap.UserAgentParser.getOrderedRules;
+import static com.blueconic.browscap.impl.CapabilitiesImpl.DEFAULT;
+import static com.blueconic.browscap.impl.UserAgentParserImpl.getOrderedRules;
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -19,7 +19,11 @@ import java.util.BitSet;
 
 import org.junit.Test;
 
-import com.blueconic.browscap.UserAgentParser.Filter;
+import com.blueconic.browscap.impl.Rule;
+import com.blueconic.browscap.impl.SearchableString;
+import com.blueconic.browscap.impl.UserAgentFileParser;
+import com.blueconic.browscap.impl.UserAgentParserImpl;
+import com.blueconic.browscap.impl.UserAgentParserImpl.Filter;
 
 public class UserAgentParserTest {
 
@@ -62,7 +66,7 @@ public class UserAgentParserTest {
         final Rule d = getRule("*123*");
         final Rule[] rules = {a, b, c, d};
 
-        final UserAgentParser parser = new UserAgentParser(rules);
+        final UserAgentParserImpl parser = new UserAgentParserImpl(rules);
 
         final Filter startsWithTest = parser.createPrefixFilter("test");
         final Filter containsTest = parser.createContainsFilter("test");

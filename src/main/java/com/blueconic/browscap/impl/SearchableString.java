@@ -1,4 +1,4 @@
-package com.blueconic.browscap;
+package com.blueconic.browscap.impl;
 
 import java.util.BitSet;
 import java.util.concurrent.atomic.AtomicInteger;

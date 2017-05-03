@@ -1,6 +1,6 @@
-package com.blueconic.browscap;
+package com.blueconic.browscap.impl;
 
-import com.blueconic.browscap.domain.Capabilities;
+import com.blueconic.browscap.Capabilities;
 
 /**
  * Instances of this class represent a line of the browscap data. This class is responsible for checking a potential

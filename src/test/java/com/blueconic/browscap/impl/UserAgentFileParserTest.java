@@ -1,14 +1,18 @@
-package com.blueconic.browscap;
+package com.blueconic.browscap.impl;
 
-import static com.blueconic.browscap.domain.Capabilities.DEFAULT;
-import static com.blueconic.browscap.UserAgentFileParser.getParts;
-import static com.blueconic.browscap.UserAgentFileParser.getValue;
+import static com.blueconic.browscap.impl.CapabilitiesImpl.DEFAULT;
+import static com.blueconic.browscap.impl.UserAgentFileParser.getParts;
+import static com.blueconic.browscap.impl.UserAgentFileParser.getValue;
 import static java.util.Arrays.asList;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertSame;
 
 import org.junit.Test;
+
+import com.blueconic.browscap.impl.Literal;
+import com.blueconic.browscap.impl.Rule;
+import com.blueconic.browscap.impl.UserAgentFileParser;
 
 public class UserAgentFileParserTest {
 

@@ -1,4 +1,4 @@
-package com.blueconic.browscap;
+package com.blueconic.browscap.impl;
 
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
@@ -8,6 +8,9 @@ import static org.junit.Assert.assertSame;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
+
+import com.blueconic.browscap.impl.Literal;
+import com.blueconic.browscap.impl.SearchableString;
 
 public class SearchableStringTest {
 

@@ -1,10 +1,13 @@
-package com.blueconic.browscap.domain;
+package com.blueconic.browscap.impl;
 
-public class Capabilities {
-    public static final String UNKNOWN = "Unknown";
+import com.blueconic.browscap.Capabilities;
 
-    public static final Capabilities DEFAULT =
-            new Capabilities("Default Browser", "Default Browser", UNKNOWN, UNKNOWN, UNKNOWN, UNKNOWN);
+class CapabilitiesImpl implements Capabilities {
+    public final static Capabilities DEFAULT = new CapabilitiesImpl("Default Browser", "Default Browser",
+            UNKNOWN_BROWSCAP_VALUE,
+            UNKNOWN_BROWSCAP_VALUE,
+            UNKNOWN_BROWSCAP_VALUE,
+            UNKNOWN_BROWSCAP_VALUE);
 
     private final String myBrowser;
     private final String myBrowserType;
@@ -13,7 +16,7 @@ public class Capabilities {
     private final String myPlatform;
     private final String myPlatformVersion;
 
-    public Capabilities(final String browser, final String browserType, final String browserMajorVersion,
+    public CapabilitiesImpl(final String browser, final String browserType, final String browserMajorVersion,
             final String deviceType, final String platform, final String platformVersion) {
 
         myBrowser = browser;
@@ -24,26 +27,50 @@ public class Capabilities {
         myPlatformVersion = platformVersion;
     }
 
+    /**
+     * {@inheritDoc}
+     */
+    @Override
     public String getBrowser() {
         return myBrowser;
     }
 
+    /**
+     * {@inheritDoc}
+     */
+    @Override
     public String getBrowserType() {
         return myBrowserType;
     }
 
+    /**
+     * {@inheritDoc}
+     */
+    @Override
     public String getBrowserMajorVersion() {
         return myBrowserMajorVersion;
     }
 
+    /**
+     * {@inheritDoc}
+     */
+    @Override
     public String getPlatform() {
         return myPlatform;
     }
 
+    /**
+     * {@inheritDoc}
+     */
+    @Override
     public String getPlatformVersion() {
         return myPlatformVersion;
     }
 
+    /**
+     * {@inheritDoc}
+     */
+    @Override
     public String getDeviceType() {
         return myDeviceType;
     }

@@ -12,19 +12,25 @@ The BrowsCap version currently shipped is: 6022.
   * platform (e.g. Android, iOS, Win7, Win10)
   * platformVersion (e.g. 4.2, 10 depending on what the platform is)
 * The fields are not configurable.
+* The CSV file is read in a streaming way, so it's processed line by line. This makes it more memory efficient than loading the whole into memory first.
+
+## Future
+Possible new features we're thinking of (and are not yet present):
+* Make the fields configurable and let Capabilities return a Map containing the given fields
+* Auto-update the BrowsCap CSV or use an InputStream to use an alternative CSV file.
 
 ## Usage
 ```java
+import com.blueconic.browscap.Capabilities;
+import com.blueconic.browscap.ParseException;
 import com.blueconic.browscap.UserAgentParser;
 import com.blueconic.browscap.UserAgentService;
-import com.blueconic.browscap.domain.Capabilities;
 
 // ... class definition
 
-final UserAgentService userAgentService = new UserAgentService();
-final UserAgentParser parser = userAgentService.loadParser();
+final UserAgentParser parser = new UserAgentService().loadParser(); // handle IOException and ParseException
 
-// parser can be re-used
+// parser can be re-used for multiple lookup calls
 final String userAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36";
 final Capabilities capabilities = parser.parse(userAgent);
 

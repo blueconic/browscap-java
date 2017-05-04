@@ -30,7 +30,6 @@ public class UserAgentFileParser {
     /**
      * Parses a csv stream of rules.
      * @param input The input stream
-     * @param logService The log service.
      * @return a UserAgentParser based on the read rules
      * @throws IOException If reading the stream failed.
      * @throws ParseException

@@ -20,6 +20,17 @@ Possible new features we're thinking of (and are not yet present):
 * Make the fields configurable and let Capabilities return a Map containing the given fields
 * Auto-update the BrowsCap CSV or use an InputStream to use an alternative CSV file.
 
+## Maven
+Add this to the dependencies in your pom.xml.
+
+```xml
+<dependency>
+  <groupId>com.blueconic</groupId>
+  <artifactId>browscap-java</artifactId>
+  <version>1.0.0</version>
+</dependency>
+```
+
 ## Usage
 ```java
 import com.blueconic.browscap.Capabilities;

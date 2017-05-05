@@ -1,6 +1,6 @@
 # browscap-java
 A blazingly fast and memory efficient Java client on top of the BrowsCap CSV source files.
-The BrowsCap version currently shipped is: 6022.
+The BrowsCap version currently shipped is: 6023.
 
 ## Notes
 * Although this library is very fast, implementing a cache is advisable. Since cache strategies differ per usecase, this library doesn't ship with one out of the box.
@@ -27,7 +27,7 @@ Add this to the dependencies in your pom.xml.
 <dependency>
   <groupId>com.blueconic</groupId>
   <artifactId>browscap-java</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
 </dependency>
 ```
 

@@ -16,7 +16,7 @@ import com.blueconic.browscap.impl.UserAgentFileParser;
  */
 public class UserAgentService {
     // The version of the browscap file this bundle depends on
-    private static final int BUNDLED_BROWSCAP_VERSION = 6022;
+    private static final int BUNDLED_BROWSCAP_VERSION = 6023;
 
     /**
      * Returns a parser based on the bundled BrowsCap version

@@ -7,7 +7,7 @@ This library can be used to parse useragent headers in order to extract informat
 
 ## Algorithm
 We got some questions on the how and why of our algorithm and why it is "blazingly fast and efficient".
-In short, this is our how our algorithm works:
+In short, this is how our algorithm works:
 
 1. All CSV lines are read and parsed in our own data structures (e.g. "Rule" objects). 
   -- This doesn't involve regular expressions (which are memory consuming and costly) but uses a smart way of doing substrings on the CSV expression.

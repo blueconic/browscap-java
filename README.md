@@ -10,8 +10,8 @@ We got some questions on the how and why of our algorithm and why it is "blazing
 In short, this is how our algorithm works:
 
 1. All CSV lines are read and parsed in our own data structures (e.g. "Rule" objects). 
-  -- This doesn't involve regular expressions (which are memory consuming and costly) but uses a smart way of doing substrings on the CSV expression.
-  -- The results of the substring operations (startsWith, endsWith, findIndices in SearchableString) are cached, so subsequent calls are very fast. 
+-- This doesn't involve regular expressions (which are memory consuming and costly) but uses a smart way of doing substrings on the CSV expression.
+-- The results of the substring operations (startsWith, endsWith, findIndices in SearchableString) are cached, so subsequent calls are very fast. 
 2. When all rules are generated, they're sorted by size and alphabet, so the first match can be returned immediately.
 3. When looking up a useragent, all rules are filtered based on the "parts" of an expression. Most rules can be easily discarded because they don't contain a specific substring.
 4. The filtering mechanism is based on bitset operations, which are very fast for large data sets.

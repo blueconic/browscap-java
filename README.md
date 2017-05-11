@@ -5,6 +5,17 @@ The BrowsCap version currently shipped is: 6023.
 ## Description
 This library can be used to parse useragent headers in order to extract information about the used browser, browser version, platform, platform version and device type. Very useful to determine if the client is a desktop, tablet or mobile device or to determine if the client is on Windows or Mac OS (just to name a few examples).
 
+## Algorithm
+We got some questions on the how and why of our algorithm and why it is "blazingly fast and efficient".
+In short, this is our how our algorithm works:
+
+1. All CSV lines are read and parsed in our own data structures (e.g. "Rule" objects). 
+  -- This doesn't involve regular expressions (which are memory consuming and costly) but uses a smart way of doing substrings on the CSV expression.
+  -- The results of the substring operations (startsWith, endsWith, findIndices in SearchableString) are cached, so subsequent calls are very fast. 
+2. When all rules are generated, they're sorted by size and alphabet, so the first match can be returned immediately.
+3. When looking up a useragent, all rules are filtered based on the "parts" of an expression. Most rules can be easily discarded because they don't contain a specific substring.
+4. The filtering mechanism is based on bitset operations, which are very fast for large data sets.
+
 ## Notes
 * Although this library is very fast, implementing a cache is advisable. Since cache strategies differ per usecase, this library doesn't ship with one out of the box.
 * The followings BrowsCap fields are available:

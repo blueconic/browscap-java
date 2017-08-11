@@ -17,6 +17,22 @@ import com.blueconic.browscap.UserAgentService;
 public class UserAgentServiceTest {
 
     @Test
+    public void testUserAgentsFromExternalFile() throws IOException, ParseException {
+        final int ITERATIONS = 10;
+
+
+
+        final UserAgentService uas = new UserAgentService(".\\src\\main\\resources\\browscap-" + UserAgentService.BUNDLED_BROWSCAP_VERSION + ".zip");
+        final UserAgentParser parser = uas.loadParser();
+
+        int counter = 0;
+        for (int i = 0; i < ITERATIONS; i++) {
+            counter += processUserAgentFile(parser);
+        }
+        System.out.print("Processed " + counter + " items");
+    }
+
+    @Test
     public void testUserAgentsFromFile() throws IOException, ParseException {
         final int ITERATIONS = 10;
 
@@ -30,7 +46,7 @@ public class UserAgentServiceTest {
         System.out.print("Processed " + counter + " items");
     }
 
-    public int processUserAgentFile(final UserAgentParser parser) throws IOException, ParseException {
+    private int processUserAgentFile(final UserAgentParser parser) throws IOException, ParseException {
         final InputStream resourceAsStream = getClass().getClassLoader().getResourceAsStream("useragents.txt");
         final BufferedReader in = new BufferedReader(new InputStreamReader(resourceAsStream));
         String line = null;

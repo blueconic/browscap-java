@@ -2,9 +2,7 @@ package com.blueconic.browscap;
 
 import static java.nio.charset.StandardCharsets.UTF_8;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 
@@ -16,7 +14,24 @@ import com.blueconic.browscap.impl.UserAgentFileParser;
  */
 public class UserAgentService {
     // The version of the browscap file this bundle depends on
-    private static final int BUNDLED_BROWSCAP_VERSION = 6023;
+    public static final int BUNDLED_BROWSCAP_VERSION = 6023;
+
+    private String zipFilePath;
+
+    public UserAgentService(){
+        // Default
+    }
+
+    /**
+     *
+     * @param zipFilePath the zip file should contain the csv file. It will load the given zip file instead of
+     *                    the bundled one
+     */
+    public UserAgentService(String zipFilePath) {
+        this.zipFilePath = zipFilePath;
+    }
+
+
 
     /**
      * Returns a parser based on the bundled BrowsCap version
@@ -24,9 +39,9 @@ public class UserAgentService {
      */
     public UserAgentParser loadParser() throws IOException, ParseException {
         // http://browscap.org/version-number
-        final String csvFileName = "browscap-" + BUNDLED_BROWSCAP_VERSION + ".zip";
-        try (final InputStream zipStream = getClass().getClassLoader().getResourceAsStream(csvFileName);
-                final ZipInputStream zipIn = new ZipInputStream(zipStream)) {
+        final String csvFileName = getBundledCsvFileName();
+        try (final InputStream zipStream = getCsvFileStream();
+             final ZipInputStream zipIn = new ZipInputStream(zipStream)) {
             final ZipEntry entry = zipIn.getNextEntry();
             if (!entry.isDirectory()) {
                 return new UserAgentFileParser().parse(new InputStreamReader(zipIn, UTF_8));
@@ -34,6 +49,21 @@ public class UserAgentService {
                 throw new IOException("Unable to find BrowsCap entry: " + csvFileName);
             }
         }
+    }
 
+    private String getBundledCsvFileName() {
+        return "browscap-" + BUNDLED_BROWSCAP_VERSION + ".zip";
+    }
+
+    private InputStream getCsvFileStream() throws FileNotFoundException {
+
+        if (this.zipFilePath == null) {
+
+            final String csvFileName = getBundledCsvFileName();
+            return getClass().getClassLoader().getResourceAsStream(csvFileName);
+        } else {
+
+            return new FileInputStream(this.zipFilePath);
+        }
     }
 }

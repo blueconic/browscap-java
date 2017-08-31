@@ -32,7 +32,7 @@ In short, this is how our algorithm works:
 ## Future
 Possible new features we're thinking of (and are not yet present):
 * Make the fields configurable and let Capabilities return a Map containing the given fields
-* Auto-update the BrowsCap CSV or use an InputStream to use an alternative CSV file.
+* Auto-update the BrowsCap CSV
 
 ## Maven
 Add this to the dependencies in your pom.xml.

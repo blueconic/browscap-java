@@ -56,6 +56,10 @@ import com.blueconic.browscap.UserAgentService;
 
 final UserAgentParser parser = new UserAgentService().loadParser(); // handle IOException and ParseException
 
+// It's also possible to supply your own ZIP file by supplying a correct path to a ZIP file in the constructor. 
+// This can be used when a new BrowsCap version is released which is not yet bundled in this package.
+// final UserAgentParser parser = new UserAgentService("E:\\anil\\browscap.zip").loadParser();
+
 // parser can be re-used for multiple lookup calls
 final String userAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36";
 final Capabilities capabilities = parser.parse(userAgent);

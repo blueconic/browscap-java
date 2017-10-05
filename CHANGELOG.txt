@@ -1,3 +1,7 @@
+1.0.4 - 5 Oct 2017
+  Updated to BrowsCap 6026.
+  Updated unit test accordingly.
+
 1.0.3 - 31 Aug 2017
   Merged pull request https://github.com/blueconic/browscap-java/pull/1.
   It is now possible to supply your own BrowsCap ZIP file in the constructor.

@@ -17,7 +17,7 @@ import com.blueconic.browscap.impl.UserAgentFileParser;
  */
 public class UserAgentService {
     // The version of the browscap file this bundle depends on
-    public static final int BUNDLED_BROWSCAP_VERSION = 6024;
+    public static final int BUNDLED_BROWSCAP_VERSION = 6026;
     private String myZipFilePath;
 
     public UserAgentService() {
@@ -29,7 +29,7 @@ public class UserAgentService {
      * @param zipFilePath the zip file should contain the csv file. It will load the given zip file instead of the
      *            bundled one
      */
-    public UserAgentService(String zipFilePath) {
+    public UserAgentService(final String zipFilePath) {
         this.myZipFilePath = zipFilePath;
     }
 

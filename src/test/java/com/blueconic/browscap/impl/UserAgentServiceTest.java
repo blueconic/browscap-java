@@ -6,6 +6,8 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 import org.junit.Test;
 
@@ -20,8 +22,9 @@ public class UserAgentServiceTest {
     public void testUserAgentsFromExternalFile() throws IOException, ParseException {
         final int ITERATIONS = 10;
 
-        final UserAgentService uas = new UserAgentService(
-                ".\\src\\main\\resources\\browscap-" + UserAgentService.BUNDLED_BROWSCAP_VERSION + ".zip");
+        final Path path = Paths.get("src", "main", "resources", UserAgentService.getBundledCsvFileName());
+        final UserAgentService uas = new UserAgentService(path.toString());
+
         final UserAgentParser parser = uas.loadParser();
 
         int counter = 0;

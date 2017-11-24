@@ -14,6 +14,8 @@ import com.blueconic.browscap.impl.Literal;
 import com.blueconic.browscap.impl.Rule;
 import com.blueconic.browscap.impl.UserAgentFileParser;
 
+import java.util.Collections;
+
 public class UserAgentFileParserTest {
 
     @Test
@@ -27,32 +29,32 @@ public class UserAgentFileParserTest {
     @Test(expected = IllegalStateException.class)
     public void testLiteralException() {
         final UserAgentFileParser parser = new UserAgentFileParser();
-        parser.createRule("", DEFAULT);
+        parser.createRule("", DEFAULT, Collections.emptyList());
     }
 
     @Test
     public void testCreateRule() {
         final UserAgentFileParser parser = new UserAgentFileParser();
 
-        final Rule exact = parser.createRule("a", DEFAULT);
+        final Rule exact = parser.createRule("a", DEFAULT, Collections.emptyList());
         validate(exact, "a", null, null);
 
-        final Rule wildcard = parser.createRule("*", DEFAULT);
+        final Rule wildcard = parser.createRule("*", DEFAULT, Collections.emptyList());
         validate(wildcard, null, new String[0], null);
 
-        final Rule prefix = parser.createRule("abc*", DEFAULT);
+        final Rule prefix = parser.createRule("abc*", DEFAULT, Collections.emptyList());
         validate(prefix, "abc", new String[0], null);
 
-        final Rule postfix = parser.createRule("*abc", DEFAULT);
+        final Rule postfix = parser.createRule("*abc", DEFAULT, Collections.emptyList());
         validate(postfix, null, new String[0], "abc");
 
-        final Rule prePost = parser.createRule("abc*def", DEFAULT);
+        final Rule prePost = parser.createRule("abc*def", DEFAULT, Collections.emptyList());
         validate(prePost, "abc", new String[0], "def");
 
-        final Rule suffix = parser.createRule("*abc*", DEFAULT);
+        final Rule suffix = parser.createRule("*abc*", DEFAULT, Collections.emptyList());
         validate(suffix, null, new String[]{"abc"}, null);
 
-        final Rule expression = parser.createRule("*a*z*", DEFAULT);
+        final Rule expression = parser.createRule("*a*z*", DEFAULT, Collections.emptyList());
         validate(expression, null, new String[]{"a", "z"}, null);
     }
 

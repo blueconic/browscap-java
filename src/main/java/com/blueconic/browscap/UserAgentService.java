@@ -7,6 +7,8 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.util.Collections;
+import java.util.List;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 
@@ -46,7 +48,29 @@ public class UserAgentService {
             // look for the first file that isn't a directory
             // that should be a BrowsCap .csv file
             if (!entry.isDirectory()) {
-                return new UserAgentFileParser().parse(new InputStreamReader(zipIn, UTF_8));
+                return new UserAgentFileParser().parse(new InputStreamReader(zipIn, UTF_8), Collections.emptyList());
+            } else {
+                throw new IOException(
+                        "Unable to find the BrowsCap CSV file in the ZIP file");
+            }
+        }
+    }
+
+    /**
+     * Returns a parser based on the bundled BrowsCap version
+     * @param fields list
+     * @return the user agent parser
+     */
+    public UserAgentParser loadParser(List<String> fields) throws IOException, ParseException {
+        // http://browscap.org/version-number
+        try (final InputStream zipStream = getCsvFileStream();
+             final ZipInputStream zipIn = new ZipInputStream(zipStream)) {
+            final ZipEntry entry = zipIn.getNextEntry();
+
+            // look for the first file that isn't a directory
+            // that should be a BrowsCap .csv file
+            if (!entry.isDirectory()) {
+                return new UserAgentFileParser().parse(new InputStreamReader(zipIn, UTF_8), fields);
             } else {
                 throw new IOException(
                         "Unable to find the BrowsCap CSV file in the ZIP file");

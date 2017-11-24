@@ -11,6 +11,8 @@ import com.blueconic.browscap.impl.Rule;
 import com.blueconic.browscap.impl.SearchableString;
 import com.blueconic.browscap.impl.UserAgentFileParser;
 
+import java.util.Collections;
+
 public class RuleTest {
 
     @Test
@@ -134,7 +136,7 @@ public class RuleTest {
 
     private Rule getRule(final String pattern) {
         final UserAgentFileParser parser = new UserAgentFileParser();
-        final Rule rule = parser.createRule(pattern, DEFAULT);
+        final Rule rule = parser.createRule(pattern, DEFAULT, Collections.emptyList());
         assertEquals(pattern, rule.getPattern());
         return rule;
     }

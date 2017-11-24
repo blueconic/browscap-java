@@ -16,13 +16,10 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 import java.util.BitSet;
+import java.util.Collections;
 
 import org.junit.Test;
 
-import com.blueconic.browscap.impl.Rule;
-import com.blueconic.browscap.impl.SearchableString;
-import com.blueconic.browscap.impl.UserAgentFileParser;
-import com.blueconic.browscap.impl.UserAgentParserImpl;
 import com.blueconic.browscap.impl.UserAgentParserImpl.Filter;
 
 public class UserAgentParserTest {
@@ -66,7 +63,7 @@ public class UserAgentParserTest {
         final Rule d = getRule("*123*");
         final Rule[] rules = {a, b, c, d};
 
-        final UserAgentParserImpl parser = new UserAgentParserImpl(rules);
+        final UserAgentParserImpl parser = new UserAgentParserImpl(rules, Collections.emptyList());
 
         final Filter startsWithTest = parser.createPrefixFilter("test");
         final Filter containsTest = parser.createContainsFilter("test");
@@ -109,7 +106,7 @@ public class UserAgentParserTest {
 
     private Rule getRule(final String pattern) {
         final UserAgentFileParser parser = new UserAgentFileParser();
-        final Rule rule = parser.createRule(pattern, DEFAULT);
+        final Rule rule = parser.createRule(pattern, DEFAULT, Collections.emptyList());
         assertEquals(pattern, rule.getPattern());
         return rule;
     }

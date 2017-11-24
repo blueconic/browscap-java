@@ -5,9 +5,11 @@ import static java.util.Arrays.asList;
 import java.util.ArrayList;
 import java.util.BitSet;
 import java.util.Comparator;
+import java.util.HashMap;
 import java.util.List;
 import java.util.function.Predicate;
 
+import com.blueconic.browscap.BrowsCapField;
 import com.blueconic.browscap.Capabilities;
 import com.blueconic.browscap.UserAgentParser;
 
@@ -37,13 +39,17 @@ class UserAgentParserImpl implements UserAgentParser {
     // Filters for filtering irrelevant rules and speed up processing
     private final Filter[] myFilters;
 
+    // For fields provided in parser
+    private final List<BrowsCapField> myFields;
+
     /**
      * Creates a new parser based on a collection of rules.
      * @param rules The rules, ordered by priority
      */
-    UserAgentParserImpl(final Rule[] rules) {
+    UserAgentParserImpl(final Rule[] rules, final List<BrowsCapField> fields) {
         myRules = getOrderedRules(rules);
         myFilters = buildFilters();
+        myFields = fields;
     }
 
     /**
@@ -63,7 +69,12 @@ class UserAgentParserImpl implements UserAgentParser {
             }
         }
 
-        return CapabilitiesImpl.DEFAULT;
+        // Construct map with custom fields to contain all BrowsCap values
+        final HashMap<BrowsCapField, String> fieldValues = new HashMap<>();
+        for (final BrowsCapField field : myFields) {
+            fieldValues.put(field, Capabilities.UNKNOWN_BROWSCAP_VALUE);
+        }
+        return new CapabilitiesImpl(fieldValues);
     }
 
     BitSet getIncludeRules(final SearchableString searchString, final Filter[] filters) {

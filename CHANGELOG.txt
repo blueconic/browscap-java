@@ -1,3 +1,7 @@
+1.0.10 - 24 Nov 2017
+  Intregrated PR 2; the browscap fields are now configurable in the constructor of the parser.
+  Updated documentation and unit tests.
+
 1.0.4 - 5 Oct 2017
   Updated to BrowsCap 6026.
   Updated unit test accordingly.

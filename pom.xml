@@ -4,7 +4,7 @@
     <groupId>com.blueconic</groupId>
     <artifactId>browscap-java</artifactId>
     <packaging>jar</packaging>
-    <version>1.0.4</version>
+    <version>1.1.0</version>
     <name>browscap-java</name>
     <description>A blazingly fast and memory efficient Java client on top of the BrowsCap CSV source files.</description>
 

@@ -1,4 +1,4 @@
-![TravisCI Build Status](https://travis-ci.org/blueconic/browscap-java.svg?branch=master "Build status")
+[![TravisCI Build Status](https://travis-ci.org/blueconic/browscap-java.svg?branch=master)](https://travis-ci.org/blueconic/browscap-java)
 
 # browscap-java
 A blazingly fast and memory efficient Java client on top of the BrowsCap CSV source files.

@@ -1,3 +1,5 @@
+![TravisCI Build Status](https://travis-ci.org/blueconic/browscap-java.svg?branch=master "Build status")
+
 # browscap-java
 A blazingly fast and memory efficient Java client on top of the BrowsCap CSV source files.
 The BrowsCap version currently shipped is: 6026.

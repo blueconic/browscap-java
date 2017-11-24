@@ -2,10 +2,7 @@ package com.blueconic.browscap.impl;
 
 import static java.util.Arrays.asList;
 
-import java.util.ArrayList;
-import java.util.BitSet;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 import java.util.function.Predicate;
 
 import com.blueconic.browscap.Capabilities;
@@ -37,13 +34,17 @@ class UserAgentParserImpl implements UserAgentParser {
     // Filters for filtering irrelevant rules and speed up processing
     private final Filter[] myFilters;
 
+    // For fields provided in parser
+    private final List<String> myfields;
+
     /**
      * Creates a new parser based on a collection of rules.
      * @param rules The rules, ordered by priority
      */
-    UserAgentParserImpl(final Rule[] rules) {
+    UserAgentParserImpl(final Rule[] rules, final List<String> fields) {
         myRules = getOrderedRules(rules);
         myFilters = buildFilters();
+        myfields = fields;
     }
 
     /**
@@ -63,7 +64,17 @@ class UserAgentParserImpl implements UserAgentParser {
             }
         }
 
-        return CapabilitiesImpl.DEFAULT;
+        // Return default values and construct map with custom fields to return consistent Map structure
+        HashMap<String, String> fieldValues = new HashMap<>();
+        for (String field: myfields) {
+            fieldValues.put(field, Capabilities.UNKNOWN_BROWSCAP_VALUE);
+        }
+        return  new CapabilitiesImpl("Default Browser", "Default Browser",
+                Capabilities.UNKNOWN_BROWSCAP_VALUE,
+                Capabilities.UNKNOWN_BROWSCAP_VALUE,
+                Capabilities.UNKNOWN_BROWSCAP_VALUE,
+                Capabilities.UNKNOWN_BROWSCAP_VALUE,
+                fieldValues);
     }
 
     BitSet getIncludeRules(final SearchableString searchString, final Filter[] filters) {

@@ -2,12 +2,15 @@ package com.blueconic.browscap.impl;
 
 import com.blueconic.browscap.Capabilities;
 
+import java.util.HashMap;
+
 class CapabilitiesImpl implements Capabilities {
     public final static Capabilities DEFAULT = new CapabilitiesImpl("Default Browser", "Default Browser",
             UNKNOWN_BROWSCAP_VALUE,
             UNKNOWN_BROWSCAP_VALUE,
             UNKNOWN_BROWSCAP_VALUE,
-            UNKNOWN_BROWSCAP_VALUE);
+            UNKNOWN_BROWSCAP_VALUE,
+            new HashMap<>());
 
     private final String myBrowser;
     private final String myBrowserType;
@@ -15,9 +18,11 @@ class CapabilitiesImpl implements Capabilities {
     private final String myDeviceType;
     private final String myPlatform;
     private final String myPlatformVersion;
+    private final HashMap<String, String> myValues;
 
     public CapabilitiesImpl(final String browser, final String browserType, final String browserMajorVersion,
-            final String deviceType, final String platform, final String platformVersion) {
+                            final String deviceType, final String platform, final String platformVersion,
+                            final HashMap<String, String> values) {
 
         myBrowser = browser;
         myBrowserType = browserType;
@@ -25,6 +30,7 @@ class CapabilitiesImpl implements Capabilities {
         myDeviceType = deviceType;
         myPlatform = platform;
         myPlatformVersion = platformVersion;
+        myValues = values;
     }
 
     /**
@@ -73,6 +79,14 @@ class CapabilitiesImpl implements Capabilities {
     @Override
     public String getDeviceType() {
         return myDeviceType;
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public HashMap<String, String> getValues() {
+        return myValues;
     }
 
     @Override

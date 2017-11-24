@@ -64,7 +64,7 @@ public class UserAgentServiceTest {
                 final Capabilities result = parser.parse(properties[5]); // check the values
 
                 int y = 0;
-                System.out.println(result + "===" + properties[5]);
+                // System.out.println(result + "===" + properties[5]);
                 assertEquals(properties[y++], result.getBrowser());
                 assertEquals(properties[y++], result.getBrowserMajorVersion());
                 assertEquals(properties[y++], result.getPlatform());

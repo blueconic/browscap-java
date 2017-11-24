@@ -4,6 +4,8 @@ import static org.junit.Assert.assertEquals;
 
 import java.io.*;
 import java.util.Arrays;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 import org.junit.Test;
 
@@ -18,8 +20,9 @@ public class UserAgentServiceTest {
     public void testUserAgentsFromExternalFile() throws IOException, ParseException {
         final int ITERATIONS = 10;
 
-        final UserAgentService uas = new UserAgentService(
-                ".\\src\\main\\resources\\browscap-" + UserAgentService.BUNDLED_BROWSCAP_VERSION + ".zip");
+        final Path path = Paths.get("src", "main", "resources", UserAgentService.getBundledCsvFileName());
+        final UserAgentService uas = new UserAgentService(path.toString());
+
         final UserAgentParser parser = uas.loadParser();
 
         int counter = 0;
@@ -58,7 +61,7 @@ public class UserAgentServiceTest {
                 final Capabilities result = parser.parse(properties[5]); // check the values
 
                 int y = 0;
-                System.out.println(result + "===" + properties[5]);
+                // System.out.println(result + "===" + properties[5]);
                 assertEquals(properties[y++], result.getBrowser());
                 assertEquals(properties[y++], result.getBrowserMajorVersion());
                 assertEquals(properties[y++], result.getPlatform());

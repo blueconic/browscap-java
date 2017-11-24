@@ -56,7 +56,7 @@ public class UserAgentService {
 
     /**
      * Returns the bundled ZIP file name
-     * @return
+     * @return CSV file name
      */
     public static String getBundledCsvFileName() {
         return "browscap-" + BUNDLED_BROWSCAP_VERSION + ".zip";

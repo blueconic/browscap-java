@@ -2,9 +2,14 @@ package com.blueconic.browscap.impl;
 
 import static java.util.Arrays.asList;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.BitSet;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.List;
 import java.util.function.Predicate;
 
+import com.blueconic.browscap.BrowsCapField;
 import com.blueconic.browscap.Capabilities;
 import com.blueconic.browscap.UserAgentParser;
 
@@ -35,16 +40,16 @@ class UserAgentParserImpl implements UserAgentParser {
     private final Filter[] myFilters;
 
     // For fields provided in parser
-    private final List<String> myfields;
+    private final List<BrowsCapField> myFields;
 
     /**
      * Creates a new parser based on a collection of rules.
      * @param rules The rules, ordered by priority
      */
-    UserAgentParserImpl(final Rule[] rules, final List<String> fields) {
+    UserAgentParserImpl(final Rule[] rules, final List<BrowsCapField> fields) {
         myRules = getOrderedRules(rules);
         myFilters = buildFilters();
-        myfields = fields;
+        myFields = fields;
     }
 
     /**
@@ -64,17 +69,12 @@ class UserAgentParserImpl implements UserAgentParser {
             }
         }
 
-        // Return default values and construct map with custom fields to return consistent Map structure
-        HashMap<String, String> fieldValues = new HashMap<>();
-        for (String field: myfields) {
+        // Construct map with custom fields to contain all BrowsCap values
+        final HashMap<BrowsCapField, String> fieldValues = new HashMap<>();
+        for (final BrowsCapField field : myFields) {
             fieldValues.put(field, Capabilities.UNKNOWN_BROWSCAP_VALUE);
         }
-        return  new CapabilitiesImpl("Default Browser", "Default Browser",
-                Capabilities.UNKNOWN_BROWSCAP_VALUE,
-                Capabilities.UNKNOWN_BROWSCAP_VALUE,
-                Capabilities.UNKNOWN_BROWSCAP_VALUE,
-                Capabilities.UNKNOWN_BROWSCAP_VALUE,
-                fieldValues);
+        return new CapabilitiesImpl(fieldValues);
     }
 
     BitSet getIncludeRules(final SearchableString searchString, final Filter[] filters) {

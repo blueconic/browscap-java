@@ -7,7 +7,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.util.Collections;
+import java.util.Arrays;
 import java.util.List;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
@@ -18,6 +18,10 @@ import com.blueconic.browscap.impl.UserAgentFileParser;
  * Service that manages the creation of user agent parsers. In the feature, this might be expanded so it also supports
  */
 public class UserAgentService {
+    public static final List<BrowsCapField> DEFAULT_FIELDS =
+            Arrays.asList(BrowsCapField.BROWSER, BrowsCapField.BROWSER_TYPE, BrowsCapField.BROWSER_MAJOR_VERSION,
+                    BrowsCapField.DEVICE_TYPE, BrowsCapField.PLATFORM, BrowsCapField.PLATFORM_VERSION);
+
     // The version of the browscap file this bundle depends on
     public static final int BUNDLED_BROWSCAP_VERSION = 6026;
     private String myZipFilePath;
@@ -40,20 +44,7 @@ public class UserAgentService {
      * @return the user agent parser
      */
     public UserAgentParser loadParser() throws IOException, ParseException {
-        // http://browscap.org/version-number
-        try (final InputStream zipStream = getCsvFileStream();
-                final ZipInputStream zipIn = new ZipInputStream(zipStream)) {
-            final ZipEntry entry = zipIn.getNextEntry();
-
-            // look for the first file that isn't a directory
-            // that should be a BrowsCap .csv file
-            if (!entry.isDirectory()) {
-                return new UserAgentFileParser().parse(new InputStreamReader(zipIn, UTF_8), Collections.emptyList());
-            } else {
-                throw new IOException(
-                        "Unable to find the BrowsCap CSV file in the ZIP file");
-            }
-        }
+        return createParserWithFields(DEFAULT_FIELDS);
     }
 
     /**
@@ -61,10 +52,15 @@ public class UserAgentService {
      * @param fields list
      * @return the user agent parser
      */
-    public UserAgentParser loadParser(List<String> fields) throws IOException, ParseException {
+    public UserAgentParser loadParser(final List<BrowsCapField> fields) throws IOException, ParseException {
+        return createParserWithFields(fields);
+    }
+
+    private UserAgentParser createParserWithFields(final List<BrowsCapField> fields)
+            throws IOException, ParseException, FileNotFoundException {
         // http://browscap.org/version-number
         try (final InputStream zipStream = getCsvFileStream();
-             final ZipInputStream zipIn = new ZipInputStream(zipStream)) {
+                final ZipInputStream zipIn = new ZipInputStream(zipStream)) {
             final ZipEntry entry = zipIn.getNextEntry();
 
             // look for the first file that isn't a directory

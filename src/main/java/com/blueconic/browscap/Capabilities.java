@@ -1,6 +1,6 @@
 package com.blueconic.browscap;
 
-import java.util.HashMap;
+import java.util.Map;
 
 public interface Capabilities {
     String UNKNOWN_BROWSCAP_VALUE = "Unknown";
@@ -45,6 +45,6 @@ public interface Capabilities {
      * Returns the Map of values with the fields passed to the parser while loading
      * @return the map of values
      */
-    HashMap<String, String> getValues();
+    Map<BrowsCapField, String> getValues();
 
 }

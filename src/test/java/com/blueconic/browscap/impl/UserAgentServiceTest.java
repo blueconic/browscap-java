@@ -2,13 +2,17 @@ package com.blueconic.browscap.impl;
 
 import static org.junit.Assert.assertEquals;
 
-import java.io.*;
-import java.util.Arrays;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.Arrays;
 
 import org.junit.Test;
 
+import com.blueconic.browscap.BrowsCapField;
 import com.blueconic.browscap.Capabilities;
 import com.blueconic.browscap.ParseException;
 import com.blueconic.browscap.UserAgentParser;
@@ -29,7 +33,7 @@ public class UserAgentServiceTest {
         for (int i = 0; i < ITERATIONS; i++) {
             counter += processUserAgentFile(parser);
         }
-        System.out.print("Processed " + counter + " items");
+        System.out.print("Processed " + counter + " items\n");
     }
 
     @Test
@@ -43,7 +47,7 @@ public class UserAgentServiceTest {
         for (int i = 0; i < ITERATIONS; i++) {
             counter += processUserAgentFile(parser);
         }
-        System.out.print("Processed " + counter + " items");
+        System.out.print("Processed " + counter + " items\n");
     }
 
     private int processUserAgentFile(final UserAgentParser parser) throws IOException, ParseException {
@@ -74,15 +78,17 @@ public class UserAgentServiceTest {
         return x;
     }
 
-
     @Test
     public void testUserAgentsFromBundledFileWithCustomFields() throws IOException, ParseException {
-
         final UserAgentService uas = new UserAgentService();
-        final UserAgentParser parser = uas.loadParser(Arrays.asList("rendering_engine_maker", "rendering_engine_name",
-                                                                    "platform_maker", "rendering_engine_version"));
+        final UserAgentParser parser =
+                uas.loadParser(Arrays.asList(BrowsCapField.BROWSER, BrowsCapField.BROWSER_TYPE,
+                        BrowsCapField.BROWSER_MAJOR_VERSION,
+                        BrowsCapField.DEVICE_TYPE, BrowsCapField.PLATFORM, BrowsCapField.PLATFORM_VERSION,
+                        BrowsCapField.RENDERING_ENGINE_VERSION, BrowsCapField.RENDERING_ENGINE_NAME,
+                        BrowsCapField.PLATFORM_MAKER, BrowsCapField.RENDERING_ENGINE_MAKER));
 
-        int counter = processCustomUserAgentFile(parser);
+        final int counter = processCustomUserAgentFile(parser);
         System.out.print("Processed " + counter + " items");
     }
 
@@ -101,19 +107,19 @@ public class UserAgentServiceTest {
                 final Capabilities result = parser.parse(properties[10]); // check the values
 
                 int y = 0;
-                System.out.println(result + "===" + properties[10]);
-                System.out.println("Custom Fields" + result.getValues() + "===" + properties[10]);
+                // System.out.println(result + "===" + properties[10] + "\n");
+                // System.out.println("Custom Fields" + result.getValues() + "===" + properties[10] + "\n");
 
                 assertEquals(properties[y++], result.getBrowser());
                 assertEquals(properties[y++], result.getBrowserType());
                 assertEquals(properties[y++], result.getBrowserMajorVersion());
                 assertEquals(properties[y++], result.getPlatform());
-                assertEquals(properties[y++], result.getValues().get("platform_maker"));
+                assertEquals(properties[y++], result.getValues().get(BrowsCapField.PLATFORM_MAKER));
                 assertEquals(properties[y++], result.getPlatformVersion());
                 assertEquals(properties[y++], result.getDeviceType());
-                assertEquals(properties[y++], result.getValues().get("rendering_engine_name"));
-                assertEquals(properties[y++], result.getValues().get("rendering_engine_maker"));
-                assertEquals(properties[y], result.getValues().get("rendering_engine_version"));
+                assertEquals(properties[y++], result.getValues().get(BrowsCapField.RENDERING_ENGINE_NAME));
+                assertEquals(properties[y++], result.getValues().get(BrowsCapField.RENDERING_ENGINE_MAKER));
+                assertEquals(properties[y], result.getValues().get(BrowsCapField.RENDERING_ENGINE_VERSION));
                 x++;
             }
         }

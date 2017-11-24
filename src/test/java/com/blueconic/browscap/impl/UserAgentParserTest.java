@@ -20,10 +20,6 @@ import java.util.Collections;
 
 import org.junit.Test;
 
-import com.blueconic.browscap.impl.Rule;
-import com.blueconic.browscap.impl.SearchableString;
-import com.blueconic.browscap.impl.UserAgentFileParser;
-import com.blueconic.browscap.impl.UserAgentParserImpl;
 import com.blueconic.browscap.impl.UserAgentParserImpl.Filter;
 
 public class UserAgentParserTest {

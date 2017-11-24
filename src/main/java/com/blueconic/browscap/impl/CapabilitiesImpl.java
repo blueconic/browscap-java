@@ -1,36 +1,28 @@
 package com.blueconic.browscap.impl;
 
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
+
+import com.blueconic.browscap.BrowsCapField;
 import com.blueconic.browscap.Capabilities;
 
-import java.util.HashMap;
-
 class CapabilitiesImpl implements Capabilities {
-    public final static Capabilities DEFAULT = new CapabilitiesImpl("Default Browser", "Default Browser",
-            UNKNOWN_BROWSCAP_VALUE,
-            UNKNOWN_BROWSCAP_VALUE,
-            UNKNOWN_BROWSCAP_VALUE,
-            UNKNOWN_BROWSCAP_VALUE,
-            new HashMap<>());
+    public final static Capabilities DEFAULT = new CapabilitiesImpl(Collections.emptyMap());
 
-    private final String myBrowser;
-    private final String myBrowserType;
-    private final String myBrowserMajorVersion;
-    private final String myDeviceType;
-    private final String myPlatform;
-    private final String myPlatformVersion;
-    private final HashMap<String, String> myValues;
+    private final Map<BrowsCapField, String> myValues = new HashMap<>();
 
-    public CapabilitiesImpl(final String browser, final String browserType, final String browserMajorVersion,
-                            final String deviceType, final String platform, final String platformVersion,
-                            final HashMap<String, String> values) {
+    public CapabilitiesImpl(
+            final Map<BrowsCapField, String> values) {
+        // default values first, for backwards compatibility
+        myValues.put(BrowsCapField.BROWSER, "Default Browser");
+        myValues.put(BrowsCapField.BROWSER_TYPE, "Default Browser");
+        myValues.put(BrowsCapField.BROWSER_MAJOR_VERSION, UNKNOWN_BROWSCAP_VALUE);
+        myValues.put(BrowsCapField.DEVICE_TYPE, UNKNOWN_BROWSCAP_VALUE);
+        myValues.put(BrowsCapField.PLATFORM, UNKNOWN_BROWSCAP_VALUE);
+        myValues.put(BrowsCapField.PLATFORM_VERSION, UNKNOWN_BROWSCAP_VALUE);
 
-        myBrowser = browser;
-        myBrowserType = browserType;
-        myBrowserMajorVersion = browserMajorVersion;
-        myDeviceType = deviceType;
-        myPlatform = platform;
-        myPlatformVersion = platformVersion;
-        myValues = values;
+        myValues.putAll(values);
     }
 
     /**
@@ -38,7 +30,7 @@ class CapabilitiesImpl implements Capabilities {
      */
     @Override
     public String getBrowser() {
-        return myBrowser;
+        return myValues.get(BrowsCapField.BROWSER);
     }
 
     /**
@@ -46,7 +38,7 @@ class CapabilitiesImpl implements Capabilities {
      */
     @Override
     public String getBrowserType() {
-        return myBrowserType;
+        return myValues.get(BrowsCapField.BROWSER_TYPE);
     }
 
     /**
@@ -54,7 +46,7 @@ class CapabilitiesImpl implements Capabilities {
      */
     @Override
     public String getBrowserMajorVersion() {
-        return myBrowserMajorVersion;
+        return myValues.get(BrowsCapField.BROWSER_MAJOR_VERSION);
     }
 
     /**
@@ -62,7 +54,7 @@ class CapabilitiesImpl implements Capabilities {
      */
     @Override
     public String getPlatform() {
-        return myPlatform;
+        return myValues.get(BrowsCapField.PLATFORM);
     }
 
     /**
@@ -70,7 +62,7 @@ class CapabilitiesImpl implements Capabilities {
      */
     @Override
     public String getPlatformVersion() {
-        return myPlatformVersion;
+        return myValues.get(BrowsCapField.PLATFORM_VERSION);
     }
 
     /**
@@ -78,21 +70,20 @@ class CapabilitiesImpl implements Capabilities {
      */
     @Override
     public String getDeviceType() {
-        return myDeviceType;
+        return myValues.get(BrowsCapField.DEVICE_TYPE);
     }
 
     /**
      * {@inheritDoc}
      */
     @Override
-    public HashMap<String, String> getValues() {
+    public Map<BrowsCapField, String> getValues() {
         return myValues;
     }
 
     @Override
     public String toString() {
-        return "Capabilities{browser='" + myBrowser + "', browserType='" + myBrowserType + "', browserMajorVersion='"
-                + myBrowserMajorVersion + "', deviceType='" + myDeviceType + "', platform='" + myPlatform
-                + "', platformVersion='" + myPlatformVersion + '}';
+        return "CapabilitiesImpl [myValues=" + myValues + "]";
     }
+
 }

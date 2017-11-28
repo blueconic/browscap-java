@@ -19,9 +19,11 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.Collection;
 
 import org.junit.Test;
 
+import com.blueconic.browscap.BrowsCapField;
 import com.blueconic.browscap.Capabilities;
 import com.blueconic.browscap.ParseException;
 import com.blueconic.browscap.UserAgentParser;
@@ -59,8 +61,9 @@ public class UserAgentServiceTest {
         System.out.print("Processed " + counter + " items\n");
     }
 
-    private int processUserAgentFile(final UserAgentParser parser) throws IOException, ParseException {
+    private int processUserAgentFile(final UserAgentParser parser) throws IOException {
         final InputStream resourceAsStream = getClass().getClassLoader().getResourceAsStream("useragents.txt");
+
         final BufferedReader in = new BufferedReader(new InputStreamReader(resourceAsStream));
         String line = null;
         int x = 0;
@@ -89,17 +92,20 @@ public class UserAgentServiceTest {
 
     @Test
     public void testUserAgentsFromBundledFileWithCustomFields() throws IOException, ParseException {
+
+        final Collection<BrowsCapField> fields =
+                asList(BROWSER, BROWSER_TYPE, BROWSER_MAJOR_VERSION, DEVICE_TYPE, PLATFORM,
+                PLATFORM_VERSION, RENDERING_ENGINE_VERSION, RENDERING_ENGINE_NAME, PLATFORM_MAKER,
+                RENDERING_ENGINE_MAKER);
+
         final UserAgentService uas = new UserAgentService();
-        final UserAgentParser parser =
-                uas.loadParser(asList(BROWSER, BROWSER_TYPE, BROWSER_MAJOR_VERSION, DEVICE_TYPE, PLATFORM,
-                        PLATFORM_VERSION, RENDERING_ENGINE_VERSION, RENDERING_ENGINE_NAME, PLATFORM_MAKER,
-                        RENDERING_ENGINE_MAKER));
+        final UserAgentParser parser = uas.loadParser(fields);
 
         final int counter = processCustomUserAgentFile(parser);
         System.out.print("Processed " + counter + " items");
     }
 
-    private int processCustomUserAgentFile(final UserAgentParser parser) throws IOException, ParseException {
+    private int processCustomUserAgentFile(final UserAgentParser parser) throws IOException {
         final InputStream resourceAsStream = getClass().getClassLoader().getResourceAsStream("useragents_2.txt");
         final BufferedReader in = new BufferedReader(new InputStreamReader(resourceAsStream));
         String line = null;

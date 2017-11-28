@@ -46,5 +46,4 @@ public interface Capabilities {
      * @return the map of values
      */
     Map<BrowsCapField, String> getValues();
-
 }

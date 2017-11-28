@@ -95,7 +95,7 @@ public class UserAgentParserTest {
         final Rule bb = getRule("bb");
 
         // Sort by size first, then lexicographical
-        final Rule[] expected = new Rule[]{aa, bb, a, b};
+        final Rule[] expected = {aa, bb, a, b};
 
         final Rule[] rules = {bb, aa, b, a};
         assertArrayEquals(expected, getOrderedRules(rules));

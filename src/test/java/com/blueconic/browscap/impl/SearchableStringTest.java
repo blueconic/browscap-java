@@ -9,8 +9,7 @@ import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
-import com.blueconic.browscap.impl.Literal;
-import com.blueconic.browscap.impl.SearchableString;
+import com.blueconic.browscap.impl.SearchableString.Cache;
 
 public class SearchableStringTest {
 
@@ -60,7 +59,7 @@ public class SearchableStringTest {
 
     @Test
     public void testCache() {
-        final SearchableString.Cache cache = new SearchableString.Cache();
+        final Cache cache = new Cache();
 
         assertNull(cache.get(0));
         cache.set(0, true);

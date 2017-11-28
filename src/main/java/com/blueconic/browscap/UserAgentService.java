@@ -1,14 +1,16 @@
 package com.blueconic.browscap;
 
 import static java.nio.charset.StandardCharsets.UTF_8;
+import static java.util.stream.Collectors.toSet;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.util.Arrays;
-import java.util.List;
+import java.util.Collection;
+import java.util.Set;
+import java.util.stream.Stream;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 
@@ -18,9 +20,6 @@ import com.blueconic.browscap.impl.UserAgentFileParser;
  * Service that manages the creation of user agent parsers. In the feature, this might be expanded so it also supports
  */
 public class UserAgentService {
-    public static final List<BrowsCapField> DEFAULT_FIELDS =
-            Arrays.asList(BrowsCapField.BROWSER, BrowsCapField.BROWSER_TYPE, BrowsCapField.BROWSER_MAJOR_VERSION,
-                    BrowsCapField.DEVICE_TYPE, BrowsCapField.PLATFORM, BrowsCapField.PLATFORM_VERSION);
 
     // The version of the browscap file this bundle depends on
     public static final int BUNDLED_BROWSCAP_VERSION = 6026;
@@ -36,7 +35,7 @@ public class UserAgentService {
      *            bundled one
      */
     public UserAgentService(final String zipFilePath) {
-        this.myZipFilePath = zipFilePath;
+        myZipFilePath = zipFilePath;
     }
 
     /**
@@ -44,7 +43,12 @@ public class UserAgentService {
      * @return the user agent parser
      */
     public UserAgentParser loadParser() throws IOException, ParseException {
-        return createParserWithFields(DEFAULT_FIELDS);
+
+        // Use all default fields
+        final Set<BrowsCapField> defaultFields =
+                Stream.of(BrowsCapField.values()).filter(BrowsCapField::isDefault).collect(toSet());
+
+        return createParserWithFields(defaultFields);
     }
 
     /**
@@ -52,12 +56,12 @@ public class UserAgentService {
      * @param fields list
      * @return the user agent parser
      */
-    public UserAgentParser loadParser(final List<BrowsCapField> fields) throws IOException, ParseException {
+    public UserAgentParser loadParser(final Collection<BrowsCapField> fields) throws IOException, ParseException {
         return createParserWithFields(fields);
     }
 
-    private UserAgentParser createParserWithFields(final List<BrowsCapField> fields)
-            throws IOException, ParseException, FileNotFoundException {
+    private UserAgentParser createParserWithFields(final Collection<BrowsCapField> fields)
+            throws IOException, ParseException {
         // http://browscap.org/version-number
         try (final InputStream zipStream = getCsvFileStream();
                 final ZipInputStream zipIn = new ZipInputStream(zipStream)) {
@@ -89,11 +93,11 @@ public class UserAgentService {
      * @throws FileNotFoundException
      */
     private InputStream getCsvFileStream() throws FileNotFoundException {
-        if (this.myZipFilePath == null) {
+        if (myZipFilePath == null) {
             final String csvFileName = getBundledCsvFileName();
             return getClass().getClassLoader().getResourceAsStream(csvFileName);
         } else {
-            return new FileInputStream(this.myZipFilePath);
+            return new FileInputStream(myZipFilePath);
         }
     }
 }

@@ -8,13 +8,9 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertSame;
 
-import org.junit.Test;
-
-import com.blueconic.browscap.impl.Literal;
-import com.blueconic.browscap.impl.Rule;
-import com.blueconic.browscap.impl.UserAgentFileParser;
-
 import java.util.Collections;
+
+import org.junit.Test;
 
 public class UserAgentFileParserTest {
 

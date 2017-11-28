@@ -1,5 +1,16 @@
 package com.blueconic.browscap.impl;
 
+import static com.blueconic.browscap.BrowsCapField.BROWSER;
+import static com.blueconic.browscap.BrowsCapField.BROWSER_MAJOR_VERSION;
+import static com.blueconic.browscap.BrowsCapField.BROWSER_TYPE;
+import static com.blueconic.browscap.BrowsCapField.DEVICE_TYPE;
+import static com.blueconic.browscap.BrowsCapField.PLATFORM;
+import static com.blueconic.browscap.BrowsCapField.PLATFORM_MAKER;
+import static com.blueconic.browscap.BrowsCapField.PLATFORM_VERSION;
+import static com.blueconic.browscap.BrowsCapField.RENDERING_ENGINE_MAKER;
+import static com.blueconic.browscap.BrowsCapField.RENDERING_ENGINE_NAME;
+import static com.blueconic.browscap.BrowsCapField.RENDERING_ENGINE_VERSION;
+import static java.util.Arrays.asList;
 import static org.junit.Assert.assertEquals;
 
 import java.io.BufferedReader;
@@ -8,11 +19,9 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.Arrays;
 
 import org.junit.Test;
 
-import com.blueconic.browscap.BrowsCapField;
 import com.blueconic.browscap.Capabilities;
 import com.blueconic.browscap.ParseException;
 import com.blueconic.browscap.UserAgentParser;
@@ -82,11 +91,9 @@ public class UserAgentServiceTest {
     public void testUserAgentsFromBundledFileWithCustomFields() throws IOException, ParseException {
         final UserAgentService uas = new UserAgentService();
         final UserAgentParser parser =
-                uas.loadParser(Arrays.asList(BrowsCapField.BROWSER, BrowsCapField.BROWSER_TYPE,
-                        BrowsCapField.BROWSER_MAJOR_VERSION,
-                        BrowsCapField.DEVICE_TYPE, BrowsCapField.PLATFORM, BrowsCapField.PLATFORM_VERSION,
-                        BrowsCapField.RENDERING_ENGINE_VERSION, BrowsCapField.RENDERING_ENGINE_NAME,
-                        BrowsCapField.PLATFORM_MAKER, BrowsCapField.RENDERING_ENGINE_MAKER));
+                uas.loadParser(asList(BROWSER, BROWSER_TYPE, BROWSER_MAJOR_VERSION, DEVICE_TYPE, PLATFORM,
+                        PLATFORM_VERSION, RENDERING_ENGINE_VERSION, RENDERING_ENGINE_NAME, PLATFORM_MAKER,
+                        RENDERING_ENGINE_MAKER));
 
         final int counter = processCustomUserAgentFile(parser);
         System.out.print("Processed " + counter + " items");
@@ -114,12 +121,12 @@ public class UserAgentServiceTest {
                 assertEquals(properties[y++], result.getBrowserType());
                 assertEquals(properties[y++], result.getBrowserMajorVersion());
                 assertEquals(properties[y++], result.getPlatform());
-                assertEquals(properties[y++], result.getValues().get(BrowsCapField.PLATFORM_MAKER));
+                assertEquals(properties[y++], result.getValues().get(PLATFORM_MAKER));
                 assertEquals(properties[y++], result.getPlatformVersion());
                 assertEquals(properties[y++], result.getDeviceType());
-                assertEquals(properties[y++], result.getValues().get(BrowsCapField.RENDERING_ENGINE_NAME));
-                assertEquals(properties[y++], result.getValues().get(BrowsCapField.RENDERING_ENGINE_MAKER));
-                assertEquals(properties[y], result.getValues().get(BrowsCapField.RENDERING_ENGINE_VERSION));
+                assertEquals(properties[y++], result.getValues().get(RENDERING_ENGINE_NAME));
+                assertEquals(properties[y++], result.getValues().get(RENDERING_ENGINE_MAKER));
+                assertEquals(properties[y], result.getValues().get(RENDERING_ENGINE_VERSION));
                 x++;
             }
         }

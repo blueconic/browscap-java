@@ -1,26 +1,35 @@
 package com.blueconic.browscap.impl;
 
-import java.util.Collections;
-import java.util.HashMap;
+import static com.blueconic.browscap.BrowsCapField.BROWSER;
+import static com.blueconic.browscap.BrowsCapField.BROWSER_MAJOR_VERSION;
+import static com.blueconic.browscap.BrowsCapField.BROWSER_TYPE;
+import static com.blueconic.browscap.BrowsCapField.DEVICE_TYPE;
+import static com.blueconic.browscap.BrowsCapField.PLATFORM;
+import static com.blueconic.browscap.BrowsCapField.PLATFORM_VERSION;
+import static java.util.Collections.emptyMap;
+
+import java.util.EnumMap;
 import java.util.Map;
 
 import com.blueconic.browscap.BrowsCapField;
 import com.blueconic.browscap.Capabilities;
 
 class CapabilitiesImpl implements Capabilities {
-    public final static Capabilities DEFAULT = new CapabilitiesImpl(Collections.emptyMap());
 
-    private final Map<BrowsCapField, String> myValues = new HashMap<>();
+    public static final Capabilities DEFAULT = new CapabilitiesImpl(emptyMap());
 
-    public CapabilitiesImpl(
-            final Map<BrowsCapField, String> values) {
+    private final Map<BrowsCapField, String> myValues;
+
+    public CapabilitiesImpl(final Map<BrowsCapField, String> values) {
+
         // default values first, for backwards compatibility
-        myValues.put(BrowsCapField.BROWSER, "Default Browser");
-        myValues.put(BrowsCapField.BROWSER_TYPE, "Default Browser");
-        myValues.put(BrowsCapField.BROWSER_MAJOR_VERSION, UNKNOWN_BROWSCAP_VALUE);
-        myValues.put(BrowsCapField.DEVICE_TYPE, UNKNOWN_BROWSCAP_VALUE);
-        myValues.put(BrowsCapField.PLATFORM, UNKNOWN_BROWSCAP_VALUE);
-        myValues.put(BrowsCapField.PLATFORM_VERSION, UNKNOWN_BROWSCAP_VALUE);
+        myValues = new EnumMap<>(BrowsCapField.class);
+        myValues.put(BROWSER, "Default Browser");
+        myValues.put(BROWSER_TYPE, "Default Browser");
+        myValues.put(BROWSER_MAJOR_VERSION, UNKNOWN_BROWSCAP_VALUE);
+        myValues.put(DEVICE_TYPE, UNKNOWN_BROWSCAP_VALUE);
+        myValues.put(PLATFORM, UNKNOWN_BROWSCAP_VALUE);
+        myValues.put(PLATFORM_VERSION, UNKNOWN_BROWSCAP_VALUE);
 
         myValues.putAll(values);
     }
@@ -30,7 +39,7 @@ class CapabilitiesImpl implements Capabilities {
      */
     @Override
     public String getBrowser() {
-        return myValues.get(BrowsCapField.BROWSER);
+        return myValues.get(BROWSER);
     }
 
     /**
@@ -38,7 +47,7 @@ class CapabilitiesImpl implements Capabilities {
      */
     @Override
     public String getBrowserType() {
-        return myValues.get(BrowsCapField.BROWSER_TYPE);
+        return myValues.get(BROWSER_TYPE);
     }
 
     /**
@@ -46,7 +55,7 @@ class CapabilitiesImpl implements Capabilities {
      */
     @Override
     public String getBrowserMajorVersion() {
-        return myValues.get(BrowsCapField.BROWSER_MAJOR_VERSION);
+        return myValues.get(BROWSER_MAJOR_VERSION);
     }
 
     /**
@@ -54,7 +63,7 @@ class CapabilitiesImpl implements Capabilities {
      */
     @Override
     public String getPlatform() {
-        return myValues.get(BrowsCapField.PLATFORM);
+        return myValues.get(PLATFORM);
     }
 
     /**
@@ -62,7 +71,7 @@ class CapabilitiesImpl implements Capabilities {
      */
     @Override
     public String getPlatformVersion() {
-        return myValues.get(BrowsCapField.PLATFORM_VERSION);
+        return myValues.get(PLATFORM_VERSION);
     }
 
     /**
@@ -70,7 +79,7 @@ class CapabilitiesImpl implements Capabilities {
      */
     @Override
     public String getDeviceType() {
-        return myValues.get(BrowsCapField.DEVICE_TYPE);
+        return myValues.get(DEVICE_TYPE);
     }
 
     /**
@@ -85,5 +94,4 @@ class CapabilitiesImpl implements Capabilities {
     public String toString() {
         return "CapabilitiesImpl [myValues=" + myValues + "]";
     }
-
 }

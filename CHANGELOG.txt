@@ -1,4 +1,7 @@
-1.0.10 - 24 Nov 2017
+1.2.0 - 29 Nov 2017
+  Performance updates for memory footprint and startup time.
+
+1.1.0 - 24 Nov 2017
   Intregrated PR 2; the browscap fields are now configurable in the constructor of the parser.
   Updated documentation and unit tests.
 

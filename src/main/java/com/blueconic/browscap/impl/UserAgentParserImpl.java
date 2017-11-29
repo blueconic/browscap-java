@@ -1,12 +1,15 @@
 package com.blueconic.browscap.impl;
 
-import static java.util.Arrays.asList;
+import static java.util.Arrays.parallelSort;
+import static java.util.stream.Collectors.toList;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.BitSet;
 import java.util.Comparator;
 import java.util.List;
 import java.util.function.Predicate;
+import java.util.stream.Stream;
 
 import com.blueconic.browscap.Capabilities;
 import com.blueconic.browscap.UserAgentParser;
@@ -85,11 +88,12 @@ class UserAgentParserImpl implements UserAgentParser {
 
     // Sort by size and alphabet, so the first match can be returned immediately
     static Rule[] getOrderedRules(final Rule[] rules) {
+
         final Comparator<Rule> c = Comparator.comparing(Rule::getSize).reversed().thenComparing(Rule::getPattern);
 
-        final List<Rule> orderedRules = new ArrayList<>(asList(rules));
-        orderedRules.sort(c);
-        return orderedRules.toArray(new Rule[0]);
+        final Rule[] result = Arrays.copyOf(rules, rules.length);
+        parallelSort(result, c);
+        return result;
     }
 
     Filter[] buildFilters() {
@@ -100,11 +104,10 @@ class UserAgentParserImpl implements UserAgentParser {
         for (final String pattern : FILTER_PREFIXES) {
             result.add(createPrefixFilter(pattern));
         }
-
+        
         // Build filters for specific contains constraints
-        for (final String pattern : COMMON) {
-            result.add(createContainsFilter(pattern));
-        }
+        final List<Filter> commonFilters = Stream.of(COMMON).parallel().map(this::createContainsFilter).collect(toList());
+        result.addAll(commonFilters);
 
         return result.toArray(new Filter[0]);
     }

@@ -15,7 +15,6 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-import java.util.TreeMap;
 
 import com.blueconic.browscap.BrowsCapField;
 import com.blueconic.browscap.Capabilities;
@@ -29,7 +28,7 @@ import com.opencsv.CSVReader;
 public class UserAgentFileParser {
 
     // Mapping substrings to unique literal for caching of lookups
-    private final Map<String, Literal> myUniqueLiterals = new TreeMap<>();
+    private final Map<String, Literal> myUniqueLiterals = new HashMap<>();
 
     private final Map<Capabilities, Capabilities> myCache = new HashMap<>();
 
@@ -65,6 +64,7 @@ public class UserAgentFileParser {
 
             while (iterator.hasNext()) {
                 final String[] record = iterator.next();
+
                 final Rule rule = getRule(record);
                 if (rule != null) {
                     rules.add(rule);
@@ -89,7 +89,7 @@ public class UserAgentFileParser {
         }
 
         // Normalize: lowercase and remove duplicate wildcards
-        final String pattern = record[0].toLowerCase().replaceAll("\\*+", "*");
+        final String pattern = normalizePattern(record[0]);
         try {
             final Map<BrowsCapField, String> values = getBrowsCapFields(record);
             final Capabilities capabilities = getCapabilities(values);
@@ -104,6 +104,15 @@ public class UserAgentFileParser {
         } catch (final IllegalStateException e) {
             throw new ParseException("Unable to parse " + pattern);
         }
+    }
+
+    private static String normalizePattern(final String pattern) {
+
+        final String lowerCase = pattern.toLowerCase();
+        if (lowerCase.contains("**")) {
+            return lowerCase.replaceAll("\\*+", "*");
+        }
+        return lowerCase;
     }
 
     private Map<BrowsCapField, String> getBrowsCapFields(final String[] record) {

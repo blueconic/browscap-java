@@ -281,6 +281,29 @@ class Literal {
         return NUMBER_OF_INSTANCES.get();
     }
 
+    private static boolean contains(final char[] characters, final char value) {
+
+        for (final char c : characters) {
+            if (c == value) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    boolean requires(final String value) {
+        final int len = value.length();
+        if (len == 1) {
+            return contains(myCharacters, value.charAt(0));
+        }
+
+        if (len > myCharacters.length) {
+            return false;
+        }
+
+        return toString().contains(value);
+    }
+
     /**
      * {@inheritDoc}
      */

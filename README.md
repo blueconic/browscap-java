@@ -42,7 +42,7 @@ Add this to the dependencies in your pom.xml.
 <dependency>
   <groupId>com.blueconic</groupId>
   <artifactId>browscap-java</artifactId>
-  <version>1.1.0</version>
+  <version>1.2.0</version>
 </dependency>
 ```
 
@@ -84,8 +84,8 @@ final String deviceType = capabilities.getDeviceType();
 final String platform = capabilities.getPlatform();
 final String platformVersion = capabilities.getPlatformVersion();
 
-// the custom defined fields are available through a Map
-final String renderingEngineMaker = capabilities.getValues().get(BrowsCapField.RENDERING_ENGINE_MAKER);
+// the custom defined fields are available
+final String renderingEngineMaker = capabilities.getValue(BrowsCapField.RENDERING_ENGINE_MAKER);
 
 // do something with the values
 

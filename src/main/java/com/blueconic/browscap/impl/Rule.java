@@ -82,7 +82,7 @@ class Rule {
     }
 
     private static boolean requires(final Literal literal, final String value) {
-        return literal != null && literal.toString().contains(value);
+        return literal != null && literal.requires(value);
     }
 
     Capabilities getCapabilities() {

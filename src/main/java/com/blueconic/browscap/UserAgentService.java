@@ -70,7 +70,7 @@ public class UserAgentService {
             // look for the first file that isn't a directory
             // that should be a BrowsCap .csv file
             if (!entry.isDirectory()) {
-                return new UserAgentFileParser().parse(new InputStreamReader(zipIn, UTF_8), fields);
+                return UserAgentFileParser.parse(new InputStreamReader(zipIn, UTF_8), fields);
             } else {
                 throw new IOException(
                         "Unable to find the BrowsCap CSV file in the ZIP file");

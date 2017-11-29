@@ -1,18 +1,13 @@
 package com.blueconic.browscap.impl;
 
-import static com.blueconic.browscap.Capabilities.UNKNOWN_BROWSCAP_VALUE;
 import static java.util.Arrays.asList;
 
 import java.util.ArrayList;
 import java.util.BitSet;
-import java.util.Collection;
 import java.util.Comparator;
-import java.util.EnumMap;
 import java.util.List;
-import java.util.Map;
 import java.util.function.Predicate;
 
-import com.blueconic.browscap.BrowsCapField;
 import com.blueconic.browscap.Capabilities;
 import com.blueconic.browscap.UserAgentParser;
 
@@ -49,10 +44,10 @@ class UserAgentParserImpl implements UserAgentParser {
      * Creates a new parser based on a collection of rules.
      * @param rules The rules, ordered by priority
      */
-    UserAgentParserImpl(final Rule[] rules, final Collection<BrowsCapField> fields) {
+    UserAgentParserImpl(final Rule[] rules, final Capabilities defaultCapabilities) {
         myRules = getOrderedRules(rules);
         myFilters = buildFilters();
-        myDefaultCapabilities = getDefaultCapabilities(fields);
+        myDefaultCapabilities = defaultCapabilities;
     }
 
     /**
@@ -73,15 +68,6 @@ class UserAgentParserImpl implements UserAgentParser {
         }
 
         return myDefaultCapabilities;
-    }
-
-    // Constructs a map with custom fields and default values
-    private static Capabilities getDefaultCapabilities(final Collection<BrowsCapField> fields) {
-        final Map<BrowsCapField, String> result = new EnumMap<>(BrowsCapField.class);
-        for (final BrowsCapField field : fields) {
-            result.put(field, UNKNOWN_BROWSCAP_VALUE);
-        }
-        return new CapabilitiesImpl(result);
     }
 
     BitSet getIncludeRules(final SearchableString searchString, final Filter[] filters) {

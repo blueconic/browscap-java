@@ -6,9 +6,8 @@ import static com.blueconic.browscap.BrowsCapField.BROWSER_TYPE;
 import static com.blueconic.browscap.BrowsCapField.DEVICE_TYPE;
 import static com.blueconic.browscap.BrowsCapField.PLATFORM;
 import static com.blueconic.browscap.BrowsCapField.PLATFORM_VERSION;
-import static java.util.Collections.emptyMap;
 
-import java.util.EnumMap;
+import java.util.Arrays;
 import java.util.Map;
 
 import com.blueconic.browscap.BrowsCapField;
@@ -16,22 +15,17 @@ import com.blueconic.browscap.Capabilities;
 
 class CapabilitiesImpl implements Capabilities {
 
-    public static final Capabilities DEFAULT = new CapabilitiesImpl(emptyMap());
+    private final String[] myValues;
+    private final Mapper myMapper;
 
-    private final Map<BrowsCapField, String> myValues;
+    CapabilitiesImpl(final String[] values, final Mapper mapper) {
+        myValues = values;
+        myMapper = mapper;
+    }
 
-    public CapabilitiesImpl(final Map<BrowsCapField, String> values) {
-
-        // default values first, for backwards compatibility
-        myValues = new EnumMap<>(BrowsCapField.class);
-        myValues.put(BROWSER, "Default Browser");
-        myValues.put(BROWSER_TYPE, "Default Browser");
-        myValues.put(BROWSER_MAJOR_VERSION, UNKNOWN_BROWSCAP_VALUE);
-        myValues.put(DEVICE_TYPE, UNKNOWN_BROWSCAP_VALUE);
-        myValues.put(PLATFORM, UNKNOWN_BROWSCAP_VALUE);
-        myValues.put(PLATFORM_VERSION, UNKNOWN_BROWSCAP_VALUE);
-
-        myValues.putAll(values);
+    @Override
+    public String getValue(final BrowsCapField field) {
+        return myMapper.getValue(myValues, field);
     }
 
     /**
@@ -39,7 +33,7 @@ class CapabilitiesImpl implements Capabilities {
      */
     @Override
     public String getBrowser() {
-        return myValues.get(BROWSER);
+        return getValue(BROWSER);
     }
 
     /**
@@ -47,7 +41,7 @@ class CapabilitiesImpl implements Capabilities {
      */
     @Override
     public String getBrowserType() {
-        return myValues.get(BROWSER_TYPE);
+        return getValue(BROWSER_TYPE);
     }
 
     /**
@@ -55,7 +49,7 @@ class CapabilitiesImpl implements Capabilities {
      */
     @Override
     public String getBrowserMajorVersion() {
-        return myValues.get(BROWSER_MAJOR_VERSION);
+        return getValue(BROWSER_MAJOR_VERSION);
     }
 
     /**
@@ -63,7 +57,7 @@ class CapabilitiesImpl implements Capabilities {
      */
     @Override
     public String getPlatform() {
-        return myValues.get(PLATFORM);
+        return getValue(PLATFORM);
     }
 
     /**
@@ -71,7 +65,7 @@ class CapabilitiesImpl implements Capabilities {
      */
     @Override
     public String getPlatformVersion() {
-        return myValues.get(PLATFORM_VERSION);
+        return getValue(PLATFORM_VERSION);
     }
 
     /**
@@ -79,7 +73,7 @@ class CapabilitiesImpl implements Capabilities {
      */
     @Override
     public String getDeviceType() {
-        return myValues.get(DEVICE_TYPE);
+        return getValue(DEVICE_TYPE);
     }
 
     /**
@@ -87,11 +81,40 @@ class CapabilitiesImpl implements Capabilities {
      */
     @Override
     public Map<BrowsCapField, String> getValues() {
-        return myValues;
+        return myMapper.getAll(myValues);
+    }
+    
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public int hashCode() {
+        return Arrays.hashCode(myValues);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public boolean equals(final Object obj) {
+
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof CapabilitiesImpl)) {
+            return false;
+        }
+
+        final CapabilitiesImpl other = (CapabilitiesImpl) obj;
+        if (myMapper != other.myMapper) {
+            return false;
+        }
+        
+        return Arrays.equals(myValues, other.myValues);
     }
 
     @Override
     public String toString() {
-        return "CapabilitiesImpl [myValues=" + myValues + "]";
+        return "CapabilitiesImpl [myValues=" + getValues() + "]";
     }
 }

@@ -8,10 +8,13 @@ import java.io.Reader;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.EnumMap;
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.TreeMap;
 
 import com.blueconic.browscap.BrowsCapField;
@@ -24,18 +27,37 @@ import com.opencsv.CSVReader;
  * This class is responsible for parsing rules and creating the efficient java representation.
  */
 public class UserAgentFileParser {
+
     // Mapping substrings to unique literal for caching of lookups
     private final Map<String, Literal> myUniqueLiterals = new TreeMap<>();
+
+    private final Map<Capabilities, Capabilities> myCache = new HashMap<>();
+
+    private final Map<String, String> myStrings = new HashMap<>();
+
+    private final Mapper myMapper;
+
+    private final Set<BrowsCapField> myFields;
+
+    UserAgentFileParser(final Collection<BrowsCapField> fields) {
+        myFields = new HashSet<>(fields);
+        myMapper = new Mapper(myFields);
+    }
 
     /**
      * Parses a csv stream of rules.
      * @param input The input stream
+     * @param fields The fields that should be stored during parsing
      * @return a UserAgentParser based on the read rules
      * @throws IOException If reading the stream failed.
      * @throws ParseException
      */
-    public synchronized UserAgentParser parse(final Reader input, final Collection<BrowsCapField> fields)
+    public static UserAgentParser parse(final Reader input, final Collection<BrowsCapField> fields)
             throws IOException, ParseException {
+        return new UserAgentFileParser(fields).parse(input);
+    }
+
+    private UserAgentParser parse(final Reader input) throws IOException, ParseException {
 
         final List<Rule> rules = new ArrayList<>();
         try (final CSVReader csvReader = new CSVReader(input)) {
@@ -43,17 +65,25 @@ public class UserAgentFileParser {
 
             while (iterator.hasNext()) {
                 final String[] record = iterator.next();
-                final Rule rule = getRule(record, fields);
+                final Rule rule = getRule(record);
                 if (rule != null) {
                     rules.add(rule);
                 }
             }
         }
 
-        return new UserAgentParserImpl(rules.toArray(new Rule[0]), fields);
+        return new UserAgentParserImpl(rules.toArray(new Rule[0]), getDefaultCapabilities());
     }
 
-    private Rule getRule(final String[] record, final Collection<BrowsCapField> fields) throws ParseException {
+    Capabilities getDefaultCapabilities() {
+        final Map<BrowsCapField, String> result = new EnumMap<>(BrowsCapField.class);
+        for (final BrowsCapField field : myFields) {
+            result.put(field, UNKNOWN_BROWSCAP_VALUE);
+        }
+        return getCapabilities(result);
+    }
+
+    private Rule getRule(final String[] record) throws ParseException {
         if (record.length <= 47) {
             return null;
         }
@@ -61,9 +91,9 @@ public class UserAgentFileParser {
         // Normalize: lowercase and remove duplicate wildcards
         final String pattern = record[0].toLowerCase().replaceAll("\\*+", "*");
         try {
-            final Map<BrowsCapField, String> values = getBrowsCapFields(record, fields);
-            final Capabilities capabilities = new CapabilitiesImpl(values);
-            final Rule rule = createRule(pattern, capabilities, fields);
+            final Map<BrowsCapField, String> values = getBrowsCapFields(record);
+            final Capabilities capabilities = getCapabilities(values);
+            final Rule rule = createRule(pattern, capabilities);
 
             // Check reconstructing the pattern
             if (!pattern.equals(rule.getPattern())) {
@@ -76,16 +106,15 @@ public class UserAgentFileParser {
         }
     }
 
-    private static Map<BrowsCapField, String> getBrowsCapFields(final String[] record,
-            final Collection<BrowsCapField> fields) {
+    private Map<BrowsCapField, String> getBrowsCapFields(final String[] record) {
         final Map<BrowsCapField, String> values = new EnumMap<>(BrowsCapField.class);
-        for (final BrowsCapField field : fields) {
+        for (final BrowsCapField field : myFields) {
             values.put(field, getValue(record[field.getIndex()]));
         }
         return values;
     }
 
-    static String getValue(final String value) {
+    String getValue(final String value) {
         if (value == null) {
             return UNKNOWN_BROWSCAP_VALUE;
         }
@@ -94,14 +123,32 @@ public class UserAgentFileParser {
         if (trimmed.isEmpty()) {
             return UNKNOWN_BROWSCAP_VALUE;
         }
-        return trimmed.intern();
+
+        final String cached = myStrings.get(trimmed);
+        if (cached != null) {
+            return cached;
+        }
+        myStrings.put(trimmed, trimmed);
+        return trimmed;
+    }
+
+    Capabilities getCapabilities(final Map<BrowsCapField, String> values) {
+
+        final CapabilitiesImpl result = new CapabilitiesImpl(myMapper.getValues(values), myMapper);
+        final Capabilities fromCache = myCache.get(result);
+        if (fromCache != null) {
+            return fromCache;
+        }
+
+        myCache.put(result, result);
+        return result;
     }
 
     Literal getLiteral(final String value) {
         return myUniqueLiterals.computeIfAbsent(value, Literal::new);
     }
 
-    Rule createRule(final String pattern, final Capabilities capabilities, final Collection<BrowsCapField> fields) {
+    Rule createRule(final String pattern, final Capabilities capabilities) {
 
         final List<String> parts = getParts(pattern);
         if (parts.isEmpty()) {
@@ -111,7 +158,7 @@ public class UserAgentFileParser {
         final String first = parts.get(0);
         if (parts.size() == 1) {
             if ("*".equals(first)) {
-                return getWildCardRule(fields);
+                return getWildCardRule();
             }
             return new Rule(getLiteral(first), null, null, pattern, capabilities);
         }
@@ -139,15 +186,16 @@ public class UserAgentFileParser {
         return new Rule(prefix, suffixArray, postfix, pattern, capabilities);
     }
 
-    private static Rule getWildCardRule(final Collection<BrowsCapField> fields) {
+    private  Rule getWildCardRule() {
         // The default match all pattern
         final Map<BrowsCapField, String> fieldValues = new EnumMap<>(BrowsCapField.class);
-        for (final BrowsCapField field : fields) {
+        for (final BrowsCapField field : myFields) {
             if (!field.isDefault()) {
                 fieldValues.put(field, UNKNOWN_BROWSCAP_VALUE);
             }
         }
-        return new Rule(null, new Literal[0], null, "*", new CapabilitiesImpl(fieldValues));
+        final Capabilities capabilities = getCapabilities(fieldValues);
+        return new Rule(null, new Literal[0], null, "*", capabilities);
     }
 
     static List<String> getParts(final String pattern) {

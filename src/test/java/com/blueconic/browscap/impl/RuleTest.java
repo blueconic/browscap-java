@@ -1,11 +1,11 @@
 package com.blueconic.browscap.impl;
 
-import static com.blueconic.browscap.impl.CapabilitiesImpl.DEFAULT;
+import static com.blueconic.browscap.BrowsCapField.BROWSER;
+import static com.blueconic.browscap.impl.UserAgentFileParserTest.DEFAULT;
+import static java.util.Collections.singleton;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
-
-import java.util.Collections;
 
 import org.junit.Test;
 
@@ -131,8 +131,8 @@ public class RuleTest {
     }
 
     private Rule getRule(final String pattern) {
-        final UserAgentFileParser parser = new UserAgentFileParser();
-        final Rule rule = parser.createRule(pattern, DEFAULT, Collections.emptyList());
+        final UserAgentFileParser parser = new UserAgentFileParser(singleton(BROWSER));
+        final Rule rule = parser.createRule(pattern, DEFAULT);
         assertEquals(pattern, rule.getPattern());
         return rule;
     }

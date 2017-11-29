@@ -42,6 +42,13 @@ public interface Capabilities {
     String getDeviceType();
 
     /**
+     * Returns the value for the specified field.
+     * @param field The field for which the value should be returned.
+     * @return the value for the specified field.
+     */
+    String getValue(BrowsCapField field);
+
+    /**
      * Returns the Map of values with the fields passed to the parser while loading
      * @return the map of values
      */

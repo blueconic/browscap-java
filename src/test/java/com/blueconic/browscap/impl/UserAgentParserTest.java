@@ -8,15 +8,16 @@
  */
 package com.blueconic.browscap.impl;
 
-import static com.blueconic.browscap.impl.CapabilitiesImpl.DEFAULT;
+import static com.blueconic.browscap.BrowsCapField.BROWSER;
+import static com.blueconic.browscap.impl.UserAgentFileParserTest.DEFAULT;
 import static com.blueconic.browscap.impl.UserAgentParserImpl.getOrderedRules;
+import static java.util.Collections.singleton;
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 import java.util.BitSet;
-import java.util.Collections;
 
 import org.junit.Test;
 
@@ -63,7 +64,7 @@ public class UserAgentParserTest {
         final Rule d = getRule("*123*");
         final Rule[] rules = {a, b, c, d};
 
-        final UserAgentParserImpl parser = new UserAgentParserImpl(rules, Collections.emptyList());
+        final UserAgentParserImpl parser = new UserAgentParserImpl(rules, DEFAULT);
 
         final Filter startsWithTest = parser.createPrefixFilter("test");
         final Filter containsTest = parser.createContainsFilter("test");
@@ -105,8 +106,8 @@ public class UserAgentParserTest {
     }
 
     private Rule getRule(final String pattern) {
-        final UserAgentFileParser parser = new UserAgentFileParser();
-        final Rule rule = parser.createRule(pattern, DEFAULT, Collections.emptyList());
+        final UserAgentFileParser parser = new UserAgentFileParser(singleton(BROWSER));
+        final Rule rule = parser.createRule(pattern, DEFAULT);
         assertEquals(pattern, rule.getPattern());
         return rule;
     }

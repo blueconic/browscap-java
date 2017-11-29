@@ -1,18 +1,21 @@
 package com.blueconic.browscap.impl;
 
-import static com.blueconic.browscap.impl.CapabilitiesImpl.DEFAULT;
+import static com.blueconic.browscap.BrowsCapField.BROWSER;
 import static com.blueconic.browscap.impl.UserAgentFileParser.getParts;
-import static com.blueconic.browscap.impl.UserAgentFileParser.getValue;
 import static java.util.Arrays.asList;
+import static java.util.Collections.emptySet;
+import static java.util.Collections.singleton;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertSame;
 
-import java.util.Collections;
-
 import org.junit.Test;
 
+import com.blueconic.browscap.Capabilities;
+
 public class UserAgentFileParserTest {
+
+    static final Capabilities DEFAULT = new UserAgentFileParser(singleton(BROWSER)).getDefaultCapabilities();
 
     @Test
     public void testGetParts() {
@@ -24,33 +27,33 @@ public class UserAgentFileParserTest {
 
     @Test(expected = IllegalStateException.class)
     public void testLiteralException() {
-        final UserAgentFileParser parser = new UserAgentFileParser();
-        parser.createRule("", DEFAULT, Collections.emptyList());
+        final UserAgentFileParser parser = new UserAgentFileParser(singleton(BROWSER));
+        parser.createRule("", DEFAULT);
     }
 
     @Test
     public void testCreateRule() {
-        final UserAgentFileParser parser = new UserAgentFileParser();
+        final UserAgentFileParser parser = new UserAgentFileParser(singleton(BROWSER));
 
-        final Rule exact = parser.createRule("a", DEFAULT, Collections.emptyList());
+        final Rule exact = parser.createRule("a", DEFAULT);
         validate(exact, "a", null, null);
 
-        final Rule wildcard = parser.createRule("*", DEFAULT, Collections.emptyList());
+        final Rule wildcard = parser.createRule("*", DEFAULT);
         validate(wildcard, null, new String[0], null);
 
-        final Rule prefix = parser.createRule("abc*", DEFAULT, Collections.emptyList());
+        final Rule prefix = parser.createRule("abc*", DEFAULT);
         validate(prefix, "abc", new String[0], null);
 
-        final Rule postfix = parser.createRule("*abc", DEFAULT, Collections.emptyList());
+        final Rule postfix = parser.createRule("*abc", DEFAULT);
         validate(postfix, null, new String[0], "abc");
 
-        final Rule prePost = parser.createRule("abc*def", DEFAULT, Collections.emptyList());
+        final Rule prePost = parser.createRule("abc*def", DEFAULT);
         validate(prePost, "abc", new String[0], "def");
 
-        final Rule suffix = parser.createRule("*abc*", DEFAULT, Collections.emptyList());
+        final Rule suffix = parser.createRule("*abc*", DEFAULT);
         validate(suffix, null, new String[]{"abc"}, null);
 
-        final Rule expression = parser.createRule("*a*z*", DEFAULT, Collections.emptyList());
+        final Rule expression = parser.createRule("*a*z*", DEFAULT);
         validate(expression, null, new String[]{"a", "z"}, null);
     }
 
@@ -80,14 +83,17 @@ public class UserAgentFileParserTest {
     @Test
     public void testGetValue() {
 
+        final UserAgentFileParser parser = new UserAgentFileParser(emptySet());
+
         // Test missing values
-        assertEquals("Unknown", getValue(null));
-        assertEquals("Unknown", getValue(""));
-        assertEquals("Unknown", getValue(" "));
+        assertEquals("Unknown", parser.getValue(null));
+        assertEquals("Unknown", parser.getValue(""));
+        assertEquals("Unknown", parser.getValue(" "));
 
         // Test trimming and interning
         final String input = "Test";
-        assertSame("Test", getValue(input + " "));
-        assertSame("Test", getValue(" " + input));
+        assertSame("Test", parser.getValue(input));
+        assertSame("Test", parser.getValue(input + " "));
+        assertSame("Test", parser.getValue(" " + input));
     }
 }

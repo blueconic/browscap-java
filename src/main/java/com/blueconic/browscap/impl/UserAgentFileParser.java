@@ -53,11 +53,28 @@ public class UserAgentFileParser {
      */
     public static UserAgentParser parse(final Reader input, final Collection<BrowsCapField> fields)
             throws IOException, ParseException {
-        return new UserAgentFileParser(fields).parse(input);
+        return parse(input, fields, false);
     }
 
-    private UserAgentParser parse(final Reader input) throws IOException, ParseException {
+    /**
+     * Parses a csv stream of rules.
+     * @param input The input stream
+     * @param fields The fields that should be stored during parsing
+     * @param isLiteOnly Whether or not to use the lite-only matches.
+     * @return a UserAgentParser based on the read rules
+     * @throws IOException If reading the stream failed.
+     * @throws ParseException
+     */
+    public static UserAgentParser parse(final Reader input, final Collection<BrowsCapField> fields, final boolean isLiteOnly) throws IOException, ParseException {
+        // make sure we add the "lite" field for filtering
+        if (isLiteOnly && !fields.contains(BrowsCapField.IS_LITE_MODE)) {
+            fields.add(BrowsCapField.IS_LITE_MODE);
+        }
 
+        return new UserAgentFileParser(fields).parse(input, isLiteOnly);
+    }
+
+    private UserAgentParser parse(final Reader input, boolean isLiteOnly) throws IOException, ParseException {
         final List<Rule> rules = new ArrayList<>();
         try (final CSVReader csvReader = new CSVReader(input)) {
             final Iterator<String[]> iterator = csvReader.iterator();
@@ -67,12 +84,18 @@ public class UserAgentFileParser {
 
                 final Rule rule = getRule(record);
                 if (rule != null) {
-                    rules.add(rule);
+                    if (!isLiteOnly || this.getBrowsCapFields(record).get(BrowsCapField.IS_LITE_MODE).equals("true")) {
+                        rules.add(rule);
+                    }
                 }
             }
         }
 
         return new UserAgentParserImpl(rules.toArray(new Rule[0]), getDefaultCapabilities());
+    }
+
+    private UserAgentParser parse(final Reader input) throws IOException, ParseException {
+        return parse(input, false);
     }
 
     Capabilities getDefaultCapabilities() {

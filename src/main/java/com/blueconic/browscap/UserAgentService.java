@@ -25,8 +25,21 @@ public class UserAgentService {
     public static final int BUNDLED_BROWSCAP_VERSION = 6026;
     private String myZipFilePath;
 
+    private final boolean isLiteOnly;
+
+    /**
+     * Default constructor
+     */
     public UserAgentService() {
-        // Default
+        this(false);
+    }
+
+    /**
+     * A constructor that set whether or not to use the lite-only matches.
+     * @param isLiteOnly boolean Determine whether or not to use lite-only matches.
+     */
+    public UserAgentService(boolean isLiteOnly) {
+        this.isLiteOnly = isLiteOnly;
     }
 
     /**
@@ -35,6 +48,17 @@ public class UserAgentService {
      *            bundled one
      */
     public UserAgentService(final String zipFilePath) {
+        this(zipFilePath, false);
+    }
+
+    /**
+     * Creates a user agent service based on the Browscap CSV file in the given ZIP file
+     * @param zipFilePath the zip file should contain the csv file. It will load the given zip file instead of the
+     *            bundled one
+     * @param isLiteOnly boolean Determine whether or not to use lite-only matches.
+     */
+    public UserAgentService(final String zipFilePath, boolean isLiteOnly) {
+        this(isLiteOnly);
         myZipFilePath = zipFilePath;
     }
 
@@ -70,7 +94,7 @@ public class UserAgentService {
             // look for the first file that isn't a directory
             // that should be a BrowsCap .csv file
             if (!entry.isDirectory()) {
-                return UserAgentFileParser.parse(new InputStreamReader(zipIn, UTF_8), fields);
+                return UserAgentFileParser.parse(new InputStreamReader(zipIn, UTF_8), fields, isLiteOnly);
             } else {
                 throw new IOException(
                         "Unable to find the BrowsCap CSV file in the ZIP file");

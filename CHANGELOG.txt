@@ -1,3 +1,7 @@
+1.2.1 - 2 Jan 2018
+  Updated to BrowsCap 6027.
+  Updated unit test accordingly.
+
 1.2.0 - 29 Nov 2017
   Performance updates for memory footprint and startup time.
 

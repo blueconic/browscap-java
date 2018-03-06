@@ -1,3 +1,7 @@
+1.2.2 - 3 March 2018
+- Updated to browscap 600028 
+- Updated unit tests accordingly
+
 1.2.1 - 2 Jan 2018
   Updated to BrowsCap 6027.
   Updated unit test accordingly.

@@ -78,6 +78,7 @@ public class UserAgentServiceTest {
 
                 int y = 0;
                 // System.out.println(result + "===" + properties[5]);
+
                 assertEquals(properties[y++], result.getBrowser());
                 assertEquals(properties[y++], result.getBrowserMajorVersion());
                 assertEquals(properties[y++], result.getPlatform());
@@ -95,8 +96,8 @@ public class UserAgentServiceTest {
 
         final Collection<BrowsCapField> fields =
                 asList(BROWSER, BROWSER_TYPE, BROWSER_MAJOR_VERSION, DEVICE_TYPE, PLATFORM,
-                PLATFORM_VERSION, RENDERING_ENGINE_VERSION, RENDERING_ENGINE_NAME, PLATFORM_MAKER,
-                RENDERING_ENGINE_MAKER);
+                        PLATFORM_VERSION, RENDERING_ENGINE_VERSION, RENDERING_ENGINE_NAME, PLATFORM_MAKER,
+                        RENDERING_ENGINE_MAKER);
 
         final UserAgentService uas = new UserAgentService();
         final UserAgentParser parser = uas.loadParser(fields);

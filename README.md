@@ -2,7 +2,7 @@
 
 # browscap-java
 A blazingly fast and memory efficient Java client on top of the BrowsCap CSV source files.
-The BrowsCap version currently shipped is: 6027.
+The BrowsCap version currently shipped is: 600028.
 
 ## Description
 This library can be used to parse useragent headers in order to extract information about the used browser, browser version, platform, platform version and device type. Very useful to determine if the client is a desktop, tablet or mobile device or to determine if the client is on Windows or Mac OS (just to name a few examples).

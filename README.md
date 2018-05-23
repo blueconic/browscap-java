@@ -2,7 +2,7 @@
 
 # browscap-java
 A blazingly fast and memory efficient Java client on top of the BrowsCap CSV source files.
-The BrowsCap version currently shipped is: 600028.
+The BrowsCap version currently shipped is: 6000029.
 
 ## Description
 This library can be used to parse useragent headers in order to extract information about the used browser, browser version, platform, platform version and device type. Very useful to determine if the client is a desktop, tablet or mobile device or to determine if the client is on Windows or Mac OS (just to name a few examples).
@@ -23,7 +23,7 @@ In short, this is how our algorithm works:
 * All BrowsCap fields are available by configuration, but the following fields are loaded by default:
   * browser (e.g. Chrome)
   * browserType (e.g. Browser or Application)
-  * browserMajorVersion (e.g. 61 in case of Chrome)
+  * browserMajorVersion (e.g. 66 in case of Chrome)
   * deviceType (e.g. Mobile Phone, Desktop, Tablet, Console, TV Device)
   * platform (e.g. Android, iOS, Win7, Win8, Win10)
   * platformVersion (e.g. 4.2, 10 depending on what the platform is)

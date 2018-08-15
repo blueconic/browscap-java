@@ -95,13 +95,13 @@ Safari    9    MacOSX    10.11    Desktop    Mozilla/5.0 (Macintosh; Intel Mac O
 Safari    10    iOS    10.3    Mobile Phone    Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1
 IE    11    Win7    6.1    Desktop    Mozilla/5.0 (Windows NT 6.1; Win64; x64; Trident/7.0; rv:11.0) like Gecko
 Chrome    57    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-G900F Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.132 Mobile Safari/537.36
-Android WebView    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-G920F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36
-Android WebView    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-G920F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36
+Android WebView    57    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-G920F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36
+Android WebView    56    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-G920F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36
 Chrome    56    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-G901F Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36
 Chrome    57    MacOSX    10.11    Desktop    Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
 Samsung Browser    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SAMSUNG SM-A310F Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0 Chrome/44.0.2403.133 Mobile Safari/537.36
 Safari    10    MacOSX    10.11    Desktop    Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/602.4.8 (KHTML, like Gecko) Version/10.0.3 Safari/602.4.8
-Android WebView    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0; LG-H815 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/38.0.2125.102 Mobile Safari/537.36
+Android WebView    38    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0; LG-H815 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/38.0.2125.102 Mobile Safari/537.36
 Chrome    57    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0; ALE-L21 Build/HuaweiALE-L21) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.132 Mobile Safari/537.36
 Safari    10    iOS    10.2    Tablet    Mozilla/5.0 (iPad; CPU OS 10_2 like Mac OS X) AppleWebKit/602.3.12 (KHTML, like Gecko) Version/10.0 Mobile/14C92 Safari/602.1
 Samsung Browser    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SAMSUNG SM-G903F/XXU1BPD3 Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0 Chrome/44.0.2403.133 Mobile Safari/537.36
@@ -110,7 +110,7 @@ Safari    10    macOS    10.12    Desktop    Mozilla/5.0 (Macintosh; Intel Mac O
 Chrome    57    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-G903F Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.132 Mobile Safari/537.36
 Mobile Safari UIWebView    0    iOS    10.2    Mobile Phone    Mozilla/5.0 (iPhone; CPU iPhone OS 10_2 like Mac OS X) AppleWebKit/602.3.12 (KHTML, like Gecko) Mobile/14C92
 Chrome    56    macOS    10.12    Desktop    Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
-Android WebView    4    Android    7.0    Mobile Phone    Mozilla/5.0 (Linux; Android 7.0; SM-G935F Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36
+Android WebView    56    Android    7.0    Mobile Phone    Mozilla/5.0 (Linux; Android 7.0; SM-G935F Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36
 Samsung Browser    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SAMSUNG SM-G900F/XXS1CQB3 Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0 Chrome/44.0.2403.133 Mobile Safari/537.36
 Chrome    55    Linux    Unknown    Desktop    Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36
 Chrome    56    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-A510F Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36
@@ -120,7 +120,7 @@ StatusCake Monitor    0    Unknown    Unknown    Unknown    Mozilla/5.0 (Windows
 Samsung Browser    3    Android    5.1    Mobile Phone    Mozilla/5.0 (Linux; Android 5.1.1; SAMSUNG SM-J320FN Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/3.5 Chrome/38.0.2125.102 Mobile Safari/537.36
 Chrome    56    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-A310F Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36
 Firefox    52    Ubuntu    Unknown    Desktop    Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0
-Android WebView    4    Android    7.0    Mobile Phone    Mozilla/5.0 (Linux; Android 7.0; SM-G935F Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36
+Android WebView    57    Android    7.0    Mobile Phone    Mozilla/5.0 (Linux; Android 7.0; SM-G935F Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36
 Default Browser    Unknown    Unknown    Unknown    Unknown    BlueConic Android SDK 2.1.0
 Firefox    52    MacOSX    10.10    Desktop    Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:52.0) Gecko/20100101 Firefox/52.0
 Firefox    52    Win10    10.0    Desktop    Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0
@@ -198,20 +198,20 @@ Chrome    56    Android    6.0    Tablet    Mozilla/5.0 (Linux; Android 6.0.1; S
 Samsung Browser    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SAMSUNG SM-J500FN Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0 Chrome/44.0.2403.133 Mobile Safari/537.36
 IE    11    Win7    6.1    Desktop    Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; NP06; rv:11.0) like Gecko
 Safari    6    MacOSX    10.7    Desktop    Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.78.2 (KHTML, like Gecko) Version/6.1.6 Safari/537.78.2
-Android WebView    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-G925F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36
-Android WebView    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-G930F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36
+Android WebView    57    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-G925F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36
+Android WebView    56    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-G930F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36
 IE    9    WinVista    6.0    Desktop    Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.0; Trident/5.0)
 Safari    10    MacOSX    10.11    Desktop    Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/602.3.12 (KHTML, like Gecko) Version/10.0.2 Safari/602.3.12
 Samsung Browser    5    Android    7.0    Mobile Phone    Mozilla/5.0 (Linux; Android 7.0; SAMSUNG SM-G920F/G920FXXU5EQBG Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/5.0 Chrome/51.0.2704.106 Mobile Safari/537.36
 Samsung Browser    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SAMSUNG SM-A310F/XXU2BQA3 Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0 Chrome/44.0.2403.133 Mobile Safari/537.36
 IE    11    Win8.1    6.3    Desktop    Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; MAARJS; rv:11.0) like Gecko
 Yandex Mobile Bot    3    iOS    8.1    Mobile Phone    Mozilla/5.0 (iPhone; CPU iPhone OS 8_1 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Version/8.0 Mobile/12B411 Safari/600.1.4 (compatible; YandexMobileBot/3.0; +http://yandex.com/bots)
-Android WebView    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-G925F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36
+Android WebView    56    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-G925F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36
 Samsung Browser    4    Android    5.0    Mobile Phone    Mozilla/5.0 (Linux; Android 5.0.1; SAMSUNG GT-I9506 Build/LRX22C) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0 Chrome/44.0.2403.133 Mobile Safari/537.36
 Samsung Browser    2    Android    5.0    Mobile Phone    Mozilla/5.0 (Linux; Android 5.0.1; SAMSUNG GT-I9505 Build/LRX22C) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/2.1 Chrome/34.0.1847.76 Mobile Safari/537.36
 Mobile Safari UIWebView    0    iOS    10.1    Mobile Phone    Mozilla/5.0 (iPhone; CPU iPhone OS 10_1_1 like Mac OS X) AppleWebKit/602.2.14 (KHTML, like Gecko) Mobile/14B100
 IE    11    Win10    10.0    Desktop    Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; MAARJS; rv:11.0) like Gecko
-Android WebView    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-G900F Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36
+Android WebView    56    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-G900F Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36
 Chrome    57    Android    5.0    Mobile Phone    Mozilla/5.0 (Linux; Android 5.0.1; GT-I9505 Build/LRX22C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.132 Mobile Safari/537.36
 IE    11    Win8.1    6.3    Desktop    Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; LCJB; rv:11.0) like Gecko
 Chrome    57    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-G928F Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.132 Mobile Safari/537.36
@@ -231,7 +231,7 @@ Chrome    57    MacOSX    10.11    Desktop    Mozilla/5.0 (Macintosh; Intel Mac 
 Chrome    56    Android    5.1    Mobile Phone    Mozilla/5.0 (Linux; Android 5.1.1; SM-G531F Build/LMY48B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36
 Firefox    52    Android    6.0    Mobile Phone    Mozilla/5.0 (Android 6.0.1; Mobile; rv:52.0) Gecko/52.0 Firefox/52.0
 Opera    43    Win10    10.0    Desktop    Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36 OPR/43.0.2442.1144
-Android WebView    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-G903F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36
+Android WebView    56    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-G903F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36
 IE    11    Win10    10.0    Desktop    Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; LCJB; rv:11.0) like Gecko
 Firefox    52    Win8    6.2    Desktop    Mozilla/5.0 (Windows NT 6.2; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0
 Chrome    56    Android    6.0    Tablet    Mozilla/5.0 (Linux; Android 6.0.1; SM-T580 Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
@@ -239,10 +239,10 @@ Safari    9    iOS    9.2    Mobile Phone    Mozilla/5.0 (iPhone; CPU iPhone OS 
 Safari    9    MacOSX    10.11    Desktop    Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/601.7.8 (KHTML, like Gecko) Version/9.1.3 Safari/601.7.8
 Safari    9    iOS    9.3    Mobile Phone    Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13G35 Safari/601.1
 Chrome    56    macOS    10.12    Desktop    Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
-Android WebView    4    Android    7.0    Mobile Phone    Mozilla/5.0 (Linux; Android 7.0; SM-G930F Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36
+Android WebView    57    Android    7.0    Mobile Phone    Mozilla/5.0 (Linux; Android 7.0; SM-G930F Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36
 Chrome    56    macOS    10.12    Desktop    Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
 Android    4    Android    4.3    Mobile Phone    Mozilla/5.0 (Linux; U; Android 4.3; nl-nl; GT-I9300 Build/JSS15J) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30
-Android WebView    4    Android    7.0    Mobile Phone    Mozilla/5.0 (Linux; Android 7.0; SM-G930F Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36
+Android WebView    56    Android    7.0    Mobile Phone    Mozilla/5.0 (Linux; Android 7.0; SM-G930F Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36
 Chrome    49    WinVista    6.0    Desktop    Mozilla/5.0 (Windows NT 6.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36
 Samsung Browser    4    Android    5.0    Mobile Phone    Mozilla/5.0 (Linux; Android 5.0.1; SAMSUNG GT-I9515 Build/LRX22C) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0 Chrome/44.0.2403.133 Mobile Safari/537.36
 Chrome    56    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-G800F Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36
@@ -251,21 +251,21 @@ Chrome    57    Win7    6.1    Desktop    Mozilla/5.0 (Windows NT 6.1; WOW64) Ap
 Samsung Browser    4    Android    5.0    Mobile Phone    Mozilla/5.0 (Linux; Android 5.0; SAMSUNG SM-N9005 Build/LRX21V) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0 Chrome/44.0.2403.133 Mobile Safari/537.36
 Chrome    57    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; D5803 Build/23.5.A.1.291) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.132 Mobile Safari/537.36
 Safari    10    MacOSX    10.10    Desktop    Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/602.3.12 (KHTML, like Gecko) Version/10.0.2 Safari/602.3.12
-Android WebView    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-G930F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36
+Android WebView    57    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-G930F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36
 Firefox    52    MacOSX    10.9    Desktop    Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:52.0) Gecko/20100101 Firefox/52.0
 Chrome    56    Android    5.0    Mobile Phone    Mozilla/5.0 (Linux; Android 5.0; SM-N9005 Build/LRX21V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36
 Dalvik    2    Android    6.0    Mobile Phone    Dalvik/2.1.0 (Linux; U; Android 6.0.1; SM-G930F Build/MMB29K)
 Chrome    56    Android    6.0    Tablet    Mozilla/5.0 (Linux; Android 6.0.1; SM-T800 Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
 Firefox    52    Ubuntu    Unknown    Desktop    Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:52.0) Gecko/20100101 Firefox/52.0
 IE    11    Win10    10.0    Desktop    Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; LCTE; rv:11.0) like Gecko
-Android WebView    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-G900F Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36
+Android WebView    57    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-G900F Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36
 Safari    9    MacOSX    10.11    Desktop    Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/601.5.17 (KHTML, like Gecko) Version/9.1 Safari/601.5.17
 Firefox    52    Android    7.0    Mobile Phone    Mozilla/5.0 (Android 7.0; Mobile; rv:52.0) Gecko/52.0 Firefox/52.0
 Chrome    56    Android    4.4    Mobile Phone    Mozilla/5.0 (Linux; Android 4.4.2; GT-I9195 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36
 Samsung Browser    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SAMSUNG SM-A520F Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.2 Chrome/44.0.2403.133 Mobile Safari/537.36
 Chrome    57    Win7    6.1    Desktop    Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36
 Chrome    56    Android    4.4    Tablet    Mozilla/5.0 (Linux; Android 4.4.4; SM-T560 Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
-Android WebView    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0; ALE-L21 Build/HuaweiALE-L21; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36
+Android WebView    56    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0; ALE-L21 Build/HuaweiALE-L21; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36
 Firefox    50    Win7    6.1    Desktop    Mozilla/5.0 (Windows NT 6.1; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0
 Chrome    49    MacOSX    10.7    Desktop    Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36
 Chrome    57    Win8    6.2    Desktop    Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
@@ -275,7 +275,7 @@ Chrome    57    Android    5.0    Mobile Phone    Mozilla/5.0 (Linux; Android 5.
 Safari    9    MacOSX    10.11    Desktop    Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/601.4.4 (KHTML, like Gecko) Version/9.0.3 Safari/601.4.4
 Chrome    56    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-A300FU Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36
 Chrome    57    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; D6603 Build/23.5.A.1.291) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.132 Mobile Safari/537.36
-Android WebView    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-G901F Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36
+Android WebView    56    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-G901F Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36
 Mobile Safari UIWebView    0    iOS    10.0    Mobile Phone    Mozilla/5.0 (iPhone; CPU iPhone OS 10_0_2 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Mobile/14A456
 Samsung Browser    1    Android    4.4    Mobile Phone    Mozilla/5.0 (Linux; Android 4.4.2; nl-nl; SAMSUNG GT-I9195/I9195XXUCOI4 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/1.5 Chrome/28.0.1500.94 Mobile Safari/537.36
 Dalvik    2    Android    7.0    Mobile Phone    Dalvik/2.1. 0 (Linux; U; Android 7.0; SM-G930F Build/NRD90M)
@@ -318,7 +318,7 @@ Edge Mobile    14    WinPhone10    10.0    Mobile Phone    Mozilla/5.0 (Windows 
 Safari    9    iOS    9.3    Mobile Phone    Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13E238 Safari/601.1
 IE    11    Win8.1    6.3    Desktop    Mozilla/5.0 (Windows NT 6.3; Trident/7.0; rv:11.0) like Gecko
 IE    9    Win7    6.1    Desktop    Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0)
-Android WebView    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-A310F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36
+Android WebView    56    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-A310F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36
 Samsung Browser    3    Android    5.1    Mobile Phone    Mozilla/5.0 (Linux; Android 5.1.1; SAMSUNG SM-G361F Build/LMY48B) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/3.3 Chrome/38.0.2125.102 Mobile Safari/537.36
 Safari    8    iOS    8.4    Tablet    Mozilla/5.0 (iPad; CPU OS 8_4_1 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Version/8.0 Mobile/12H321 Safari/600.1.4
 Dalvik    2    Android    6.0    Mobile Phone    Dalvik/2.1.0 (Linux; U; Android 6.0.1; SM-G925F Build/MMB29K)
@@ -327,7 +327,7 @@ Chrome    57    Android    6.0    Tablet    Mozilla/5.0 (Linux; Android 6.0.1; S
 Safari    10    MacOSX    10.11    Desktop    Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Safari/602.1.50
 Default Browser    Unknown    Unknown    Unknown    Unknown    Pulsepoint  XT3 web scraper
 Samsung Browser    2    Android    5.0    Mobile Phone    Mozilla/5.0 (Linux; Android 5.0.1; SAMSUNG GT-I9515 Build/LRX22C) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/2.1 Chrome/34.0.1847.76 Mobile Safari/537.36
-Android WebView    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-G903F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36
+Android WebView    57    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-G903F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36
 Chrome    57    Win8.1    6.3    Desktop    Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36
 Samsung Browser    4    Android    6.0    Tablet    Mozilla/5.0 (Linux; Android 6.0.1; SAMSUNG SM-T810 Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0 Chrome/44.0.2403.133 Safari/537.36
 Google App    0    iOS    10.3    Mobile Phone    Mozilla/5.0 (iPhone; CPU iPhone OS 10_3 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) GSA/24.1.151204851 Mobile/14E277 Safari/602.1
@@ -346,7 +346,7 @@ Chrome    56    Android    4.4    Tablet    Mozilla/5.0 (Linux; Android 4.4.2; G
 Chrome    56    Android    7.1    Mobile Phone    Mozilla/5.0 (Linux; Android 7.1.1; Nexus 5X Build/N4F26T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36
 Chrome    57    Android    6.0    Tablet    Mozilla/5.0 (Linux; Android 6.0.1; SM-T580 Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.132 Safari/537.36
 Chrome    57    Android    7.0    Mobile Phone    Mozilla/5.0 (Linux; Android 7.0; ONEPLUS A3003 Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.132 Mobile Safari/537.36
-Android WebView    4    Android    5.0    Mobile Phone    Mozilla/5.0 (Linux; U; Android 5.0; nl-nl; LG-D855 Build/LRX21R.A1445306351) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/34.0.1847.118 Mobile Safari/537.36
+Android WebView    34    Android    5.0    Mobile Phone    Mozilla/5.0 (Linux; U; Android 5.0; nl-nl; LG-D855 Build/LRX21R.A1445306351) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/34.0.1847.118 Mobile Safari/537.36
 Chrome    56    Android    5.1    Mobile Phone    Mozilla/5.0 (Linux; Android 5.1; HUAWEI CUN-L21 Build/HUAWEICUN-L21) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36
 Chrome    57    Win8.1    6.3    Desktop    Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36
 Dalvik    2    Android    6.0    Mobile Phone    Dalvik/2.1. 0 (Linux; U; Android 6.0.1; SM-G903F Build/MMB29K)
@@ -354,7 +354,7 @@ IE    10    Win8    6.2    Desktop    Mozilla/5.0 (compatible; MSIE 10.0; Window
 Chrome    57    Android    4.4    Mobile Phone    Mozilla/5.0 (Linux; Android 4.4.2; GT-I9301I Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.132 Mobile Safari/537.36
 Chrome    57    Win8    6.2    Desktop    Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
 IEMobile    11    WinPhone8.1    8.1    Mobile Phone    Mozilla/5.0 (Mobile; Windows Phone 8.1; Android 4.0; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; Microsoft; Lumia 640 LTE) like iPhone OS 7_0_3 Mac OS X AppleWebKit/537 (KHTML, like Gecko) Mobile Safari/537
-Android WebView    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-G800F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36
+Android WebView    56    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-G800F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36
 Default Browser    Unknown    Unknown    Unknown    Unknown    BlueConic iOS SDK 2.1.7
 Chrome    56    Android    5.1    Mobile Phone    Mozilla/5.0 (Linux; Android 5.1.1; C6603 Build/10.7.A.0.228) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36
 Samsung Browser    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SAMSUNG SM-G935F/XXU1BPLM Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0 Chrome/44.0.2403.133 Mobile Safari/537.36
@@ -367,12 +367,12 @@ Chromium    53    Ubuntu    Unknown    Desktop    Mozilla/5.0 (X11; Linux x86_64
 Chrome    57    Android    5.1    Mobile Phone    Mozilla/5.0 (Linux; Android 5.1.1; SM-J320FN Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.132 Mobile Safari/537.36
 Chrome    56    MacOSX    10.11    Desktop    Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
 Chrome    56    Android    5.0    Mobile Phone    Mozilla/5.0 (Linux; Android 5.0; LG-D855 Build/LRX21R.A1445306351) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36
-Android WebView    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0; HUAWEI VNS-L31 Build/HUAWEIVNS-L31; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36
+Android WebView    56    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0; HUAWEI VNS-L31 Build/HUAWEIVNS-L31; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36
 Android    4    Android    4.4    Mobile Phone    Mozilla/5.0 (Linux; U; Android 4.4.4; nl-nl; GT-I9305 Build/KTU84P) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30
 Safari    9    MacOSX    10.11    Desktop    Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/601.3.9 (KHTML, like Gecko) Version/9.0.2 Safari/601.3.9
 Chrome    56    Android    5.1    Mobile Phone    Mozilla/5.0 (Linux; Android 5.1.1; SM-G361F Build/LMY48B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36
 Samsung Browser    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SAMSUNG SM-G900F/XXS1CQA1 Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0 Chrome/44.0.2403.133 Mobile Safari/537.36
-Android WebView    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-G901F Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36
+Android WebView    57    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-G901F Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36
 Chrome    56    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; D6503 Build/23.5.A.1.291) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36
 Chrome    57    macOS    10.12    Desktop    Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36
 Safari    9    iOS    9.1    Mobile Phone    Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1
@@ -392,14 +392,14 @@ IE    9    Win7    6.1    Desktop    Mozilla/5.0 (compatible; MSIE 9.0; Windows 
 Safari    10    iOS    10.3    Mobile Phone    Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_2 like Mac OS X) AppleWebKit/603.2.1 (KHTML, like Gecko) Version/10.0 Mobile/14F5065b Safari/602.1
 Chrome    41    Win7    6.1    Desktop    Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.118 Safari/537.36
 Chrome    57    macOS    10.12    Desktop    Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36
-Android WebView    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0; ALE-L21 Build/HuaweiALE-L21; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36
+Android WebView    57    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0; ALE-L21 Build/HuaweiALE-L21; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36
 Chrome    57    Android    7.0    Mobile Phone    Mozilla/5.0 (Linux; Android 7.0; E6653 Build/32.3.A.0.378) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.132 Mobile Safari/537.36
 Firefox    45    Win7    6.1    Desktop    Mozilla/5.0 (Windows NT 6.1; rv:45.0) Gecko/20100101 Firefox/45.0
 Edge Mobile    14    WinPhone10    10.0    Mobile Phone    Mozilla/5.0 (Windows Phone 10.0; Android 6.0.1; Microsoft; Lumia 950) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.79 Mobile Safari/537.36 Edge/14.14393
 Samsung Browser    4    Android    5.1    Mobile Phone    Mozilla/5.0 (Linux; Android 5.1.1; SAMSUNG SM-A510F/XXU1APA3 Build/LMY47X) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0 Chrome/44.0.2403.133 Mobile Safari/537.36
-Android WebView    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-A510F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36
+Android WebView    56    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-A510F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36
 Samsung Browser    3    Android    5.1    Mobile Phone    Mozilla/5.0 (Linux; Android 5.1.1; SAMSUNG SM-J320F Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/3.5 Chrome/38.0.2125.102 Mobile Safari/537.36
-Android WebView    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-A510F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36
+Android WebView    57    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-A510F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36
 Safari    10    iOS    10.0    Tablet    Mozilla/5.0 (iPad; CPU OS 10_0_1 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/14A403 Safari/602.1
 Chrome    55    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-G900F Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.91 Mobile Safari/537.36
 Chrome    57    Win8.1    6.3    Desktop    Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36
@@ -432,26 +432,26 @@ Chrome    56    Android    6.0    Tablet    Mozilla/5.0 (Linux; Android 6.0.1; S
 Firefox    45    Win10    10.0    Desktop    Mozilla/5.0 (Windows NT 10.0; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0
 Chrome    56    Android    7.0    Mobile Phone    Mozilla/5.0 (Linux; Android 7.0; E6653 Build/32.3.A.0.376) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36
 CFNetwork    0    iOS    10.3    Mobile Device    My%20T%E2%80%91Mobile/5059 CFNetwork/811.4.18 Darwin/16.5.0
-Android WebView    4    Android    5.0    Mobile Phone    Mozilla/5.0 (Linux; Android 5.0.1; GT-I9505 Build/LRX22C; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36
+Android WebView    56    Android    5.0    Mobile Phone    Mozilla/5.0 (Linux; Android 5.0.1; GT-I9505 Build/LRX22C; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36
 Chrome    56    Linux    Unknown    Desktop    Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
 Samsung Browser    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SAMSUNG SM-N910F/XXS1DQB4 Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0 Chrome/44.0.2403.133 Mobile Safari/537.36
 Chrome    56    Android    5.1    Mobile Phone    Mozilla/5.0 (Linux; Android 5.1; HUAWEI LYO-L21 Build/HUAWEILYO-L21) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36
 Chrome    56    Android    7.0    Mobile Phone    Mozilla/5.0 (Linux; Android 7.0; E5823 Build/32.3.A.0.378) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36
-Android WebView    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-A500FU Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36
+Android WebView    56    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-A500FU Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36
 Safari    8    iOS    8.4    Tablet    Mozilla/5.0 (iPad; CPU OS 8_4 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Version/8.0 Mobile/12H143 Safari/600.1.4
 Chrome    57    Android    7.0    Mobile Phone    Mozilla/5.0 (Linux; Android 7.0; Moto G (4) Build/NPJ25.93-14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.132 Mobile Safari/537.36
 Chrome    56    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-A520F Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36
 Chrome    56    Android    6.0    Tablet    Mozilla/5.0 (Linux; Android 6.0.1; SM-T555 Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
 Safari    5    iOS    5.1    Tablet    Mozilla/5.0 (iPad; CPU OS 5_1_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9B206 Safari/7534.48.3
 Chrome    55    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-G920F Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.91 Mobile Safari/537.36
-Android WebView    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-J510FN Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36
+Android WebView    56    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-J510FN Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36
 Chrome    57    Android    7.0    Mobile Phone    Mozilla/5.0 (Linux; Android 7.0; LG-H850 Build/NRD90U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.132 Mobile Safari/537.36
 Firefox    47    Win7    6.1    Desktop    Mozilla/5.0 (Windows NT 6.1; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0
 IE    8    Win7    6.1    Desktop    Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)
 Chrome    56    Android    6.0    Tablet    Mozilla/5.0 (Linux; Android 6.0.1; SM-T813 Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
 Chrome    57    Android    4.4    Mobile Phone    Mozilla/5.0 (Linux; Android 4.4.4; GT-I9060I Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.132 Mobile Safari/537.36
 Chrome    57    MacOSX    10.10    Desktop    Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36
-Android WebView    4    Android    5.1    Mobile Phone    Mozilla/5.0 (Linux; Android 5.1.1; SM-J320FN Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36
+Android WebView    56    Android    5.1    Mobile Phone    Mozilla/5.0 (Linux; Android 5.1.1; SM-J320FN Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36
 IE    11    Win8.1    6.3    Desktop    Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; MATMJS; rv:11.0) like Gecko
 Samsung Browser    4    Android    5.0    Mobile Phone    Mozilla/5.0 (Linux; Android 5.0.2; SAMSUNG SM-G901F/XXU1BPA2 Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0 Chrome/44.0.2403.133 Mobile Safari/537.36
 Samsung Browser    3    Android    5.0    Mobile Phone    Mozilla/5.0 (Linux; Android 5.0.2; SAMSUNG SM-G530FZ Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/3.3 Chrome/38.0.2125.102 Mobile Safari/537.36
@@ -469,7 +469,7 @@ IE    11    Win8.1    6.3    Desktop    Mozilla/4.0 (compatible; MSIE 7.0; Windo
 Samsung Browser    2    Android    5.0    Mobile Phone    Mozilla/5.0 (Linux; Android 5.0.1; SAMSUNG GT-I9506 Build/LRX22C) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/2.1 Chrome/34.0.1847.76 Mobile Safari/537.36
 Safari    10    iOS    10.1    Mobile Phone    Mozilla/5.0 (iPhone; CPU iPhone OS 10_1 like Mac OS X) AppleWebKit/602.2.14 (KHTML, like Gecko) Version/10.0 Mobile/14B72 Safari/602.1
 Chrome    57    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0; F3111 Build/33.2.A.4.70) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.132 Mobile Safari/537.36
-Android WebView    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0; LG-H815 Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36
+Android WebView    57    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0; LG-H815 Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36
 Safari    9    iOS    9.2    Tablet    Mozilla/5.0 (iPad; CPU OS 9_2_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13D15 Safari/601.1
 Chrome    55    Win7    6.1    Desktop    Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36
 Samsung Browser    3    Android    5.1    Mobile Phone    Mozilla/5.0 (Linux; Android 5.1.1; SAMSUNG SM-G800F Build/LMY47X) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/3.3 Chrome/38.0.2125.102 Mobile Safari/537.36
@@ -493,23 +493,23 @@ IE    11    Win7    6.1    Desktop    Mozilla/5.0 (Windows NT 6.1; WOW64; Triden
 Chrome    57    Android    7.0    Mobile Phone    Mozilla/5.0 (Linux; Android 7.0; E5823 Build/32.3.A.0.376) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.132 Mobile Safari/537.36
 Chrome    57    Android    7.0    Mobile Phone    Mozilla/5.0 (Linux; Android 7.0; F8331 Build/39.2.A.0.417) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.132 Mobile Safari/537.36
 Samsung Browser    3    Android    5.0    Tablet    Mozilla/5.0 (Linux; Android 5.0.2; SAMSUNG SM-T535 Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/3.3 Chrome/38.0.2125.102 Safari/537.36
-Android WebView    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-A500FU Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36
+Android WebView    57    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-A500FU Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36
 Samsung Browser    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SAMSUNG SM-G928F/G928FXXS3BPIB Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0 Chrome/44.0.2403.133 Mobile Safari/537.36
 Safari    7    iOS    7.0    Tablet    Mozilla/5.0 (iPad; CPU OS 7_0_4 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) Version/7.0 Mobile/11B554a Safari/9537.53
 Chrome    45    Win7    6.1    Desktop    Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36
-Android WebView    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0; HUAWEI GRA-L09 Build/HUAWEIGRA-L09; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36
+Android WebView    56    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0; HUAWEI GRA-L09 Build/HUAWEIGRA-L09; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36
 Chrome    56    Android    7.0    Mobile Phone    Mozilla/5.0 (Linux; Android 7.0; F5321 Build/34.2.A.0.333) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36
 Chrome    57    Android    5.1    Mobile Phone    Mozilla/5.0 (Linux; Android 5.1.1; C6603 Build/10.7.A.0.228) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.132 Mobile Safari/537.36
 Chrome    55    MacOSX    10.11    Desktop    Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36
 Samsung Browser    2    Android    5.0    Mobile Phone    Mozilla/5.0 (Linux; Android 5.0; SAMSUNG SM-N9005 Build/LRX21V) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/2.1 Chrome/34.0.1847.76 Mobile Safari/537.36
 Safari    9    iOS    9.3    Tablet    Mozilla/5.0 (iPad; CPU OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13G35 Safari/601.1
 Safari    9    iOS    9.3    Tablet    Mozilla/5.0 (iPad; CPU OS 9_3_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13E238 Safari/601.1
-Android WebView    4    Android    7.0    Mobile Phone    Mozilla/5.0 (Linux; Android 7.0; EVA-L09 Build/HUAWEIEVA-L09; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36
+Android WebView    56    Android    7.0    Mobile Phone    Mozilla/5.0 (Linux; Android 7.0; EVA-L09 Build/HUAWEIEVA-L09; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36
 Chrome    57    macOS    10.12    Desktop    Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
 Mobile Safari UIWebView    0    iOS    7.1    Mobile Phone    Mozilla/5.0 (iPhone; CPU iPhone OS 7_1_2 like Mac OS X) AppleWebKit/537.51.2 (KHTML, like Gecko) Mobile/11D257
 Chrome    57    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; A0001 Build/MHC19Q) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.132 Mobile Safari/537.36
 Chrome    56    MacOSX    10.10    Desktop    Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
-Android WebView    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0; HUAWEI GRA-L09 Build/HUAWEIGRA-L09; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36
+Android WebView    57    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0; HUAWEI GRA-L09 Build/HUAWEIGRA-L09; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36
 IE    9    WinVista    6.0    Desktop    Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.0; WOW64; Trident/5.0)
 Mobile Safari UIWebView    0    iOS    9.3    Mobile Phone    Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_2 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13F69
 Edge Mobile    14    WinPhone10    10.0    Mobile Phone    Mozilla/5.0 (Windows Phone 10.0; Android 6.0.1; Microsoft; Lumia 950 XL) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.79 Mobile Safari/537.36 Edge/14.14393
@@ -518,10 +518,10 @@ Chrome    55    Android    7.0    Mobile Phone    Mozilla/5.0 (Linux; Android 7.
 Samsung Browser    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SAMSUNG SM-G920F/XXU4DPJD Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0 Chrome/44.0.2403.133 Mobile Safari/537.36
 Firefox    45    Linux    Unknown    Desktop    Mozilla/5.0 (X11; Linux i686; rv:45.0) Gecko/20100101 Firefox/45.0
 Chrome    56    Android    4.4    Mobile Phone    Mozilla/5.0 (Linux; Android 4.4.4; GT-I9195I Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36
-Android WebView    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-G935F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36
+Android WebView    57    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-G935F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36
 Chrome    56    Android    7.0    Mobile Phone    Mozilla/5.0 (Linux; Android 7.0; F8331 Build/39.2.A.0.417) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36
 IE    11    Win10    10.0    Desktop    Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; MATMJS; rv:11.0) like Gecko
-Android WebView    4    Android    5.0    Mobile Phone    Mozilla/5.0 (Linux; Android 5.0.1; GT-I9505 Build/LRX22C; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36
+Android WebView    57    Android    5.0    Mobile Phone    Mozilla/5.0 (Linux; Android 5.0.1; GT-I9505 Build/LRX22C; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36
 Chrome    57    Android    6.0    Tablet    Mozilla/5.0 (Linux; Android 6.0.1; SM-T810 Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.132 Safari/537.36
 Safari    7    iOS    7.1    Tablet    Mozilla/5.0 (iPad; CPU OS 7_1_2 like Mac OS X) AppleWebKit/537.51.2 (KHTML, like Gecko) Version/7.0 Mobile/11D257 Safari/9537.53
 Firefox    47    Win10    10.0    Desktop    Mozilla/5.0 (Windows NT 10.0; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0
@@ -530,17 +530,17 @@ Safari    10    MacOSX    10.10    Desktop    Mozilla/5.0 (Macintosh; Intel Mac 
 Chrome    57    MacOSX    10.9    Desktop    Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
 Chromium    56    Ubuntu    Unknown    Desktop    Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36
 Safari    10    iOS    10.1    Mobile Phone    Mozilla/5.0 (iPhone; CPU iPhone OS 10_1_1 like Mac OS X) AppleWebKit/602.2.14 (KHTML, like Gecko) Version/10.0 Mobile/14B150 Safari/602.1
-Android WebView    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0; LG-H815 Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36
-Android WebView    4    Android    5.0    Mobile Phone    Mozilla/5.0 (Linux; Android 5.0.1; ALE-L21 Build/HuaweiALE-L21) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/37.0.0.0 Mobile Safari/537.36
+Android WebView    56    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0; LG-H815 Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36
+Android WebView    37    Android    5.0    Mobile Phone    Mozilla/5.0 (Linux; Android 5.0.1; ALE-L21 Build/HuaweiALE-L21) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/37.0.0.0 Mobile Safari/537.36
 Firefox    51    Win7    6.1    Desktop    Mozilla/5.0 (Windows NT 6.1; rv:51.0) Gecko/20100101 Firefox/51.0
 IE    11    Win8.1    6.3    Desktop    Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; MALNJS; rv:11.0) like Gecko
 Chrome    56    Android    5.1    Mobile Phone    Mozilla/5.0 (Linux; Android 5.1.1; SM-G800F Build/LMY47X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36
 Chrome    57    Android    4.4    Tablet    Mozilla/5.0 (Linux; Android 4.4.4; SM-T113 Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.132 Safari/537.36
-Android WebView    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-J510FN Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36
+Android WebView    57    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-J510FN Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36
 Chrome    56    Android    5.0    Mobile Phone    Mozilla/5.0 (Linux; Android 5.0; SM-G900F Build/LRX21T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36
-Android WebView    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0; HUAWEI VNS-L31 Build/HUAWEIVNS-L31; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36
+Android WebView    57    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0; HUAWEI VNS-L31 Build/HUAWEIVNS-L31; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36
 Opera    43    Win8.1    6.3    Desktop    Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36 OPR/43.0.2442.1144
-Android WebView    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-N910F Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36
+Android WebView    56    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-N910F Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36
 Android    4    Android    4.2    Tablet    Mozilla/5.0 (Linux; U; Android 4.2.2; nl-nl; SM-T110 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30
 Safari    9    MacOSX    10.11    Desktop    Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/601.2.7 (KHTML, like Gecko) Version/9.0.1 Safari/601.2.7
 Chrome    56    Android    5.0    Mobile Phone    Mozilla/5.0 (Linux; Android 5.0.2; SM-G360F Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36
@@ -555,7 +555,7 @@ Chrome    55    Android    5.1    Mobile Phone    Mozilla/5.0 (Linux; Android 5.
 Safari    9    iOS    9.3    Tablet    Mozilla/5.0 (iPad; CPU OS 9_3_3 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13G34 Safari/601.1
 Chrome    57    macOS    10.12    Desktop    Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
 Samsung Browser    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SAMSUNG SM-A520F/XXU1APLP Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.2 Chrome/44.0.2403.133 Mobile Safari/537.36
-Android WebView    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-G920F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36
+Android WebView    55    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-G920F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36
 IE    11    Win10    10.0    Desktop    Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; MATM; rv:11.0) like Gecko
 Firefox    51    Win8.1    6.3    Desktop    Mozilla/5.0 (Windows NT 6.3; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0
 Chrome    57    Android    5.1    Mobile Phone    Mozilla/5.0 (Linux; Android 5.1; HUAWEI LYO-L21 Build/HUAWEILYO-L21) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.132 Mobile Safari/537.36
@@ -576,15 +576,15 @@ Firefox    52    Android    6.0    Mobile Phone    Mozilla/5.0 (Android 6.0; Mob
 Chrome    56    Android    5.1    Tablet    Mozilla/5.0 (Linux; Android 5.1.1; SM-T533 Build/LMY47X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
 Android    4    Android    4.1    Mobile Phone    Mozilla/5.0 (Linux; U; Android 4.1.2; nl-nl; GT-I8190 Build/JZO54K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30
 Mobile Safari UIWebView    0    iOS    10.2    Tablet    Mozilla/5.0 (iPad; CPU OS 10_2_1 like Mac OS X) AppleWebKit/602.4.6 (KHTML, like Gecko) Mobile/14D27
-Android WebView    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-G800F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36
+Android WebView    57    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-G800F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36
 Firefox    48    MacOSX    10.8    Desktop    Mozilla/5.0 (Macintosh; Intel Mac OS X 10.8; rv:48.0) Gecko/20100101 Firefox/48.0
 Chrome    54    Win7    6.1    Desktop    Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36
-Android WebView    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-N910F Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36
+Android WebView    57    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-N910F Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36
 Chrome    55    Win10    10.0    Desktop    Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36
 Chrome    56    Android    7.0    Mobile Phone    Mozilla/5.0 (Linux; Android 7.0; SM-G925F Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36
 Samsung Browser    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SAMSUNG SM-G930F/G930FXXU1BPLB Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0 Chrome/44.0.2403.133 Mobile Safari/537.36
 Chrome    57    iOS    10.3    Tablet    Mozilla/5.0 (iPad; CPU OS 10_3 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) CriOS/57.0.2987.137 Mobile/14E277 Safari/602.1
-Android WebView    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-G935F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36
+Android WebView    56    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-G935F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36
 AdsBot Google-Mobile    0    iOS    9.1    Mobile Phone    Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 (compatible; AdsBot-Google-Mobile; +http://www.google.com/mobile/adsbot.html)
 Samsung Browser    2    Android    5.0    Mobile Phone    Mozilla/5.0 (Linux; Android 5.0.1; SAMSUNG GT-I9505/I9505XXUHPK2 Build/LRX22C) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/2.1 Chrome/34.0.1847.76 Mobile Safari/537.36
 Chrome    57    Android    5.1    Mobile Phone    Mozilla/5.0 (Linux; Android 5.1.1; C6903 Build/14.6.A.1.236) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.132 Mobile Safari/537.36
@@ -605,7 +605,7 @@ Chrome    56    Android    7.0    Mobile Phone    Mozilla/5.0 (Linux; Android 7.
 Dalvik    2    Android    7.0    Mobile Phone    Dalvik/2.1.0 (Linux; U; Android 7.0; EVA-L09 Build/HUAWEIEVA-L09)
 IE    11    Win10    10.0    Desktop    Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; MAPBJS; rv:11.0) like Gecko
 IE    11    Win8.1    6.3    Desktop    Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; MAPBJS; rv:11.0) like Gecko
-Android WebView    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0; LG-H525n Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/38.0.2125.102 Mobile Safari/537.36
+Android WebView    38    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0; LG-H525n Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/38.0.2125.102 Mobile Safari/537.36
 Chrome    55    Android    7.0    Mobile Phone    Mozilla/5.0 (Linux; Android 7.0; SM-G930F Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.91 Mobile Safari/537.36
 Android    4    Android    4.1    Mobile Phone    Mozilla/5.0 (Linux; U; Android 4.1.1; nl-nl; HUAWEI Y300-0100 Build/HuaweiY300-0100) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30
 Chrome    57    Android    7.0    Mobile Phone    Mozilla/5.0 (Linux; Android 7.0; SM-G925F Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.132 Mobile Safari/537.36
@@ -634,7 +634,7 @@ Chrome    56    Android    5.1    Mobile Phone    Mozilla/5.0 (Linux; Android 5.
 Chrome    57    Android    5.1    Mobile Phone    Mozilla/5.0 (Linux; Android 5.1.1; SM-G531F Build/LMY48B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.132 Mobile Safari/537.36
 Samsung Browser    1    Android    4.4    Tablet    Mozilla/5.0 (Linux; Android 4.4.2; nl-nl; SAMSUNG SM-T230 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/1.5 Chrome/28.0.1500.94 Safari/537.36
 Android    4    Android    4.1    Mobile Phone    Mozilla/5.0 (Linux; U; Android 4.1.2; nl-nl; GT-I8260 Build/JZO54K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30
-Android WebView    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; D6603 Build/23.5.A.1.291; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36
+Android WebView    56    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; D6603 Build/23.5.A.1.291; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36
 Chrome    52    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0; Orange-Rise31 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Mobile Safari/537.36
 Chrome    11    Linux    Unknown    Desktop    Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/11.0.696.34 Safari/534.24
 Samsung Browser    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SAMSUNG SM-G389F Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0 Chrome/44.0.2403.133 Mobile Safari/537.36
@@ -642,7 +642,7 @@ Safari    8    iOS    8.1    Tablet    Mozilla/5.0 (iPad; CPU OS 8_1_3 like Mac 
 Chrome    57    iOS    10.2    Tablet    Mozilla/5.0 (iPad; CPU OS 10_2_1 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) CriOS/57.0.2987.100 Mobile/14D27 Safari/602.1
 Safari    8    MacOSX    10.10    Desktop    Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_4) AppleWebKit/600.7.12 (KHTML, like Gecko) Version/8.0.7 Safari/600.7.12
 Chrome    56    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; HTC One M8s Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36
-Android WebView    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-A310F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36
+Android WebView    57    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-A310F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36
 Android    4    Android    4.2    Tablet    Mozilla/5.0 (Linux; U; Android 4.2.2; nl-nl; GT-P5100 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30
 Samsung Browser    4    Android    5.0    Mobile Phone    Mozilla/5.0 (Linux; Android 5.0.1; SAMSUNG GT-I9506/XXSDPK1 Build/LRX22C) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0 Chrome/44.0.2403.133 Mobile Safari/537.36
 Chrome    56    Android    5.1    Mobile Phone    Mozilla/5.0 (Linux; Android 5.1; LENNY2 Build/LMY47I) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36
@@ -670,7 +670,7 @@ Samsung Browser    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; An
 Google App    0    iOS    10.2    Mobile Phone    Mozilla/5.0 (iPhone; CPU iPhone OS 10_2_1 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) GSA/23.1.148956103 Mobile/14D27 Safari/600.1.4
 Chrome    57    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-J500FN Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.132 Mobile Safari/537.36
 Chrome    57    Linux    Unknown    Desktop    Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.132 Safari/537.36
-Android WebView    4    Android    7.0    Mobile Phone    Mozilla/5.0 (Linux; Android 7.0; SM-G935F Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36
+Android WebView    55    Android    7.0    Mobile Phone    Mozilla/5.0 (Linux; Android 7.0; SM-G935F Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36
 Facebook App    0    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-G930F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/117.0.0.18.47;]
 Chrome    57    Android    7.0    Mobile Phone    Mozilla/5.0 (Linux; Android 7.0; HTC One M9 Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.132 Mobile Safari/537.36
 Samsung Browser    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SAMSUNG SM-G930F/XXU1BPLL Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0 Chrome/44.0.2403.133 Mobile Safari/537.36
@@ -684,7 +684,7 @@ Chrome    55    MacOSX    10.10    Desktop    Mozilla/5.0 (Macintosh; Intel Mac 
 Android    4    Android    4.4    Mobile Phone    Mozilla/5.0 (Linux; U; Android 4.4.2; nl-nl; GT-N7100 Build/KOT49H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30
 Edge Mobile    14    WinPhone10    10.0    Mobile Phone    Mozilla/5.0 (Windows Phone 10.0; Android 6.0.1; NOKIA; Lumia 930) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.79 Mobile Safari/537.36 Edge/14.14393
 Android    4    Android    4.4    Mobile Phone    Mozilla/5.0 (Linux; U; Android 4.4.4; nl-nl; GT-I9060I Build/KTU84P) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30
-Android WebView    4    Android    5.0    Mobile Phone    Mozilla/5.0 (Linux; Android 5.0; SM-N9005 Build/LRX21V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36
+Android WebView    56    Android    5.0    Mobile Phone    Mozilla/5.0 (Linux; Android 5.0; SM-N9005 Build/LRX21V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36
 Chrome    56    MacOSX    10.10    Desktop    Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
 Chrome    57    Android    7.0    Mobile Phone    Mozilla/5.0 (Linux; Android 7.0; MHA-L29 Build/HUAWEIMHA-L29) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.132 Mobile Safari/537.36
 Dalvik    2    Android    6.0    Mobile Phone    Dalvik/2.1.0 (Linux; U; Android 6.0; ALE-L21 Build/HuaweiALE-L21)
@@ -692,7 +692,7 @@ Android    4    Android    4.4    Mobile Phone    Mozilla/5.0 (Linux; U; Android
 Chrome    57    Android    5.0    Mobile Phone    Mozilla/5.0 (Linux; Android 5.0.1; GT-I9506 Build/LRX22C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.132 Mobile Safari/537.36
 Android    4    Android    4.1    Mobile Phone    Mozilla/5.0 (Linux; U; Android 4.1.2; nl-nl; SonyLT26i Build/6.2.B.1.96) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30
 Opera    44    Win10    10.0    Desktop    Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36 OPR/44.0.2510.857
-Android WebView    4    Android    5.1    Mobile Phone    Mozilla/5.0 (Linux; Android 5.1.1; HUAWEI P7-L10 Build/HuaweiP7-L10) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Mobile Safari/537.36
+Android WebView    39    Android    5.1    Mobile Phone    Mozilla/5.0 (Linux; Android 5.1.1; HUAWEI P7-L10 Build/HuaweiP7-L10) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Mobile Safari/537.36
 Chrome    57    Android    6.0    Tablet    Mozilla/5.0 (Linux; Android 6.0.1; SM-T813 Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.132 Safari/537.36
 Chrome    56    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-A320FL Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36
 Chrome    56    MacOSX    10.10    Desktop    Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
@@ -708,7 +708,7 @@ Chrome    56    Android    4.4    Tablet    Mozilla/5.0 (Linux; Android 4.4.4; S
 Chrome    56    Android    6.0    Tablet    Mozilla/5.0 (Linux; Android 6.0.1; Lenovo TB2-X30F Build/LenovoTB2-X30F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
 Samsung Browser    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SAMSUNG SM-G925F/G925FXXU4DPJG Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0 Chrome/44.0.2403.133 Mobile Safari/537.36
 Chrome    55    Win8.1    6.3    Desktop    Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36
-Android WebView    4    Android    5.1    Mobile Phone    Mozilla/5.0 (Linux; Android 5.1.1; HUAWEI GRA-L09 Build/HUAWEIGRA-L09C02B191) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Mobile Safari/537.36
+Android WebView    39    Android    5.1    Mobile Phone    Mozilla/5.0 (Linux; Android 5.1.1; HUAWEI GRA-L09 Build/HUAWEIGRA-L09C02B191) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Mobile Safari/537.36
 Safari    9    iOS    9.2    Tablet    Mozilla/5.0 (iPad; CPU OS 9_2 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13C75 Safari/601.1
 Mobile Safari UIWebView    0    iOS    10.0    Mobile Phone    Mozilla/5.0 (iPhone; CPU iPhone OS 10_0_1 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Mobile/14A403
 Chrome    54    Win7    6.1    Desktop    Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36
@@ -741,17 +741,17 @@ IE    11    Win10    10.0    Desktop    Mozilla/5.0 (Windows NT 10.0; Trident/7.
 Chrome    56    Android    7.0    Mobile Phone    Mozilla/5.0 (Linux; Android 7.0; XT1635-02 Build/NPN25.137-24-1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36
 Chrome    55    Win7    6.1    Desktop    Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36
 Safari    9    MacOSX    10.10    Desktop    Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/601.6.17 (KHTML, like Gecko) Version/9.1.1 Safari/601.6.17
-Android WebView    4    Android    5.0    Mobile Phone    Mozilla/5.0 (Linux; Android 5.0; SM-N9005 Build/LRX21V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36
+Android WebView    57    Android    5.0    Mobile Phone    Mozilla/5.0 (Linux; Android 5.0; SM-N9005 Build/LRX21V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36
 Samsung Browser    2    Android    4.4    Mobile Phone    Mozilla/5.0 (Linux; Android 4.4.4; SAMSUNG SM-G318H Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/2.0 Chrome/34.0.1847.76 Mobile Safari/537.36
 Chrome    56    Android    6.0    Tablet    Mozilla/5.0 (Linux; Android 6.0; P00C Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
-Android WebView    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-G900F Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36
+Android WebView    55    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-G900F Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36
 Google App    0    iOS    10.3    Tablet    Mozilla/5.0 (iPad; CPU OS 10_3 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) GSA/24.1.151204851 Mobile/14E277 Safari/602.1
 Chrome    56    Android    4.4    Tablet    Mozilla/5.0 (Linux; Android 4.4.2; SM-T230 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
 Safari    9    MacOSX    10.10    Desktop    Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/601.7.7 (KHTML, like Gecko) Version/9.1.2 Safari/601.7.7
 Firefox    53    Win10    10.0    Desktop    Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0
 Chrome    56    Android    5.0    Mobile Phone    Mozilla/5.0 (Linux; Android 5.0.1; ALE-L21 Build/HuaweiALE-L21) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36
-Android WebView    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; D5803 Build/23.5.A.1.291; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36
-Android WebView    4    Android    5.0    Mobile Phone    Mozilla/5.0 (Linux; Android 5.0.1; LG-H320 Build/LRX21Y) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/38.0.2125.102 Mobile Safari/537.36
+Android WebView    56    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; D5803 Build/23.5.A.1.291; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36
+Android WebView    38    Android    5.0    Mobile Phone    Mozilla/5.0 (Linux; Android 5.0.1; LG-H320 Build/LRX21Y) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/38.0.2125.102 Mobile Safari/537.36
 Firefox    45    Win8.1    6.3    Desktop    Mozilla/5.0 (Windows NT 6.3; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0
 Google App    0    iOS    10.2    Mobile Phone    Mozilla/5.0 (iPhone; CPU iPhone OS 10_2 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) GSA/20.3.136880903 Mobile/14C92 Safari/600.1.4
 Samsung Browser    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SAMSUNG SM-G900F/G900FXXS1CQAV Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0 Chrome/44.0.2403.133 Mobile Safari/537.36
@@ -762,7 +762,7 @@ Chrome    57    iOS    10.3    Mobile Phone    Mozilla/5.0 (iPhone; CPU iPhone O
 Chrome    56    Android    5.1    Mobile Phone    Mozilla/5.0 (Linux; Android 5.1.1; D5503 Build/14.6.A.1.236) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36
 Chrome    51    Win10    10.0    Desktop    Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2683.0 Safari/537.36
 Chrome    57    Android    5.1    Mobile Phone    Mozilla/5.0 (Linux; Android 5.1.1; D5503 Build/14.6.A.1.236) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.132 Mobile Safari/537.36
-Android WebView    4    Android    4.4    Mobile Phone    Mozilla/5.0 (Linux; Android 4.4.2; GT-I9195 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36
+Android WebView    30    Android    4.4    Mobile Phone    Mozilla/5.0 (Linux; Android 4.4.2; GT-I9195 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36
 Chrome    56    Android    7.0    Mobile Phone    Mozilla/5.0 (Linux; Android 7.0; HTC 10 Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36
 Samsung Browser    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SAMSUNG SM-N915FY Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0 Chrome/44.0.2403.133 Mobile Safari/537.36
 Samsung Browser    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SAMSUNG SM-G900F/XXU1CPK2 Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0 Chrome/44.0.2403.133 Mobile Safari/537.36
@@ -770,7 +770,7 @@ Chrome    56    Android    7.0    Mobile Phone    Mozilla/5.0 (Linux; Android 7.
 Chrome    46    Android    4.4    Mobile Phone    Mozilla/5.0 (Linux; Android 4.4.2; GT-I9195 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Crosswalk/17.46.448.4 Mobile Safari/537.36
 Opera    43    Win7    6.1    Desktop    Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36 OPR/43.0.2442.1144
 Chrome    57    Win10    10.0    Desktop    Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36
-Android WebView    4    Android    4.4    Mobile Phone    Mozilla/5.0 (Linux; Android 4.4.4; Y635-L21 Build/HuaweiY635-L21) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36
+Android WebView    33    Android    4.4    Mobile Phone    Mozilla/5.0 (Linux; Android 4.4.4; Y635-L21 Build/HuaweiY635-L21) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36
 Google App    0    iOS    10.2    Tablet    Mozilla/5.0 (iPad; CPU OS 10_2 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) GSA/24.1.151204851 Mobile/14C92 Safari/602.1
 Firefox    49    Win10    10.0    Desktop    Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0
 Mobile Safari UIWebView    0    iOS    10.3    Mobile Phone    Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_2 like Mac OS X) AppleWebKit/603.2.1 (KHTML, like Gecko) Mobile/14F5065b
@@ -786,7 +786,7 @@ Chrome    56    iOS    10.2    Mobile Phone    Mozilla/5.0 (iPhone; CPU iPhone O
 Android    4    Android    4.1    Mobile Phone    Mozilla/5.0 (Linux; U; Android 4.1.2; nl-nl; SAMSUNG GT-I8190/I8190XXANR6 Build/JZO54K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30
 Chrome    56    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5 Build/M4B30Z) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36
 Chrome    57    iOS    10.2    Mobile Phone    Mozilla/5.0 (iPhone; CPU iPhone OS 10_2 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) CriOS/57.0.2987.137 Mobile/14C92 Safari/602.1
-Android WebView    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-G928F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36
+Android WebView    56    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-G928F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36
 Chrome    56    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0; E5603 Build/30.2.A.1.21) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36
 Chrome    57    Android    6.0    Tablet    Mozilla/5.0 (Linux; Android 6.0.1; SGP511 Build/23.5.A.1.291) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.132 Safari/537.36
 Chrome    57    Android    4.4    Tablet    Mozilla/5.0 (Linux; Android 4.4.2; SM-T230 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.132 Safari/537.36
@@ -801,28 +801,28 @@ Safari    5    MacOSX    10.5    Desktop    Mozilla/5.0 (Macintosh; Intel Mac OS
 Chrome    57    MacOSX    10.11    Desktop    Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36
 Android    4    Android    4.4    Tablet    Mozilla/5.0 (Linux; U; Android 4.4.2; nl-nl; SM-T210 Build/KOT49H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30
 Android    4    Android    4.2    Tablet    Mozilla/5.0 (Linux; U; Android 4.2.2; nl-nl; GT-P3110 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30
-Android WebView    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-J710F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36
+Android WebView    56    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-J710F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36
 Firefox    45    Linux    Unknown    Desktop    Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0
 Chrome    56    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0; HUAWEI MT7-L09 Build/HuaweiMT7-L09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36
 IE    11    Win10    10.0    Desktop    Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; MASEJS; rv:11.0) like Gecko
 Chrome    56    Android    4.4    Mobile Phone    Mozilla/5.0 (Linux; Android 4.4.2; LG-D802 Build/KOT49I.D80220h) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36
 Chrome    55    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-G925F Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.91 Mobile Safari/537.36
 Chrome    55    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-G903F Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.91 Mobile Safari/537.36
-Android WebView    4    Android    5.1    Mobile Phone    Mozilla/5.0 (Linux; Android 5.1.1; HUAWEI P7-L10 Build/HuaweiP7-L10C150B823) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Mobile Safari/537.36
+Android WebView    39    Android    5.1    Mobile Phone    Mozilla/5.0 (Linux; Android 5.1.1; HUAWEI P7-L10 Build/HuaweiP7-L10C150B823) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Mobile Safari/537.36
 Chrome    56    Android    4.2    Mobile Phone    Mozilla/5.0 (Linux; Android 4.2.2; GT-I8200N Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36
 Chrome    38    Linux    Unknown    Desktop    Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.0.0 Safari/537.36
 Waterfox    52    Win10    10.0    Desktop    Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0.1 Waterfox/52.0.1
 Chrome    57    iOS    10.1    Tablet    Mozilla/5.0 (iPad; CPU OS 10_1_1 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) CriOS/57.0.2987.137 Mobile/14B100 Safari/602.1
 Dalvik    2    Android    6.0    Mobile Phone    Dalvik/2.1.0 (Linux; U; Android 6.0.1; SM-G935F Build/MMB29K)
-Android WebView    4    Android    7.0    Mobile Phone    Mozilla/5.0 (Linux; Android 7.0; EVA-L09 Build/HUAWEIEVA-L09; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36
+Android WebView    57    Android    7.0    Mobile Phone    Mozilla/5.0 (Linux; Android 7.0; EVA-L09 Build/HUAWEIEVA-L09; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36
 Opera    36    WinXP    5.1    Desktop    Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36 OPR/36.0.2130.80
 Dalvik    2    Android    6.0    Mobile Phone    Dalvik/2.1.0 (Linux; U; Android 6.0.1; SM-N910F Build/MMB29M)
 Mobile Safari UIWebView    0    iOS    9.3    Mobile Phone    Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_3 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G34
 Safari    9    MacOSX    10.10    Desktop    Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/601.4.4 (KHTML, like Gecko) Version/9.0.3 Safari/601.4.4
-Android WebView    4    Android    5.1    Mobile Phone    Mozilla/5.0 (Linux; Android 5.1; LG-H815 Build/LMY47D) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/38.0.2125.102 Mobile Safari/537.36
+Android WebView    38    Android    5.1    Mobile Phone    Mozilla/5.0 (Linux; Android 5.1; LG-H815 Build/LMY47D) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/38.0.2125.102 Mobile Safari/537.36
 IE    11    Win7    6.1    Desktop    Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET4.0C; .NET4.0E; .NET CLR 3.5.30729; .NET CLR 3.0.30729)
 Chrome    57    Android    5.1    Tablet    Mozilla/5.0 (Linux; Android 5.1.1; SM-T533 Build/LMY47X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.132 Safari/537.36
-Android WebView    4    Android    5.1    Mobile Phone    Mozilla/5.0 (Linux; Android 5.1.1; SM-G531F Build/LMY48B; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36
+Android WebView    56    Android    5.1    Mobile Phone    Mozilla/5.0 (Linux; Android 5.1.1; SM-G531F Build/LMY48B; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36
 Samsung Browser    3    Android    5.0    Mobile Phone    Mozilla/5.0 (Linux; Android 5.0.2; SAMSUNG SM-A300FU Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/3.3 Chrome/38.0.2125.102 Mobile Safari/537.36
 Android    4    Android    4.4    Mobile Phone    Mozilla/5.0 (Linux; U; Android 4.4.2; nl-nl; GT-N7105 Build/KOT49H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30
 Chrome    56    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0; HTC One M9 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36
@@ -838,13 +838,13 @@ Android    4    Android    4.4    Tablet    Mozilla/5.0 (Linux; U; Android 4.4.2
 Chrome    56    Android    7.0    Mobile Phone    Mozilla/5.0 (Linux; Android 7.0; MHA-L29 Build/HUAWEIMHA-L29) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36
 Android    4    Android    4.2    Mobile Phone    Mozilla/5.0 (Linux; U; Android 4.2.2; nl-nl; SAMSUNG GT-I9105P/I9105PXXUBMI3 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30
 Samsung Browser    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SAMSUNG SM-N910F/N910FXXS1DQA1 Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0 Chrome/44.0.2403.133 Mobile Safari/537.36
-Android WebView    4    Android    5.1    Mobile Phone    Mozilla/5.0 (Linux; Android 5.1.1; HUAWEI SCL-L21 Build/HuaweiSCL-L21) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Mobile Safari/537.36
-Android WebView    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0; LG-D855 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/38.0.2125.102 Mobile Safari/537.36
+Android WebView    39    Android    5.1    Mobile Phone    Mozilla/5.0 (Linux; Android 5.1.1; HUAWEI SCL-L21 Build/HuaweiSCL-L21) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Mobile Safari/537.36
+Android WebView    38    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0; LG-D855 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/38.0.2125.102 Mobile Safari/537.36
 Chrome    56    Android    5.1    Mobile Phone    Mozilla/5.0 (Linux; Android 5.1.1; SM-G531H Build/LMY48B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36
 Chrome    27    Win8    6.2    Desktop    Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.93 Safari/537.36
 Chrome    50    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-G920F Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36
 Samsung Browser    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SAMSUNG SM-G800F/G800FXXU1CQA1 Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0 Chrome/44.0.2403.133 Mobile Safari/537.36
-Android WebView    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; D5803 Build/23.5.A.1.291; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36
+Android WebView    57    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; D5803 Build/23.5.A.1.291; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36
 Chrome    55    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-G930F Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.91 Mobile Safari/537.36
 IE    11    Win10    10.0    Desktop    Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; MASBJS; rv:11.0) like Gecko
 Chrome    57    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0; LG-H960 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.132 Mobile Safari/537.36
@@ -856,11 +856,11 @@ Safari    10    iOS    10.3    Mobile Phone    Mozilla/5.0 (iPhone; CPU iPhone O
 Chrome    56    Android    5.1    Mobile Phone    Mozilla/5.0 (Linux; Android 5.1.1; Lenovo A6020a40 Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36
 Chrome    56    Android    4.4    Mobile Phone    Mozilla/5.0 (Linux; Android 4.4.2; GT-N7100 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36
 Samsung Browser    2    Android    4.4    Mobile Phone    Mozilla/5.0 (Linux; Android 4.4.4; SAMSUNG SM-J110H Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/2.0 Chrome/34.0.1847.76 Mobile Safari/537.36
-Android WebView    4    Android    4.4    Mobile Phone    Mozilla/5.0 (Linux; Android 4.4.2; GT-I9301I Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36
+Android WebView    30    Android    4.4    Mobile Phone    Mozilla/5.0 (Linux; Android 4.4.2; GT-I9301I Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36
 Chrome    57    Android    7.0    Mobile Phone    Mozilla/5.0 (Linux; Android 7.0; EVA-L19 Build/HUAWEIEVA-L19) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.132 Mobile Safari/537.36
 Samsung Browser    4    Android    6.0    Tablet    Mozilla/5.0 (Linux; Android 6.0.1; SAMSUNG SM-T805 Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0 Chrome/44.0.2403.133 Safari/537.36
 Mobile Safari UIWebView    0    iOS    9.2    Mobile Phone    Mozilla/5.0 (iPhone; CPU iPhone OS 9_2_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13D15
-Android WebView    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-G928F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36
+Android WebView    57    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-G928F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36
 Facebook App    0    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-G925F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/117.0.0.18.47;]
 Samsung Browser    5    Android    7.0    Mobile Phone    Mozilla/5.0 (Linux; Android 7.0; SAMSUNG SM-G925F Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/5.0 Chrome/51.0.2704.106 Mobile Safari/537.36
 Chrome    56    Android    7.0    Mobile Phone    Mozilla/5.0 (Linux; Android 7.0; E6553 Build/32.3.A.0.376) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36
@@ -894,7 +894,7 @@ Facebook App    0    iOS    10.2    Tablet    Mozilla/5.0 (iPad; CPU OS 10_2_1 l
 Chrome    56    Android    5.0    Mobile Phone    Mozilla/5.0 (Linux; Android 5.0.2; SM-A500FU Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36
 Safari    7    iOS    7.1    Tablet    Mozilla/5.0 (iPad; CPU OS 7_1 like Mac OS X) AppleWebKit/537.51.2 (KHTML, like Gecko) Version/7.0 Mobile/11D167 Safari/9537.53
 Chrome    57    Android    5.0    Tablet    Mozilla/5.0 (Linux; Android 5.0.2; SM-T535 Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.132 Safari/537.36
-Android WebView    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-A520F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36
+Android WebView    57    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-A520F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36
 Samsung Browser    4    Android    5.0    Mobile Phone    Mozilla/5.0 (Linux; Android 5.0; SAMSUNG SM-N9005/N9005XXUGBOL3 Build/LRX21V) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0 Chrome/44.0.2403.133 Mobile Safari/537.36
 Chrome    57    Android    5.1    Mobile Phone    Mozilla/5.0 (Linux; Android 5.1.1; SM-G388F Build/LMY48B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.132 Mobile Safari/537.36
 Edge    12    Win10    10.0    Desktop    Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36 Edge/12.10240
@@ -908,33 +908,33 @@ Facebook App    0    iOS    10.2    Tablet    Mozilla/5.0 (iPad; CPU OS 10_2_1 l
 Chrome    54    Win7    6.1    Desktop    Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36
 cURL    0    Unknown    Unknown    Unknown    curl/7.47.1
 Dalvik    2    Android    6.0    Mobile Phone    Dalvik/2.1.0 (Linux; U; Android 6.0; HUAWEI GRA-L09 Build/HUAWEIGRA-L09)
-Android WebView    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-A300FU Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36
-Android WebView    4    Android    4.4    Tablet    Mozilla/5.0 (Linux; Android 4.4.2; T1 7.0 Build/HuaweiMediaPad) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36
+Android WebView    56    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-A300FU Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36
+Android WebView    30    Android    4.4    Mobile Phone    Mozilla/5.0 (Linux; Android 4.4.2; T1 7.0 Build/HuaweiMediaPad) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Safari/537.36
 Chrome    44    Linux    Unknown    Desktop    Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.133 Safari/537.36
 Dalvik    2    Android    6.0    Mobile Phone    Dalvik/2.1.0 (Linux; U; Android 6.0.1; SM-A300FU Build/MMB29M)
 Chrome    56    Android    4.2    Mobile Phone    Mozilla/5.0 (Linux; Android 4.2.2; GT-I9060 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36
-Android WebView    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-J500FN Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36
-Android WebView    4    Android    7.0    Mobile Phone    Mozilla/5.0 (Linux; Android 7.0; ONEPLUS A3003 Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36
+Android WebView    56    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-J500FN Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36
+Android WebView    57    Android    7.0    Mobile Phone    Mozilla/5.0 (Linux; Android 7.0; ONEPLUS A3003 Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36
 Samsung Browser    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SAMSUNG SM-A510F/A510FXXU3BPL1 Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0 Chrome/44.0.2403.133 Mobile Safari/537.36
 IE    11    Win8.1    6.3    Tablet    Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; Touch; LCJB; rv:11.0) like Gecko
 Avast SafeZone    3    Win10    10.0    Desktop    Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36 ASW/3.55.2393.590
 Chrome    56    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; ONE A2003 Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36
 Dalvik    2    Android    5.1    Mobile Phone    Dalvik/2.1.0 (Linux; U; Android 5.1.1; SM-J320FN Build/LMY47V)
-Android WebView    4    Android    5.1    Mobile Phone    Mozilla/5.0 (Linux; Android 5.1.1; SM-J320FN Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36
+Android WebView    57    Android    5.1    Mobile Phone    Mozilla/5.0 (Linux; Android 5.1.1; SM-J320FN Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36
 Chrome    56    Android    5.0    Mobile Phone    Mozilla/5.0 (Linux; Android 5.0.2; HTC One Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36
-Android WebView    4    Android    5.0    Mobile Phone    Mozilla/5.0 (Linux; Android 5.0.1; GT-I9515 Build/LRX22C; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36
-Android WebView    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0; LG-H635 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/38.0.2125.102 Mobile Safari/537.36
+Android WebView    56    Android    5.0    Mobile Phone    Mozilla/5.0 (Linux; Android 5.0.1; GT-I9515 Build/LRX22C; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36
+Android WebView    38    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0; LG-H635 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/38.0.2125.102 Mobile Safari/537.36
 Safari    0    Linux    Unknown    Desktop    Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) Safari/538.1 Daum/4.1
 Samsung Browser    3    Android    5.1    Mobile Phone    Mozilla/5.0 (Linux; Android 5.1.1; SAMSUNG SM-N7505 Build/LMY47X) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/3.3 Chrome/38.0.2125.102 Mobile Safari/537.36
 Chrome    56    Android    4.4    Mobile Phone    Mozilla/5.0 (Linux; Android 4.4.2; SM-G355HN Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36
-Android WebView    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-A520F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36
+Android WebView    56    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-A520F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36
 Chrome    57    iOS    10.0    Tablet    Mozilla/5.0 (iPad; CPU OS 10_0_2 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) CriOS/57.0.2987.137 Mobile/14A456 Safari/602.1
 Chrome    55    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-G901F Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.91 Mobile Safari/537.36
 Chrome    56    Android    4.4    Tablet    Mozilla/5.0 (Linux; Android 4.4.2; SM-T520 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
 Chrome    56    Android    4.4    Tablet    Mozilla/5.0 (Linux; Android 4.4.2; SM-T310 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
 Safari    10    iOS    10.0    Mobile Phone    Mozilla/5.0 (iPhone; CPU iPhone OS 10_0_3 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/14A551 Safari/602.1
 Samsung Browser    4    Android    6.0    Tablet    Mozilla/5.0 (Linux; Android 6.0.1; SAMSUNG SM-T815 Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0 Chrome/44.0.2403.133 Safari/537.36
-Android WebView    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; D6603 Build/23.5.A.1.291; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36
+Android WebView    57    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; D6603 Build/23.5.A.1.291; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36
 Chrome    56    Android    4.4    Tablet    Mozilla/5.0 (Linux; Android 4.4.2; T1 7.0 Build/HuaweiMediaPad) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
 Facebook App    0    iOS    10.2    Tablet    Mozilla/5.0 (iPad; CPU OS 10_2_1 like Mac OS X) AppleWebKit/602.4.6 (KHTML, like Gecko) Mobile/14D27 [FBAN/FBIOS;FBAV/86.0.0.48.52;FBBV/53842252;FBDV/iPad4,1;FBMD/iPad;FBSN/iOS;FBSV/10.2.1;FBSS/2;FBCR/;FBID    ablet;FBLC/nl_NL;FBOP/5;FBRV/0]
 IE    11    Win8.1    6.3    Desktop    Mozilla/5.0 (Windows NT 6.3; Win64; x64; Trident/7.0; MAARJS; rv:11.0) like Gecko
@@ -990,18 +990,18 @@ Chrome    55    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.
 Safari    9    iOS    9.1    Tablet    Mozilla/5.0 (iPad; CPU OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1
 Android    4    Android    4.1    Mobile Phone    Mozilla/5.0 (Linux; U; Android 4.1.2; nl-nl; SAMSUNG GT-S6310N/S6310NXXANR5 Build/JZO54K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30
 Chrome    55    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0; HUAWEI VNS-L31 Build/HUAWEIVNS-L31) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.91 Mobile Safari/537.36
-Android WebView    4    Android    4.4    Mobile Phone    Mozilla/5.0 (Linux; Android 4.4.4; HUAWEI Y550-L01 Build/HuaweiY550-L01C150B265) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36
+Android WebView    33    Android    4.4    Mobile Phone    Mozilla/5.0 (Linux; Android 4.4.4; HUAWEI Y550-L01 Build/HuaweiY550-L01C150B265) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36
 Chrome    56    Android    4.2    Mobile Phone    Mozilla/5.0 (Linux; Android 4.2.2; ALCATEL ONE TOUCH 7041X Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36
 Chrome    55    Android    5.0    Mobile Phone    Mozilla/5.0 (Linux; Android 5.0; E2303 Build/26.1.A.3.111) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.91 Mobile Safari/537.36
 Chrome    56    Android    4.4    Mobile Phone    Mozilla/5.0 (Linux; Android 4.4.4; SM-J100H Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36
 Chrome    55    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-A310F Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.91 Mobile Safari/537.36
-Android WebView    4    Android    5.1    Mobile Phone    Mozilla/5.0 (Linux; Android 5.1; HUAWEI LYO-L21 Build/HUAWEILYO-L21; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36
+Android WebView    57    Android    5.1    Mobile Phone    Mozilla/5.0 (Linux; Android 5.1; HUAWEI LYO-L21 Build/HUAWEILYO-L21; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36
 Chrome    57    Android    5.1    Mobile Phone    Mozilla/5.0 (Linux; Android 5.1.1; SM-G361F Build/LMY48B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.132 Mobile Safari/537.36
 Firefox    48    Win8.1    6.3    Desktop    Mozilla/5.0 (Windows NT 6.3; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0
 IE    11    Win10    10.0    Desktop    Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; EIE10;NLNLWOL; rv:11.0) like Gecko
 Chrome    56    MacOSX    10.11    Desktop    Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
-Android WebView    4    Android    4.4    Mobile Phone    Mozilla/5.0 (Linux; U; Android 4.4.2; nl-nl; LG-D802 Build/KOT49I.D80220h) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.1599.103 Mobile Safari/537.36
-Android WebView    4    Android    7.0    Mobile Phone    Mozilla/5.0 (Linux; Android 7.0; HTC One M9 Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/38.0.0.0 Mobile Safari/537.36
+Android WebView    30    Android    4.4    Mobile Phone    Mozilla/5.0 (Linux; U; Android 4.4.2; nl-nl; LG-D802 Build/KOT49I.D80220h) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.1599.103 Mobile Safari/537.36
+Android WebView    38    Android    7.0    Mobile Phone    Mozilla/5.0 (Linux; Android 7.0; HTC One M9 Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/38.0.0.0 Mobile Safari/537.36
 Chrome    57    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; LG-H840 Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.132 Mobile Safari/537.36
 IE    11    Win8.1    6.3    Desktop    Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; MAMIJS; rv:11.0) like Gecko
 Firefox    48    Win7    6.1    Desktop    Mozilla/5.0 (Windows NT 6.1; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0
@@ -1011,7 +1011,7 @@ Chrome    57    Android    6.0    Tablet    Mozilla/5.0 (Linux; Android 6.0.1; L
 Dalvik    2    Android    6.0    Mobile Phone    Dalvik/2.1.0 (Linux; U; Android 6.0.1; D5803 Build/23.5.A.1.291)
 IE    11    Win7    6.1    Desktop    Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; MDDRJS; rv:11.0) like Gecko
 Yandex Browser    17    Win10    10.0    Desktop    Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 YaBrowser/17.3.1.840 Yowser/2.5 Safari/537.36
-Android WebView    4    Android    5.1    Mobile Phone    Mozilla/5.0 (Linux; Android 5.1.1; HUAWEI MT7-L09 Build/HuaweiMT7-L09) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Mobile Safari/537.36
+Android WebView    39    Android    5.1    Mobile Phone    Mozilla/5.0 (Linux; Android 5.1.1; HUAWEI MT7-L09 Build/HuaweiMT7-L09) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Mobile Safari/537.36
 Yandex Browser    17    Win7    6.1    Desktop    Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 YaBrowser/17.3.1.840 Yowser/2.5 Safari/537.36
 Chrome    56    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-N910C Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36
 Chrome    58    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0; LG-H960 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.42 Mobile Safari/537.36
@@ -1026,14 +1026,14 @@ Chrome    56    MacOSX    10.11    Desktop    Mozilla/5.0 (Macintosh; Intel Mac 
 Samsung Browser    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SAMSUNG SM-G925F/XXU4DPJD Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0 Chrome/44.0.2403.133 Mobile Safari/537.36
 Chrome    56    Android    4.4    Mobile Phone    Mozilla/5.0 (Linux; Android 4.4.4; HTC Desire 620 Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36
 IE    11    Win10    10.0    Desktop    Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; ASTE; rv:11.0) like Gecko
-Android WebView    4    Android    5.0    Mobile Phone    Mozilla/5.0 (Linux; Android 5.0.2; HTC_One Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/38.0.0.0 Mobile Safari/537.36
+Android WebView    38    Android    5.0    Mobile Phone    Mozilla/5.0 (Linux; Android 5.0.2; HTC_One Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/38.0.0.0 Mobile Safari/537.36
 Firefox    51    Win10    10.0    Desktop    Mozilla/5.0 (Windows NT 10.0; rv:51.0) Gecko/20100101 Firefox/51.0
 Chrome    57    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; STV100-4 Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.132 Mobile Safari/537.36
 Samsung Browser    2    Android    5.0    Mobile Phone    Mozilla/5.0 (Linux; Android 5.0.1; SAMSUNG GT-I9295 Build/LRX22C) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/2.1 Chrome/34.0.1847.76 Mobile Safari/537.36
 Chrome    57    Android    5.0    Mobile Phone    Mozilla/5.0 (Linux; Android 5.0; SM-G900F Build/LRX21T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.132 Mobile Safari/537.36
 Chrome    56    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0; 4034D Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36
 Dalvik    2    Android    6.0    Mobile Phone    Dalvik/2.1.0 (Linux; U; Android 6.0.1; SM-G928F Build/MMB29K)
-Android WebView    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0; HTC_One_M8/6.12.114.4 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/38.0.0.0 Mobile Safari/537.36
+Android WebView    38    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0; HTC_One_M8/6.12.114.4 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/38.0.0.0 Mobile Safari/537.36
 Samsung Browser    2    Android    5.0    Mobile Phone    Mozilla/5.0 (Linux; Android 5.0.1; SAMSUNG GT-I9505/I9505XXUHOJ2 Build/LRX22C) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/2.1 Chrome/34.0.1847.76 Mobile Safari/537.36
 Chrome    56    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; VFD 600 Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36
 Google App    0    iOS    10.1    Tablet    Mozilla/5.0 (iPad; CPU OS 10_1_1 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) GSA/24.1.151204851 Mobile/14B100 Safari/602.1
@@ -1050,13 +1050,13 @@ Chrome    55    Android    6.0    Tablet    Mozilla/5.0 (Linux; Android 6.0.1; S
 IE    11    Win10    10.0    Desktop    Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; InfoPath.3)
 Dalvik    2    Android    5.0    Mobile Phone    Dalvik/2.1.0 (Linux; U; Android 5.0; SM-N9005 Build/LRX21V)
 Dalvik    1    Android    4.4    Mobile Phone    Dalvik/1.6.0 (Linux; U; Android 4.4.2; GT-I9195 Build/KOT49H)
-Android WebView    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; HTC_One_M8s/2.12.114.1 Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/38.0.0.0 Mobile Safari/537.36
+Android WebView    38    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; HTC_One_M8s/2.12.114.1 Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/38.0.0.0 Mobile Safari/537.36
 Chrome    55    Android    4.4    Mobile Phone    Mozilla/5.0 (Linux; Android 4.4.2; GT-I9195 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.91 Mobile Safari/537.36
-Android WebView    4    Android    7.0    Mobile Phone    Mozilla/5.0 (Linux; Android 7.0; F5121 Build/34.2.A.0.311; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36
+Android WebView    56    Android    7.0    Mobile Phone    Mozilla/5.0 (Linux; Android 7.0; F5121 Build/34.2.A.0.311; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36
 Chrome    56    Android    7.0    Mobile Phone    Mozilla/5.0 (Linux; Android 7.0; VTR-L09 Build/HUAWEIVTR-L09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36
 Firefox    50    Ubuntu    Unknown    Desktop    Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:50.0) Gecko/20100101 Firefox/50.0
 Chrome    55    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0; ALE-L21 Build/HuaweiALE-L21) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.91 Mobile Safari/537.36
-Android WebView    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; D6503 Build/23.5.A.1.291; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36
+Android WebView    56    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; D6503 Build/23.5.A.1.291; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36
 CFNetwork    0    iOS    10.0    Mobile Device    My%20T%E2%80%91Mobile/5059 CFNetwork/808.0.2 Darwin/16.0.0
 Firefox    53    Win7    6.1    Desktop    Mozilla/5.0 (Windows NT 6.1; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0
 Firefox    52    Android    5.1    Mobile Phone    Mozilla/5.0 (Android 5.1.1; Mobile; rv:52.0) Gecko/52.0 Firefox/52.0
@@ -1073,10 +1073,10 @@ Dalvik    2    Android    6.0    Mobile Phone    Dalvik/2.1.0 (Linux; U; Android
 Samsung Browser    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SAMSUNG SM-G900F/G900FXXS1CQBW Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0 Chrome/44.0.2403.133 Mobile Safari/537.36
 Samsung Browser    3    Android    5.0    Tablet    Mozilla/5.0 (Linux; Android 5.0.2; SAMSUNG SM-T535 Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/3.2 Chrome/38.0.2125.102 Safari/537.36
 Google App    0    iOS    10.2    Mobile Phone    Mozilla/5.0 (iPhone; CPU iPhone OS 10_2_1 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) GSA/23.0.147401934 Mobile/14D27 Safari/600.1.4
-Android WebView    4    Android    7.0    Mobile Phone    Mozilla/5.0 (Linux; Android 7.0; SM-G920F Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36
+Android WebView    56    Android    7.0    Mobile Phone    Mozilla/5.0 (Linux; Android 7.0; SM-G920F Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36
 Facebook App    0    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-G930F Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/117.0.0.18.47;]
 Facebook App    0    Android    7.0    Mobile Phone    Mozilla/5.0 (Linux; Android 7.0; SM-G930F Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/117.0.0.18.47;]
-Android WebView    4    Android    6.0    Tablet    Mozilla/5.0 (Linux; Android 6.0.1; SM-T585 Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Safari/537.36
+Android WebView    57    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-T585 Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Safari/537.36
 Chrome    55    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SM-N910F Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.91 Mobile Safari/537.36
 Chrome    56    Android    5.1    Mobile Phone    Mozilla/5.0 (Linux; Android 5.1; XT1032 Build/LPBS23.13-56-2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36
 Chrome    57    Android    7.0    Mobile Phone    Mozilla/5.0 (Linux; Android 7.0; HUAWEI VNS-L31 Build/HUAWEIVNS-L31) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.132 Mobile Safari/537.36
@@ -1094,7 +1094,7 @@ Safari    9    iOS    9.0    Tablet    Mozilla/5.0 (iPad; CPU OS 9_0 like Mac OS
 Samsung Browser    3    Android    5.1    Tablet    Mozilla/5.0 (Linux; Android 5.1.1; SAMSUNG SM-T900 Build/LMY47X) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/3.3 Chrome/38.0.2125.102 Safari/537.36
 Chrome    56    Android    5.1    Tablet    Mozilla/5.0 (Linux; Android 5.1.1; Nexus 10 Build/LMY49J) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
 Chrome    56    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; XT1562 Build/MPDS24.107-52-11) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36
-Android WebView    4    Android    7.1    Mobile Phone    Mozilla/5.0 (Linux; Android 7.1.1; Nexus 5X Build/N4F26T; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36
+Android WebView    56    Android    7.1    Mobile Phone    Mozilla/5.0 (Linux; Android 7.1.1; Nexus 5X Build/N4F26T; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36
 Chrome    56    Android    4.4    Mobile Phone    Mozilla/5.0 (Linux; Android 4.4.2; LG-D331 Build/KOT49I.A1421911913) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36
 Samsung Browser    4    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.0.1; SAMSUNG SM-J700H Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0 Chrome/44.0.2403.133 Mobile Safari/537.36
 Chrome    57    Android    7.0    Mobile Phone    Mozilla/5.0 (Linux; Android 7.0; VTR-L09 Build/HUAWEIVTR-L09) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.132 Mobile Safari/537.36
@@ -1150,3 +1150,10 @@ Firefox    60    Ubuntu    Unknown    Desktop    Mozilla/5.0 (X11; Ubuntu; Linux
 Firefox    60    macOS    10.13    Desktop    Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:60.0) Gecko/20100101 Firefox/60.0
 Safari    11    iOS    11.2    Mobile Phone    Mozilla/5.0 (iPhone; CPU iPhone OS 11_2_6 like Mac OS X) AppleWebKit/604.5.6 (KHTML, like Gecko) Version/11.0 Mobile/15D100 Safari/604.1
 Safari    11    macOS    10.13    Desktop    Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.1 Safari/605.1.15
+Chrome    69    Android    9.0    Mobile Phone    Mozilla/5.0 (Linux; Android 9; Pixel 2 XL Build/PPR1.180610.009) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.24 Mobile Safari/537.36
+Chrome    69    macOS    10.13    Desktop    Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.32 Safari/537.36
+Chrome    69    Win10    10.0    Desktop    Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3481.0 Safari/537.36
+Chrome    69    Linux    Unknown    Desktop    Mozilla/5.0 (X18; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3481.0 Safari/537.36
+Chrome    69    macOS    10.13    Desktop    Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3494.0 Safari/537.36
+Whale Browser    0    macOS    10.13    Desktop    Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.220 Whale/1.3.50.3 Safari/537.36
+Whale Browser    0    iOS    11.2    Mobile Phone    Mozilla/5.0 (iPhone; CPU iPhone OS 11_2_6 like Mac OS X) AppleWebKit/604.5.6 (KHTML, like Gecko) Whale/0.9.1.679 Mobile/15D100 Safari/604.5.6

@@ -1,4 +1,4 @@
-1.2.3 - 15 August 2018
+1.2.4 - 15 August 2018
 - Updated to browscap 6000030 
 - Updated unit tests accordingly
 

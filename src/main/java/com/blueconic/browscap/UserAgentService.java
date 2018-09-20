@@ -111,7 +111,7 @@ public class UserAgentService {
                 return new FileInputStream(myZipFilePath);
             }
         } else {
-           return myZipFileStream;
+            return myZipFileStream;
         }
     }
 }

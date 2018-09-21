@@ -14,6 +14,7 @@ import static java.util.Arrays.asList;
 import static org.junit.Assert.assertEquals;
 
 import java.io.BufferedReader;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -37,6 +38,23 @@ public class UserAgentServiceTest {
 
         final Path path = Paths.get("src", "main", "resources", UserAgentService.getBundledCsvFileName());
         final UserAgentService uas = new UserAgentService(path.toString());
+
+        final UserAgentParser parser = uas.loadParser();
+
+        int counter = 0;
+        for (int i = 0; i < ITERATIONS; i++) {
+            counter += processUserAgentFile(parser);
+        }
+        System.out.print("Processed " + counter + " items\n");
+    }
+
+    @Test
+    public void testUserAgentsFromExternalInputStream() throws IOException, ParseException {
+        final int ITERATIONS = 10;
+
+        final Path path = Paths.get("src", "main", "resources", UserAgentService.getBundledCsvFileName());
+        final InputStream fileStream = new FileInputStream(path.toString());
+        final UserAgentService uas = new UserAgentService(fileStream);
 
         final UserAgentParser parser = uas.loadParser();
 

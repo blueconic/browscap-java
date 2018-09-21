@@ -24,6 +24,7 @@ public class UserAgentService {
     // The version of the browscap file this bundle depends on
     public static final int BUNDLED_BROWSCAP_VERSION = 6000030;
     private String myZipFilePath;
+    private InputStream myZipFileStream;
 
     public UserAgentService() {
         // Default
@@ -36,6 +37,15 @@ public class UserAgentService {
      */
     public UserAgentService(final String zipFilePath) {
         myZipFilePath = zipFilePath;
+    }
+
+    /**
+     * Creates a user agent service based on the Browscap CSV file in the given ZIP InputStream
+     * @param zipFileStream the zip InputStream should contain the csv file. It will load
+     *            the given zip InputStream instead of the bundled zip file
+     */
+    public UserAgentService(final InputStream zipFileStream) {
+        myZipFileStream = zipFileStream;
     }
 
     /**
@@ -93,11 +103,15 @@ public class UserAgentService {
      * @throws FileNotFoundException
      */
     private InputStream getCsvFileStream() throws FileNotFoundException {
-        if (myZipFilePath == null) {
-            final String csvFileName = getBundledCsvFileName();
-            return getClass().getClassLoader().getResourceAsStream(csvFileName);
+        if (myZipFileStream == null) {
+            if (myZipFilePath == null) {
+                final String csvFileName = getBundledCsvFileName();
+                return getClass().getClassLoader().getResourceAsStream(csvFileName);
+            } else {
+                return new FileInputStream(myZipFilePath);
+            }
         } else {
-            return new FileInputStream(myZipFilePath);
+            return myZipFileStream;
         }
     }
 }

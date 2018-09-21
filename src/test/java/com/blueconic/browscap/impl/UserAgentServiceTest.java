@@ -139,8 +139,8 @@ public class UserAgentServiceTest {
                 final Capabilities result = parser.parse(properties[10]); // check the values
 
                 int y = 0;
-               //  System.out.println(result + "===" + properties[10] + "\n");
-               //  System.out.println("Custom Fields" + result.getValues() + "===" + properties[10] + "\n");
+                // System.out.println(result + "===" + properties[10] + "\n");
+                // System.out.println("Custom Fields" + result.getValues() + "===" + properties[10] + "\n");
 
                 assertEquals(properties[y++], result.getBrowser());
                 assertEquals(properties[y++], result.getBrowserType());

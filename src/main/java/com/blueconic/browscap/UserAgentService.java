@@ -41,8 +41,8 @@ public class UserAgentService {
 
     /**
      * Creates a user agent service based on the Browscap CSV file in the given ZIP InputStream
-     * @param zipFileStream the zip InputStream should contain the csv file. It will load
-     *            the given zip InputStream instead of the bundled zip file
+     * @param zipFileStream the zip InputStream should contain the csv file. It will load the given zip InputStream
+     *            instead of the bundled zip file
      */
     public UserAgentService(final InputStream zipFileStream) {
         myZipFileStream = zipFileStream;

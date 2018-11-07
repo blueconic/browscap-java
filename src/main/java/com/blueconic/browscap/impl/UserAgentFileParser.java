@@ -10,17 +10,19 @@ import java.util.Collection;
 import java.util.EnumMap;
 import java.util.HashMap;
 import java.util.HashSet;
-import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+import org.apache.commons.csv.CSVFormat;
+import org.apache.commons.csv.CSVParser;
+import org.apache.commons.csv.CSVRecord;
+
 import com.blueconic.browscap.BrowsCapField;
 import com.blueconic.browscap.Capabilities;
 import com.blueconic.browscap.ParseException;
 import com.blueconic.browscap.UserAgentParser;
-import com.opencsv.CSVReader;
 
 /**
  * This class is responsible for parsing rules and creating the efficient java representation.
@@ -59,19 +61,15 @@ public class UserAgentFileParser {
     private UserAgentParser parse(final Reader input) throws IOException, ParseException {
 
         final List<Rule> rules = new ArrayList<>();
-        try (final CSVReader csvReader = new CSVReader(input)) {
-            final Iterator<String[]> iterator = csvReader.iterator();
-
-            while (iterator.hasNext()) {
-                final String[] record = iterator.next();
-
+        CSVFormat format = CSVFormat.DEFAULT.withSkipHeaderRecord();
+        try (CSVParser records = format.parse(input)) {
+            for (CSVRecord record : records) {
                 final Rule rule = getRule(record);
                 if (rule != null) {
                     rules.add(rule);
                 }
             }
         }
-
         return new UserAgentParserImpl(rules.toArray(new Rule[0]), getDefaultCapabilities());
     }
 
@@ -83,13 +81,13 @@ public class UserAgentFileParser {
         return getCapabilities(result);
     }
 
-    private Rule getRule(final String[] record) throws ParseException {
-        if (record.length <= 47) {
+    private Rule getRule(final CSVRecord record) throws ParseException {
+        if (record.size() <= 47) {
             return null;
         }
 
         // Normalize: lowercase and remove duplicate wildcards
-        final String pattern = normalizePattern(record[0]);
+        final String pattern = normalizePattern(record.get(0));
         try {
             final Map<BrowsCapField, String> values = getBrowsCapFields(record);
             final Capabilities capabilities = getCapabilities(values);
@@ -115,10 +113,10 @@ public class UserAgentFileParser {
         return lowerCase;
     }
 
-    private Map<BrowsCapField, String> getBrowsCapFields(final String[] record) {
+    private Map<BrowsCapField, String> getBrowsCapFields(CSVRecord record) {
         final Map<BrowsCapField, String> values = new EnumMap<>(BrowsCapField.class);
         for (final BrowsCapField field : myFields) {
-            values.put(field, getValue(record[field.getIndex()]));
+            values.put(field, getValue(record.get(field.getIndex())));
         }
         return values;
     }

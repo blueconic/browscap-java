@@ -61,9 +61,9 @@ public class UserAgentFileParser {
     private UserAgentParser parse(final Reader input) throws IOException, ParseException {
 
         final List<Rule> rules = new ArrayList<>();
-        CSVFormat format = CSVFormat.DEFAULT.withSkipHeaderRecord();
+        final CSVFormat format = CSVFormat.DEFAULT.withSkipHeaderRecord();
         try (CSVParser records = format.parse(input)) {
-            for (CSVRecord record : records) {
+            for (final CSVRecord record : records) {
                 final Rule rule = getRule(record);
                 if (rule != null) {
                     rules.add(rule);
@@ -113,7 +113,7 @@ public class UserAgentFileParser {
         return lowerCase;
     }
 
-    private Map<BrowsCapField, String> getBrowsCapFields(CSVRecord record) {
+    private Map<BrowsCapField, String> getBrowsCapFields(final CSVRecord record) {
         final Map<BrowsCapField, String> values = new EnumMap<>(BrowsCapField.class);
         for (final BrowsCapField field : myFields) {
             values.put(field, getValue(record.get(field.getIndex())));
@@ -193,7 +193,7 @@ public class UserAgentFileParser {
         return new Rule(prefix, suffixArray, postfix, pattern, capabilities);
     }
 
-    private  Rule getWildCardRule() {
+    private Rule getWildCardRule() {
         // The default match all pattern
         final Map<BrowsCapField, String> fieldValues = new EnumMap<>(BrowsCapField.class);
         for (final BrowsCapField field : myFields) {

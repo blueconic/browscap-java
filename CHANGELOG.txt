@@ -1,3 +1,8 @@
+1.2.6 - 12 Nov 2018
+- Merged pull request https://github.com/blueconic/browscap-java/pull/16.
+  Reduce dependencies by leveraging commons-csv.
+  Startup performance is not affected.
+  
 1.2.5 - 21 Sept 2018
 - Merged pull request https://github.com/blueconic/browscap-java/pull/14.
   It is now possible to supply your own BrowsCap ZIP file as file input stream in the constructor.

@@ -1,3 +1,7 @@
+1.2.7 - 29 Nov 2018
+- Updated to browscap 6000031 
+- Updated unit tests accordingly
+
 1.2.6 - 12 Nov 2018
 - Merged pull request https://github.com/blueconic/browscap-java/pull/16.
   Reduce dependencies by leveraging commons-csv.

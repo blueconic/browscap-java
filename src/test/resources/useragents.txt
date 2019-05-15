@@ -363,7 +363,7 @@ Chrome    56    Android    6.0    Mobile Phone    Mozilla/5.0 (Linux; Android 6.
 Safari    8    MacOSX    10.10    Desktop    Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/600.8.9 (KHTML, like Gecko) Version/8.0.8 Safari/600.8.9
 Chrome    49    MacOSX    10.8    Desktop    Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36
 Samsung Browser    5    Android    7.0    Mobile Phone    Mozilla/5.0 (Linux; Android 7.0; SAMSUNG SM-G925F/G925FXXU5EQBG Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/5.0 Chrome/51.0.2704.106 Mobile Safari/537.36
-Pingdom Transaction Monitoring    0    Ubuntu    Unknown    Desktop    Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/53.0.2785.143 Chrome/53.0.2785.143 Safari/537.36 PingdomPageSpeed/1.0 (pingbot/2.0; +http://www.pingdom.com/)
+Pingdom Pagespeed    0    Unknown    Unknown    Unknown    Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/53.0.2785.143 Chrome/53.0.2785.143 Safari/537.36 PingdomPageSpeed/1.0 (pingbot/2.0; +http://www.pingdom.com/)
 Chrome    57    Android    5.1    Mobile Phone    Mozilla/5.0 (Linux; Android 5.1.1; SM-J320FN Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.132 Mobile Safari/537.36
 Chrome    56    MacOSX    10.11    Desktop    Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
 Chrome    56    Android    5.0    Mobile Phone    Mozilla/5.0 (Linux; Android 5.0; LG-D855 Build/LRX21R.A1445306351) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36
@@ -1168,3 +1168,12 @@ Google DMCA Takedown Tool Bot    0    Unknown    Unknown    Unknown    Mozilla/5
 Firefox    64    Linux    Unknown    Desktop    Mozilla/5.0 (X11; Linux i686; rv:64.0) Gecko/20100101 Firefox/64.0
 Firefox    64    Win7    6.1    Desktop    Mozilla/5.0 (Windows NT 6.1; WOW64; rv:64.0) Gecko/20100101 Firefox/64.0
 Edge    14    Win10    10.0    Desktop    Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/51.0.2704.79 Safari/537.36 Edge/14.14931
+Edge    75    Win10    10.0    Desktop    Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3738.0 Safari/537.36 Edg/75.0.107.0
+Android WebView    72    Android    8.0    Mobile Phone    Mozilla/5.0 (Linux; Android 8.0.0; EDI-AL10 Build/HUAWEIEDISON-AL10; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/72.0.3626.121 Mobile Safari/537.36
+Android WebView    59    Android    5.1    Tablet    Mozilla/5.0 (Linux; Android 5.1.1; AEOKN Build/LVY48F; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/59.0.3071.125 Safari/537.36
+Dalvik    2    Android    5.1    Console    Dalvik/2.1.0 (Linux; U; Android 5.1.1; AEOBC Build/LVY48F)
+IE    6    Win98    98    Desktop    Mozilla/4.0 (compatible; MSIE 6.0; Windows 98; ###842854534364284829315431###; Browsezilla; .NET CLR 1.1.4322)
+IE    9    Win7    6.1    Desktop    Mozilla/5.0 (compatible; MSIE 8.0; compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0; .NET4.0E; .NET4.0C; InfoPath.3; Trident/6.0)
+Yahoo MailProxy    0    Unknown    Unknown    Unknown    YahooMailProxy; https://help.yahoo.com/kb/yahoo-mail-proxy-SLN28749.html
+Google Shopping Quality Bot    0    Unknown    Unknown    Unknown    Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.118 Safari/537.36 (compatible; Google-Shopping-Quality +http://www.google.com/merchants/tos/extend/NL/tos.html)
+BrandVerity Bot    0    Unknown    Unknown    Unknown    Mozilla/5.0 (iPhone; CPU iPhone OS 7_0 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) Mobile/11A465 Twitter for iPhone BrandVerity/1.0 (http://www.brandverity.com/why-is-brandverity-visiting-me)

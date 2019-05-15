@@ -1,3 +1,7 @@
+1.2.8 - 15 May 2019
+- Updated to browscap 6000033 
+- Updated unit tests accordingly
+
 1.2.8 - 21 Mar 2019
 - Updated to browscap 6000032 
 - Updated unit tests accordingly

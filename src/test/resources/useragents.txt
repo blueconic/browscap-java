@@ -1177,3 +1177,8 @@ IE    9    Win7    6.1    Desktop    Mozilla/5.0 (compatible; MSIE 8.0; compatib
 Yahoo MailProxy    0    Unknown    Unknown    Unknown    YahooMailProxy; https://help.yahoo.com/kb/yahoo-mail-proxy-SLN28749.html
 Google Shopping Quality Bot    0    Unknown    Unknown    Unknown    Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.118 Safari/537.36 (compatible; Google-Shopping-Quality +http://www.google.com/merchants/tos/extend/NL/tos.html)
 BrandVerity Bot    0    Unknown    Unknown    Unknown    Mozilla/5.0 (iPhone; CPU iPhone OS 7_0 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) Mobile/11A465 Twitter for iPhone BrandVerity/1.0 (http://www.brandverity.com/why-is-brandverity-visiting-me)
+netvigie Bot    0    Ubuntu    Unknown    Desktop    Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:33.0) Gecko/20100101 Firefox/33.0 NETVIGIE
+Chrome    75    Win10    10.0    Desktop    Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36
+Basilisk    0    Win10    10.0    Desktop    Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.9) Gecko/20100101 Goanna/4.1 Firefox/60.9 Basilisk/20190211
+Oppo Browser    4    Android    5.1    Mobile Phone    Mozilla/5.0 (Linux; U; Android 5.1; en-us; OPPO A37m Build/LMY47I) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/53.0.2785.134 Mobile Safari/537.36 OppoBrowser/4.9.3
+Opera Touch    1    Android    7.0    Mobile Phone    Mozilla/5.0 (Linux; Android 7.0; SM-G610F Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/73.0.3683.90 Mobile Safari/537.36 OPT/1.17.66

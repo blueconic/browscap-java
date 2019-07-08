@@ -23,7 +23,7 @@ In short, this is how our algorithm works:
 * All BrowsCap fields are available by configuration, but the following fields are loaded by default:
   * browser (e.g. Chrome)
   * browserType (e.g. Browser or Application)
-  * browserMajorVersion (e.g. 66 in case of Chrome)
+  * browserMajorVersion (e.g. 75 in case of Chrome)
   * deviceType (e.g. Mobile Phone, Desktop, Tablet, Console, TV Device)
   * platform (e.g. Android, iOS, Win7, Win8, Win10)
   * platformVersion (e.g. 4.2, 10 depending on what the platform is)
@@ -42,7 +42,7 @@ Add this to the dependencies in your pom.xml.
 <dependency>
   <groupId>com.blueconic</groupId>
   <artifactId>browscap-java</artifactId>
-  <version>1.2.9</version>
+  <version>1.2.10</version>
 </dependency>
 ```
 

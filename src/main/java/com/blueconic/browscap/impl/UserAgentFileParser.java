@@ -40,6 +40,8 @@ public class UserAgentFileParser {
 
     private final Set<BrowsCapField> myFields;
 
+    private final LiteralDomain myDomain = new LiteralDomain();
+
     UserAgentFileParser(final Collection<BrowsCapField> fields) {
         myFields = new HashSet<>(fields);
         myMapper = new Mapper(myFields);
@@ -70,7 +72,7 @@ public class UserAgentFileParser {
                 }
             }
         }
-        return new UserAgentParserImpl(rules.toArray(new Rule[0]), getDefaultCapabilities());
+        return new UserAgentParserImpl(rules.toArray(new Rule[0]), myDomain, getDefaultCapabilities());
     }
 
     Capabilities getDefaultCapabilities() {
@@ -152,7 +154,11 @@ public class UserAgentFileParser {
     }
 
     Literal getLiteral(final String value) {
-        return myUniqueLiterals.computeIfAbsent(value, Literal::new);
+        return myUniqueLiterals.computeIfAbsent(value, myDomain::createLiteral);
+    }
+
+    LiteralDomain getDomain() {
+        return myDomain;
     }
 
     Rule createRule(final String pattern, final Capabilities capabilities) {

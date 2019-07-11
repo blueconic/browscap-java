@@ -43,11 +43,17 @@ class UserAgentParserImpl implements UserAgentParser {
     // The default Capabilities
     private final Capabilities myDefaultCapabilities;
 
+    // The domain of literals for this parser
+    private final LiteralDomain myDomain;
+
     /**
      * Creates a new parser based on a collection of rules.
      * @param rules The rules, ordered by priority
+     * @param domain The domain of literals
+     * @param defaultCapabilities The default capabilities
      */
-    UserAgentParserImpl(final Rule[] rules, final Capabilities defaultCapabilities) {
+    UserAgentParserImpl(final Rule[] rules, final LiteralDomain domain, final Capabilities defaultCapabilities) {
+        myDomain = domain;
         myRules = getOrderedRules(rules);
         myFilters = buildFilters();
         myDefaultCapabilities = defaultCapabilities;
@@ -59,7 +65,7 @@ class UserAgentParserImpl implements UserAgentParser {
     @Override
     public Capabilities parse(final String userAgent) {
 
-        final SearchableString searchString = new SearchableString(userAgent.toLowerCase());
+        final SearchableString searchString = myDomain.getSearchableString(userAgent.toLowerCase());
 
         final BitSet includes = getIncludeRules(searchString, myFilters);
 
@@ -113,7 +119,7 @@ class UserAgentParserImpl implements UserAgentParser {
     }
 
     Filter createContainsFilter(final String pattern) {
-        final Literal literal = new Literal(pattern);
+        final Literal literal = myDomain.createLiteral(pattern);
 
         final Predicate<SearchableString> pred = c -> c.getIndices(literal).length > 0;
 
@@ -123,7 +129,7 @@ class UserAgentParserImpl implements UserAgentParser {
     }
 
     Filter createPrefixFilter(final String pattern) {
-        final Literal literal = new Literal(pattern);
+        final Literal literal = myDomain.createLiteral(pattern);
 
         final Predicate<SearchableString> pred = s -> s.startsWith(literal);
 

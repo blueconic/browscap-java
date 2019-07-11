@@ -1,3 +1,6 @@
+1.2.11 - 12 July 2019
+- #22 literal indexes increasing when reload
+
 1.2.10 - 8 July 2019
 - Updated to browscap 6000034 
 - Updated unit tests accordingly
@@ -43,7 +46,7 @@
   Performance updates for memory footprint and startup time.
 
 1.1.0 - 24 Nov 2017
-  Intregrated PR 2; the browscap fields are now configurable in the constructor of the parser.
+  Integrated PR 2; the browscap fields are now configurable in the constructor of the parser.
   Updated documentation and unit tests.
 
 1.0.4 - 5 Oct 2017

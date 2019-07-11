@@ -7,9 +7,17 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
+import org.junit.Before;
 import org.junit.Test;
 
 public class RuleTest {
+
+    private UserAgentFileParser myParser;
+
+    @Before
+    public void setup() {
+        myParser = new UserAgentFileParser(singleton(BROWSER));
+    }
 
     @Test
     public void testLiteralExpression() {
@@ -131,13 +139,13 @@ public class RuleTest {
     }
 
     private Rule getRule(final String pattern) {
-        final UserAgentFileParser parser = new UserAgentFileParser(singleton(BROWSER));
-        final Rule rule = parser.createRule(pattern, DEFAULT);
+        final Rule rule = myParser.createRule(pattern, DEFAULT);
         assertEquals(pattern, rule.getPattern());
         return rule;
     }
 
     private boolean matches(final Rule rule, final String useragent) {
-        return rule.matches(new SearchableString(useragent));
+        final SearchableString searchableString = myParser.getDomain().getSearchableString(useragent);
+        return rule.matches(searchableString);
     }
 }

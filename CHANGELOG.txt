@@ -1,3 +1,7 @@
+1.2.12 - 6 October 2019
+- Updated to browscap 6000035, see https://github.com/blueconic/browscap-java/issues/26.
+- Unit tests follow later.
+
 1.2.11 - 12 July 2019
 - #22 literal indexes increasing when reload
 

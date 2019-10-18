@@ -1,3 +1,7 @@
+1.2.13 - 18 October 2019
+- Updated to browscap 6000036.
+- Updated unit tests accordingly, also for 6000035.
+
 1.2.12 - 6 October 2019
 - Updated to browscap 6000035, see https://github.com/blueconic/browscap-java/issues/26.
 - Unit tests follow later.

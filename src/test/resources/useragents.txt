@@ -1182,3 +1182,12 @@ Chrome    75    Win10    10.0    Desktop    Mozilla/5.0 (Windows NT 10.0; Win64;
 Basilisk    0    Win10    10.0    Desktop    Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.9) Gecko/20100101 Goanna/4.1 Firefox/60.9 Basilisk/20190211
 Oppo Browser    4    Android    5.1    Mobile Phone    Mozilla/5.0 (Linux; U; Android 5.1; en-us; OPPO A37m Build/LMY47I) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/53.0.2785.134 Mobile Safari/537.36 OppoBrowser/4.9.3
 Opera Touch    1    Android    7.0    Mobile Phone    Mozilla/5.0 (Linux; Android 7.0; SM-G610F Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/73.0.3683.90 Mobile Safari/537.36 OPT/1.17.66
+Firefox    69    Win10    10.0    Desktop    Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0
+Safari    12    iOS    12.4    Mobile Phone    Mozilla/5.0 (iPhone; CPU iPhone OS 12_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1.2 Mobile/15E148 Safari/604.1
+Safari    13    macOS    10.15    Desktop    Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0 Safari/605.1.15
+Chrome    64    Android    8.0    Mobile Phone    Mozilla/5.0 (Linux; Android 8.0.0; SM-G960F Build/R16NW) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.137 Mobile Safari/537.36
+Safari    13    macOS    10.15    Desktop    Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0 Safari/605.1.15
+Firefox    69    Win7    6.1    Desktop    Mozilla/5.0 (Windows NT 6.1; rv:35.0) Gecko/20100101 Firefox/69.0
+Chrome    74    Win10    10.0    Desktop    Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36
+Chrome    77    Win10    10.0    Desktop    Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.2490.71 Safari/537.36
+Chrome    77    macOS    10.15    Desktop    Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36

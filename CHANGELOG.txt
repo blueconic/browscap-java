@@ -1,3 +1,7 @@
+1.2.15 - 18 March 2020
+- Updated to browscap 6000038.
+- Updated unit tests accordingly.
+
 1.2.14 - 31 Januari 2020
 - Updated to browscap 6000037.
 - Updated unit tests accordingly.

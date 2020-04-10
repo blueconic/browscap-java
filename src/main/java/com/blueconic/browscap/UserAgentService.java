@@ -75,11 +75,13 @@ public class UserAgentService {
         // http://browscap.org/version-number
         try (final InputStream zipStream = getCsvFileStream();
                 final ZipInputStream zipIn = new ZipInputStream(zipStream)) {
-            final ZipEntry entry = zipIn.getNextEntry();
-
-            // look for the first file that isn't a directory
+            // look for the first file that isn't a directory and a .csv
             // that should be a BrowsCap .csv file
-            if (!entry.isDirectory()) {
+            ZipEntry entry = null;
+            do {
+                entry = zipIn.getNextEntry();
+            } while (!(entry == null || entry.getName().endsWith(".csv")));
+            if (!(entry == null || entry.isDirectory())) {
                 return UserAgentFileParser.parse(new InputStreamReader(zipIn, UTF_8), fields);
             } else {
                 throw new IOException(

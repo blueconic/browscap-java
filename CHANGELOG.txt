@@ -1,3 +1,6 @@
+1.2.16 - 10 April 2020
+- Merged PR #28, which allows using the default Browscap ZIP file which not only contains the CSV file.
+
 1.2.15 - 18 March 2020
 - Updated to browscap 6000038.
 - Updated unit tests accordingly.

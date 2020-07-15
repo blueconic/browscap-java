@@ -1,3 +1,4 @@
+dist: trusty
 language: java
 install: true
 script: mvn clean install -P default

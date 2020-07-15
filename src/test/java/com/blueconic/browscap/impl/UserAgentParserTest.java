@@ -19,11 +19,19 @@ import static org.junit.Assert.assertTrue;
 
 import java.util.BitSet;
 
+import org.junit.Before;
 import org.junit.Test;
 
 import com.blueconic.browscap.impl.UserAgentParserImpl.Filter;
 
 public class UserAgentParserTest {
+
+    private UserAgentFileParser myParser;
+
+    @Before
+    public void setup() {
+        myParser = new UserAgentFileParser(singleton(BROWSER));
+    }
 
     @Test
     public void testExcludes() {
@@ -64,14 +72,15 @@ public class UserAgentParserTest {
         final Rule d = getRule("*123*");
         final Rule[] rules = {a, b, c, d};
 
-        final UserAgentParserImpl parser = new UserAgentParserImpl(rules, DEFAULT);
+        final LiteralDomain domain = myParser.getDomain();
+        final UserAgentParserImpl parser = new UserAgentParserImpl(rules, domain, DEFAULT);
 
         final Filter startsWithTest = parser.createPrefixFilter("test");
         final Filter containsTest = parser.createContainsFilter("test");
         final Filter containsNumbers = parser.createContainsFilter("123");
         final Filter[] filters = {startsWithTest, containsTest, containsNumbers};
 
-        final SearchableString useragent = new SearchableString("useragent_test_string");
+        final SearchableString useragent = domain.getSearchableString("useragent_test_string");
         final BitSet includeRules = parser.getIncludeRules(useragent, filters);
 
         // b should be checked
@@ -79,7 +88,7 @@ public class UserAgentParserTest {
         // No further rules to check
         assertEquals(-1, includeRules.nextSetBit(2));
 
-        final SearchableString numberString = new SearchableString("123456");
+        final SearchableString numberString = domain.getSearchableString("123456");
         final BitSet numberIncludes = parser.getIncludeRules(numberString, filters);
 
         // Only d should be checked
@@ -106,8 +115,7 @@ public class UserAgentParserTest {
     }
 
     private Rule getRule(final String pattern) {
-        final UserAgentFileParser parser = new UserAgentFileParser(singleton(BROWSER));
-        final Rule rule = parser.createRule(pattern, DEFAULT);
+        final Rule rule = myParser.createRule(pattern, DEFAULT);
         assertEquals(pattern, rule.getPattern());
         return rule;
     }

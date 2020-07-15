@@ -23,11 +23,11 @@ class SearchableString {
     /**
      * Creates a new instance for the specified string value.
      * @param stringValue The user agent string
+     * @param maxIndex The number of unique literals
      */
-    SearchableString(final String stringValue) {
+    SearchableString(final String stringValue, final int maxIndex) {
         myChars = stringValue.toCharArray();
-        final int max = Literal.getNumberOfInstances() + 1;
-        myIndices = new int[max][];
+        myIndices = new int[maxIndex][];
         myBuffer = new int[myChars.length];
     }
 
@@ -206,9 +206,6 @@ class SearchableString {
  */
 class Literal {
 
-    // Keep track of the total number of instances
-    private static final AtomicInteger NUMBER_OF_INSTANCES = new AtomicInteger();
-
     // The actual string data
     private final char[] myCharacters;
 
@@ -218,10 +215,11 @@ class Literal {
     /**
      * Creates a new instance with the specified non-empty value.
      * @param value The String value
+     * @param index The unique index for this instance
      */
-    Literal(final String value) {
+    Literal(final String value, final int index) {
         myCharacters = value.toCharArray();
-        myIndex = NUMBER_OF_INSTANCES.getAndAdd(1);
+        myIndex = index;
     }
 
     /**
@@ -273,14 +271,6 @@ class Literal {
         return myIndex;
     }
 
-    /**
-     * Returns the total number of literals.
-     * @return the total number of literals.
-     */
-    static int getNumberOfInstances() {
-        return NUMBER_OF_INSTANCES.get();
-    }
-
     private static boolean contains(final char[] characters, final char value) {
 
         for (final char c : characters) {
@@ -310,5 +300,21 @@ class Literal {
     @Override
     public String toString() {
         return new String(myCharacters);
+    }
+}
+
+class LiteralDomain {
+
+    // Keep track of the total number of instances
+    private final AtomicInteger myNrOfInstances = new AtomicInteger();
+
+    Literal createLiteral(final String contents) {
+        return new Literal(contents, myNrOfInstances.getAndAdd(1));
+    }
+
+    SearchableString getSearchableString(final String contents) {
+        final int maxIndex = myNrOfInstances.get() + 1;
+
+        return new SearchableString(contents, maxIndex);
     }
 }

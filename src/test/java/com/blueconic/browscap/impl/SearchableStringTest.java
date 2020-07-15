@@ -15,11 +15,14 @@ public class SearchableStringTest {
 
     @Test
     public void testSearchableString() {
-        final Literal abc = new Literal("abc");
-        final Literal ab = new Literal("ab");
+
+        final LiteralDomain domain = new LiteralDomain();
+
+        final Literal abc = domain.createLiteral("abc");
+        final Literal ab = domain.createLiteral("ab");
 
         final String stringValue = "abababc";
-        final SearchableString cache = new SearchableString(stringValue);
+        final SearchableString cache = domain.getSearchableString(stringValue);
 
         assertTrue(cache.startsWith(ab));
         assertFalse(cache.startsWith(abc));
@@ -38,12 +41,14 @@ public class SearchableStringTest {
 
     @Test
     public void testGetIndices() {
-        final Literal abc = new Literal("abc");
-        final Literal ab = new Literal("ab");
-        final Literal anyChar = new Literal("?ab");
-        final Literal noMatch = new Literal("aaaaaaaaaaaaaaaaaa");
+        final LiteralDomain domain = new LiteralDomain();
 
-        final SearchableString cache = new SearchableString("abababc");
+        final Literal abc = domain.createLiteral("abc");
+        final Literal ab = domain.createLiteral("ab");
+        final Literal anyChar = domain.createLiteral("?ab");
+        final Literal noMatch = domain.createLiteral("aaaaaaaaaaaaaaaaaa");
+
+        final SearchableString cache = domain.getSearchableString("abababc");
 
         assertArrayEquals(new int[]{4}, cache.getIndices(abc));
         assertArrayEquals(new int[]{0, 2, 4}, cache.getIndices(ab));
@@ -72,8 +77,11 @@ public class SearchableStringTest {
 
     @Test
     public void testLiteralBasics() {
+
+        final LiteralDomain domain = new LiteralDomain();
+
         final String input = "abcdef";
-        final Literal literal = new Literal(input);
+        final Literal literal = domain.createLiteral(input);
         assertEquals(input.length(), literal.getLength());
         assertEquals('a', literal.getFirstChar());
         assertEquals(input, literal.toString());
@@ -81,8 +89,11 @@ public class SearchableStringTest {
 
     @Test
     public void testLiteralMatches() {
+
+        final LiteralDomain domain = new LiteralDomain();
+
         final String input = "def";
-        final Literal literal = new Literal(input);
+        final Literal literal = domain.createLiteral(input);
 
         // Test for matches also with invalid bounds
         final char[] search = "abcdef".toCharArray();
@@ -92,7 +103,7 @@ public class SearchableStringTest {
         assertFalse(literal.matches(search, -10));
         assertFalse(literal.matches(search, 100));
 
-        final Literal joker = new Literal("d?f");
+        final Literal joker = domain.createLiteral("d?f");
         assertTrue(joker.matches(search, 3));
         assertFalse(literal.matches(search, 0));
         assertFalse(literal.matches(search, 5));

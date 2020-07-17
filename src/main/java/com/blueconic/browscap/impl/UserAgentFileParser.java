@@ -61,8 +61,6 @@ public class UserAgentFileParser {
     }
 
     private UserAgentParser parse(final Reader input) throws ParseException {
-
-        final long l = System.currentTimeMillis();
         final List<Rule> rules = new ArrayList<>();
 
         final CsvParserSettings settings = new CsvParserSettings();
@@ -75,9 +73,7 @@ public class UserAgentFileParser {
                 rules.add(rule);
             }
         }
-        final UserAgentParserImpl userAgentParser = new UserAgentParserImpl(rules.toArray(new Rule[0]), myDomain, getDefaultCapabilities());
-        System.out.println("Time to parse input " + (System.currentTimeMillis() - l));
-        return userAgentParser;
+        return new UserAgentParserImpl(rules.toArray(new Rule[0]), myDomain, getDefaultCapabilities());
     }
 
     Capabilities getDefaultCapabilities() {

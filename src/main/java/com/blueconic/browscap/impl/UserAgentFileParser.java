@@ -15,9 +15,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import org.apache.commons.csv.CSVFormat;
-import org.apache.commons.csv.CSVParser;
-import org.apache.commons.csv.CSVRecord;
+import com.univocity.parsers.common.record.Record;
+import com.univocity.parsers.csv.CsvParser;
+import com.univocity.parsers.csv.CsvParserSettings;
 
 import com.blueconic.browscap.BrowsCapField;
 import com.blueconic.browscap.Capabilities;
@@ -60,16 +60,17 @@ public class UserAgentFileParser {
         return new UserAgentFileParser(fields).parse(input);
     }
 
-    private UserAgentParser parse(final Reader input) throws IOException, ParseException {
-
+    private UserAgentParser parse(final Reader input) throws ParseException {
         final List<Rule> rules = new ArrayList<>();
-        final CSVFormat format = CSVFormat.DEFAULT.withSkipHeaderRecord();
-        try (CSVParser records = format.parse(input)) {
-            for (final CSVRecord record : records) {
-                final Rule rule = getRule(record);
-                if (rule != null) {
-                    rules.add(rule);
-                }
+
+        final CsvParserSettings settings = new CsvParserSettings();
+        final CsvParser csvParser = new CsvParser(settings);
+        csvParser.beginParsing(input);
+        Record record;
+        while ((record = csvParser.parseNextRecord()) != null) {
+            final Rule rule = getRule(record);
+            if (rule != null) {
+                rules.add(rule);
             }
         }
         return new UserAgentParserImpl(rules.toArray(new Rule[0]), myDomain, getDefaultCapabilities());
@@ -83,13 +84,13 @@ public class UserAgentFileParser {
         return getCapabilities(result);
     }
 
-    private Rule getRule(final CSVRecord record) throws ParseException {
-        if (record.size() <= 47) {
+    private Rule getRule(final Record record) throws ParseException {
+        if (record.getValues().length <= 47) {
             return null;
         }
 
         // Normalize: lowercase and remove duplicate wildcards
-        final String pattern = normalizePattern(record.get(0));
+        final String pattern = normalizePattern(record.getString(0));
         try {
             final Map<BrowsCapField, String> values = getBrowsCapFields(record);
             final Capabilities capabilities = getCapabilities(values);
@@ -115,10 +116,10 @@ public class UserAgentFileParser {
         return lowerCase;
     }
 
-    private Map<BrowsCapField, String> getBrowsCapFields(final CSVRecord record) {
+    private Map<BrowsCapField, String> getBrowsCapFields(final Record record) {
         final Map<BrowsCapField, String> values = new EnumMap<>(BrowsCapField.class);
         for (final BrowsCapField field : myFields) {
-            values.put(field, getValue(record.get(field.getIndex())));
+            values.put(field, getValue(record.getString(field.getIndex())));
         }
         return values;
     }

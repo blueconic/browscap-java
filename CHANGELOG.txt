@@ -1,3 +1,7 @@
+1.3.3 - 7 December 2020
+- Updated to browscap 6000042.
+- Updated unit tests accordingly (mainly Safari 14).
+
 1.3.2 - 4 November 2020
 - Updated to browscap 6000041.
 - Updated unit tests accordingly (Mostly Chrome and FireFox version updates for current and future versions).

@@ -42,7 +42,7 @@ Add this to the dependencies in your pom.xml.
 <dependency>
   <groupId>com.blueconic</groupId>
   <artifactId>browscap-java</artifactId>
-  <version>1.3.4</version>
+  <version>1.3.5</version>
 </dependency>
 ```
 

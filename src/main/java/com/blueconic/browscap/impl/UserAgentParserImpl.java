@@ -29,7 +29,7 @@ class UserAgentParserImpl implements UserAgentParser {
             "rv:", "build", "bot", "like gecko", "applewebkit", "trident", "mozilla", "windows nt 4", "windows nt 5.0",
             "windows nt 5.1", "windows nt 5.2", "windows nt 6.0", "windows nt 6.1", "windows nt 6.2", "windows nt 6.3",
             "windows nt 10.0", "android?4.0", "android?4.1", "android?4.2", "android?4.3", "android?4.4", "android?2.3",
-    "android?5"};
+            "android?5"};
 
     // Common prefixes to filter irrelevant rules and speed up processing
     static final String[] FILTER_PREFIXES = {"mozilla/5.0", "mozilla/4"};
@@ -64,6 +64,9 @@ class UserAgentParserImpl implements UserAgentParser {
      */
     @Override
     public Capabilities parse(final String userAgent) {
+        if (userAgent == null || userAgent.length() == 0) {
+            return myDefaultCapabilities;
+        }
 
         final SearchableString searchString = myDomain.getSearchableString(userAgent.toLowerCase());
 
@@ -110,9 +113,10 @@ class UserAgentParserImpl implements UserAgentParser {
         for (final String pattern : FILTER_PREFIXES) {
             result.add(createPrefixFilter(pattern));
         }
-        
+
         // Build filters for specific contains constraints
-        final List<Filter> commonFilters = Stream.of(COMMON).parallel().map(this::createContainsFilter).collect(toList());
+        final List<Filter> commonFilters =
+                Stream.of(COMMON).parallel().map(this::createContainsFilter).collect(toList());
         result.addAll(commonFilters);
 
         return result.toArray(new Filter[0]);

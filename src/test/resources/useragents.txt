@@ -1224,3 +1224,9 @@ Safari    14    iOS    14.0    Mobile Phone    Mozilla/5.0 (iPhone; CPU iPhone O
 Edge    86    Win10    10.0    Desktop    Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36 Edg/86.0.622.58
 Safari    14    macOS    10.15    Desktop    Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Safari/605.1.15
 Edge    87    Win7    6.1    Desktop    Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.67 Safari/537.36 Edg/87.0.664.52
+Flipboard App    0    MacOSX    10    Desktop    Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Flipboard/4.2.96
+Microsoft News    0    MacOSX    10    Desktop    Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Microsoft News
+LinkedInApp    0    MacOSX    10    Mobile Device    Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [LinkedInApp]
+Schoology    0    MacOSX    10    Mobile Device    Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Schoology iOS v2021.03.1
+Playstation Browser    0    OrbisOS    Unknown    TV Device    Mozilla/5.0 (PlayStation; PlayStation 4/8.00) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0 Safari/605.1.15
+Google Adwords Express    0    Unknown    Unknown    Unknown    Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; GoogleAdwordsExpress) Chrome/89.0.4389.93 Safari/537.36

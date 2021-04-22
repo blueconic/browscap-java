@@ -1,3 +1,7 @@
+1.3.4 - 22 Aptril 2021
+- Updated to browscap 6000043.
+- Updated unit tests accordingly (new bots mostly).
+
 1.3.3 - 7 December 2020
 - Updated to browscap 6000042.
 - Updated unit tests accordingly (mainly Safari 14).

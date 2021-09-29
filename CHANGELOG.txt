@@ -1,3 +1,6 @@
+1.3.7 - 29 September 2021
+- Updated to browscap 6000046.
+
 1.3.6 - 04 May 2021
 - Updated to browscap 6000045 (skipped 6000045 due to bug).
 - Updated unit tests accordingly (Future Chrome and FireFox versions).

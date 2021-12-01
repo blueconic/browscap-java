@@ -1242,7 +1242,7 @@ Firefox    96    macOS    10.15    Desktop    Mozilla/5.0 (Macintosh; Intel Mac 
 Firefox    96    Android    11.0    Mobile Phone    Mozilla/5.0 (Android 11; Mobile; rv:68.0) Gecko/68.0 Firefox/96.0
 Safari    15    iOS    15.1    Mobile Phone    Mozilla/5.0 (iPhone; CPU iPhone OS 15_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1
 Chrome    96    iOS    15.1    Mobile Phone    Mozilla/5.0 (iPhone; CPU iPhone OS 15_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/96.0.4664.36 Mobile/15E148 Safari/604.1
-Firefox for iOS    0    iOS    15.1    Mobile Phone    Mozilla/5.0 (iPhone; CPU iPhone OS 15_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/39.0 Mobile/15E148 Safari/605.1.15
+Firefox for iOS    39    iOS    15.1    Mobile Phone    Mozilla/5.0 (iPhone; CPU iPhone OS 15_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/39.0 Mobile/15E148 Safari/605.1.15
 Safari    15    macOS    12.0    Desktop    Mozilla/5.0 (Macintosh; Intel Mac OS X 12_0_1) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Safari/605.1.15
 Firefox    94    macOS    12.0    Desktop    Mozilla/5.0 (Macintosh; Intel Mac OS X 12.0; rv:94.0) Gecko/20100101 Firefox/94.0
 Chrome    96    macOS    12.0    Desktop    Mozilla/5.0 (Macintosh; Intel Mac OS X 12_0_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36

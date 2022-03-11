@@ -1,4 +1,4 @@
-[![TravisCI Build Status](https://travis-ci.org/blueconic/browscap-java.svg?branch=master)](https://travis-ci.org/blueconic/browscap-java)
+[![Java CI with Maven](https://github.com/blueconic/browscap-java/actions/workflows/maven.yml/badge.svg)](https://github.com/blueconic/browscap-java/actions/workflows/maven.yml)
 
 # browscap-java
 A blazingly fast and memory efficient (thread-safe) Java client on top of the BrowsCap [CSV source files](https://github.com/browscap/browscap).

@@ -30,6 +30,7 @@ In short, this is how our algorithm works:
 * The fields _are_ configurable by specifying a list of BrowsCapFields in the constructor of the UserAgentParser.
 * The CSV file is read in a streaming way, so it's processed line by line. This makes it more memory efficient than loading the whole into memory first.
 * 1000+ user agents are tested in the unit tests.
+* GraalVM Native Image is supported since 1.3.15.
 
 ## Future
 Possible new features we're thinking of (and are not yet present):

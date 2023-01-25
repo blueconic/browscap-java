@@ -5,34 +5,31 @@ import static com.blueconic.browscap.impl.UserAgentFileParser.getParts;
 import static java.util.Arrays.asList;
 import static java.util.Collections.emptySet;
 import static java.util.Collections.singleton;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNull;
-import static org.junit.Assert.assertSame;
-
-import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.*;
 
 import com.blueconic.browscap.Capabilities;
+import org.junit.jupiter.api.Test;
 
-public class UserAgentFileParserTest {
+class UserAgentFileParserTest {
 
     static final Capabilities DEFAULT = new UserAgentFileParser(singleton(BROWSER)).getDefaultCapabilities();
 
     @Test
-    public void testGetParts() {
+    void testGetParts() {
         assertEquals(asList("*", "a", "*"), getParts("*a*"));
         assertEquals(asList("*", "abc", "*"), getParts("*abc*"));
         assertEquals(asList("*"), getParts("*"));
         assertEquals(asList("a"), getParts("a"));
     }
 
-    @Test(expected = IllegalStateException.class)
-    public void testLiteralException() {
+    @Test
+    void testLiteralException() {
         final UserAgentFileParser parser = new UserAgentFileParser(singleton(BROWSER));
-        parser.createRule("", DEFAULT);
+        assertThrows(IllegalStateException.class, () -> parser.createRule("", DEFAULT));
     }
 
     @Test
-    public void testCreateRule() {
+    void testCreateRule() {
         final UserAgentFileParser parser = new UserAgentFileParser(singleton(BROWSER));
 
         final Rule exact = parser.createRule("a", DEFAULT);
@@ -81,7 +78,7 @@ public class UserAgentFileParserTest {
     }
 
     @Test
-    public void testGetValue() {
+    void testGetValue() {
 
         final UserAgentFileParser parser = new UserAgentFileParser(emptySet());
 

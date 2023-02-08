@@ -12,29 +12,28 @@ import static com.blueconic.browscap.BrowsCapField.BROWSER;
 import static com.blueconic.browscap.impl.UserAgentFileParserTest.DEFAULT;
 import static com.blueconic.browscap.impl.UserAgentParserImpl.getOrderedRules;
 import static java.util.Collections.singleton;
-import static org.junit.Assert.assertArrayEquals;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.util.BitSet;
 
-import org.junit.Before;
-import org.junit.Test;
-
 import com.blueconic.browscap.impl.UserAgentParserImpl.Filter;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-public class UserAgentParserTest {
+class UserAgentParserTest {
 
     private UserAgentFileParser myParser;
 
-    @Before
-    public void setup() {
+    @BeforeEach
+    void setup() {
         myParser = new UserAgentFileParser(singleton(BROWSER));
     }
 
     @Test
-    public void testExcludes() {
+    void testExcludes() {
 
         final int length = 1017;
         final BitSet excludes = new BitSet(length);
@@ -65,7 +64,7 @@ public class UserAgentParserTest {
     }
 
     @Test
-    public void testGetIncludes() {
+    void testGetIncludes() {
         final Rule a = getRule("test*123*abc*");
         final Rule b = getRule("*test*abcd*");
         final Rule c = getRule("*123*test");
@@ -98,7 +97,7 @@ public class UserAgentParserTest {
     }
 
     @Test
-    public void testGetOrderedRules() {
+    void testGetOrderedRules() {
         final Rule a = getRule("a");
         final Rule b = getRule("b");
         final Rule aa = getRule("aa");

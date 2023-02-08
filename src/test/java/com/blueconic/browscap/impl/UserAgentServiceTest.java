@@ -11,7 +11,7 @@ import static com.blueconic.browscap.BrowsCapField.RENDERING_ENGINE_MAKER;
 import static com.blueconic.browscap.BrowsCapField.RENDERING_ENGINE_NAME;
 import static com.blueconic.browscap.BrowsCapField.RENDERING_ENGINE_VERSION;
 import static java.util.Arrays.asList;
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
@@ -22,18 +22,17 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Collection;
 
-import org.junit.Test;
-
 import com.blueconic.browscap.BrowsCapField;
 import com.blueconic.browscap.Capabilities;
 import com.blueconic.browscap.ParseException;
 import com.blueconic.browscap.UserAgentParser;
 import com.blueconic.browscap.UserAgentService;
+import org.junit.jupiter.api.Test;
 
-public class UserAgentServiceTest {
+class UserAgentServiceTest {
 
     @Test
-    public void testUserAgentsFromExternalFile() throws IOException, ParseException {
+    void testUserAgentsFromExternalFile() throws IOException, ParseException {
         final int ITERATIONS = 10;
 
         final Path path = Paths.get("src", "main", "resources", UserAgentService.getBundledCsvFileName());
@@ -49,7 +48,7 @@ public class UserAgentServiceTest {
     }
 
     @Test
-    public void testUserAgentsFromExternalInputStream() throws IOException, ParseException {
+    void testUserAgentsFromExternalInputStream() throws IOException, ParseException {
         final int ITERATIONS = 10;
 
         final Path path = Paths.get("src", "main", "resources", UserAgentService.getBundledCsvFileName());
@@ -66,7 +65,7 @@ public class UserAgentServiceTest {
     }
 
     @Test
-    public void testUserAgentsFromBundledFile() throws IOException, ParseException {
+    void testUserAgentsFromBundledFile() throws IOException, ParseException {
         final int ITERATIONS = 10;
 
         final UserAgentService uas = new UserAgentService();
@@ -110,7 +109,7 @@ public class UserAgentServiceTest {
     }
 
     @Test
-    public void testUserAgentsFromBundledFileWithCustomFields() throws IOException, ParseException {
+    void testUserAgentsFromBundledFileWithCustomFields() throws IOException, ParseException {
 
         final Collection<BrowsCapField> fields =
                 asList(BROWSER, BROWSER_TYPE, BROWSER_MAJOR_VERSION, DEVICE_TYPE, PLATFORM,

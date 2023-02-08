@@ -1,20 +1,19 @@
 package com.blueconic.browscap.impl;
 
-import static org.junit.Assert.assertArrayEquals;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertNull;
-import static org.junit.Assert.assertSame;
-import static org.junit.Assert.assertTrue;
-
-import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertNull;
+import static org.junit.jupiter.api.Assertions.assertSame;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import com.blueconic.browscap.impl.SearchableString.Cache;
+import org.junit.jupiter.api.Test;
 
-public class SearchableStringTest {
+class SearchableStringTest {
 
     @Test
-    public void testSearchableString() {
+    void testSearchableString() {
 
         final LiteralDomain domain = new LiteralDomain();
 
@@ -40,7 +39,7 @@ public class SearchableStringTest {
     }
 
     @Test
-    public void testGetIndices() {
+    void testGetIndices() {
         final LiteralDomain domain = new LiteralDomain();
 
         final Literal abc = domain.createLiteral("abc");
@@ -63,7 +62,7 @@ public class SearchableStringTest {
     }
 
     @Test
-    public void testCache() {
+    void testCache() {
         final Cache cache = new Cache();
 
         assertNull(cache.get(0));
@@ -76,7 +75,7 @@ public class SearchableStringTest {
     }
 
     @Test
-    public void testLiteralBasics() {
+    void testLiteralBasics() {
 
         final LiteralDomain domain = new LiteralDomain();
 
@@ -88,7 +87,7 @@ public class SearchableStringTest {
     }
 
     @Test
-    public void testLiteralMatches() {
+    void testLiteralMatches() {
 
         final LiteralDomain domain = new LiteralDomain();
 

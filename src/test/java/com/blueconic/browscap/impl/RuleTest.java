@@ -3,24 +3,24 @@ package com.blueconic.browscap.impl;
 import static com.blueconic.browscap.BrowsCapField.BROWSER;
 import static com.blueconic.browscap.impl.UserAgentFileParserTest.DEFAULT;
 import static java.util.Collections.singleton;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-public class RuleTest {
+class RuleTest {
 
     private UserAgentFileParser myParser;
 
-    @Before
-    public void setup() {
+    @BeforeEach
+    void setup() {
         myParser = new UserAgentFileParser(singleton(BROWSER));
     }
 
     @Test
-    public void testLiteralExpression() {
+    void testLiteralExpression() {
         final Rule rule = getRule("a");
 
         assertTrue(matches(rule, "a"));
@@ -31,7 +31,7 @@ public class RuleTest {
     }
 
     @Test
-    public void testLiteralQuestionMark() {
+    void testLiteralQuestionMark() {
         final Rule literal = getRule("?a");
 
         assertTrue(matches(literal, "aa"));
@@ -48,7 +48,7 @@ public class RuleTest {
     }
 
     @Test
-    public void testSuffix() {
+    void testSuffix() {
 
         final Rule expression = getRule("*abc*");
 
@@ -62,7 +62,7 @@ public class RuleTest {
     }
 
     @Test
-    public void testPrefix() {
+    void testPrefix() {
         final Rule expression = getRule("abc*");
 
         assertTrue(matches(expression, "abc"));
@@ -73,7 +73,7 @@ public class RuleTest {
     }
 
     @Test
-    public void testPostfix() {
+    void testPostfix() {
 
         final Rule expression = getRule("*abc");
 
@@ -85,7 +85,7 @@ public class RuleTest {
     }
 
     @Test
-    public void testPreFixMultiple() {
+    void testPreFixMultiple() {
 
         final Rule expression = getRule("a*z");
 
@@ -110,7 +110,7 @@ public class RuleTest {
     }
 
     @Test
-    public void testSuffixMultiple() {
+    void testSuffixMultiple() {
 
         final Rule rule = getRule("*a*z*");
 
@@ -125,7 +125,7 @@ public class RuleTest {
     }
 
     @Test
-    public void testRequires() {
+    void testRequires() {
         final Rule rule = getRule("*abc*def*");
         assertTrue(rule.requires("abc"));
         assertTrue(rule.requires("def"));

@@ -1,4 +1,5 @@
 [![Java CI with Maven](https://github.com/blueconic/browscap-java/actions/workflows/maven.yml/badge.svg)](https://github.com/blueconic/browscap-java/actions/workflows/maven.yml)
+[![Project Map](https://sourcespy.com/shield.svg)](https://sourcespy.com/github/blueconicbrowscapjava/)
 
 # browscap-java
 A blazingly fast and memory efficient (thread-safe) Java client on top of the BrowsCap [CSV source files](https://github.com/browscap/browscap).

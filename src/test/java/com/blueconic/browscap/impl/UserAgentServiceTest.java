@@ -22,12 +22,13 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Collection;
 
+import org.junit.jupiter.api.Test;
+
 import com.blueconic.browscap.BrowsCapField;
 import com.blueconic.browscap.Capabilities;
 import com.blueconic.browscap.ParseException;
 import com.blueconic.browscap.UserAgentParser;
 import com.blueconic.browscap.UserAgentService;
-import org.junit.jupiter.api.Test;
 
 class UserAgentServiceTest {
 

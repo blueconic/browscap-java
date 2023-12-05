@@ -4,7 +4,7 @@
     <groupId>com.blueconic</groupId>
     <artifactId>browscap-java</artifactId>
     <packaging>jar</packaging>
-    <version>1.4.1</version>
+    <version>1.4.3</version>
     <name>browscap-java</name>
     <description>A blazingly fast and memory efficient Java client on top of the BrowsCap CSV source files.</description>
 
@@ -29,6 +29,17 @@
         <developerConnection>scm:git:git@github.com:blueconic/browscap-java.git</developerConnection>
         <url>https://github.com/blueconic/browscap-java</url>
     </scm>
+
+    <distributionManagement>
+      <snapshotRepository>
+        <id>ossrh</id>
+        <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
+      </snapshotRepository>
+      <repository>
+        <id>ossrh</id>
+        <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+      </repository>
+    </distributionManagement>
 
     <url>http://www.blueconic.com</url>
     <properties>

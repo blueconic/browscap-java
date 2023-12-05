@@ -1,3 +1,15 @@
+1.4.3 - 5 December 2023
+- Updated to browscap 6001006 (https://github.com/browscap/browscap/releases/tag/6.1.6)
+- Detection for GPTBot
+- Detection for ImagesiftBot
+- Added Seekport crawler
+- support to Opera until 115
+- support for Opera Mobile until 85
+- Android 14 detection
+- MacOS X until version 14
+- Improved BingBot detection
+- Skipped 1.4.2 due to Sonatype publishing issues
+
 1.4.1 - 26 July 2023
 - Updated to browscap 6001005 (https://github.com/browscap/browscap/releases/tag/6.1.5)
 - Updated chrome versions up until 125

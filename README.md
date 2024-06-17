@@ -3,7 +3,7 @@
 
 # browscap-java
 A blazingly fast and memory efficient (thread-safe) Java client on top of the BrowsCap [CSV source files](https://github.com/browscap/browscap).
-The BrowsCap version currently shipped is: 6001006.
+The BrowsCap version currently shipped is: 6001007.
 
 ## Description
 This library can be used to parse useragent headers in order to extract information about the used browser, browser version, platform, platform version and device type. Very useful to determine if the client is a desktop, tablet or mobile device or to determine if the client is on Windows or Mac OS (just to name a few examples).
@@ -44,7 +44,7 @@ Add this to the dependencies in your pom.xml.
 <dependency>
   <groupId>com.blueconic</groupId>
   <artifactId>browscap-java</artifactId>
-  <version>1.4.3</version>
+  <version>1.4.4</version>
 </dependency>
 ```
 

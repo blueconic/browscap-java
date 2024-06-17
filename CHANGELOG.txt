@@ -1,3 +1,7 @@
+1.4.4 - 17 June 2024
+- Updated to browscap 6001007 (https://github.com/browscap/browscap/releases/tag/6.1.7)
+- Add recent and future chrome, edge and firefox based versions, up until 135, based on changes in PR 2880
+
 1.4.3 - 5 December 2023
 - Updated to browscap 6001006 (https://github.com/browscap/browscap/releases/tag/6.1.6)
 - Detection for GPTBot

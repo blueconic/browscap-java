@@ -22,7 +22,7 @@ import com.blueconic.browscap.impl.UserAgentFileParser;
 public class UserAgentService {
 
     // The version of the browscap file this bundle depends on
-    public static final int BUNDLED_BROWSCAP_VERSION = 6001007;
+    public static final int BUNDLED_BROWSCAP_VERSION = 6001008;
     private String myZipFilePath;
     private InputStream myZipFileStream;
 

@@ -1,6 +1,7 @@
 package com.blueconic.browscap.impl;
 
 import static java.util.Arrays.parallelSort;
+import static java.util.Arrays.sort;
 import static java.util.stream.Collectors.toList;
 
 import java.util.ArrayList;
@@ -38,7 +39,7 @@ class UserAgentParserImpl implements UserAgentParser {
     private final Rule[] myRules;
 
     // Filters for filtering irrelevant rules and speed up processing
-    private final Filter[] myFilters;
+    private final List<Filter> myFilters;
 
     // The default Capabilities
     private final Capabilities myDefaultCapabilities;
@@ -64,7 +65,7 @@ class UserAgentParserImpl implements UserAgentParser {
      */
     @Override
     public Capabilities parse(final String userAgent) {
-        if (userAgent == null || userAgent.length() == 0) {
+        if (userAgent == null || userAgent.isEmpty()) {
             return myDefaultCapabilities;
         }
 
@@ -82,17 +83,15 @@ class UserAgentParserImpl implements UserAgentParser {
         return myDefaultCapabilities;
     }
 
-    BitSet getIncludeRules(final SearchableString searchString, final Filter[] filters) {
-
+    BitSet getIncludeRules(final SearchableString searchString, final List<Filter> filters) {
         final BitSet excludes = new BitSet(myRules.length);
         for (final Filter filter : filters) {
             filter.applyExcludes(searchString, excludes);
         }
 
         // Convert flip the excludes to determine the includes
-        final BitSet includes = excludes;
-        includes.flip(0, myRules.length);
-        return includes;
+        excludes.flip(0, myRules.length);
+        return excludes;
     }
 
     // Sort by size and alphabet, so the first match can be returned immediately
@@ -101,12 +100,11 @@ class UserAgentParserImpl implements UserAgentParser {
         final Comparator<Rule> c = Comparator.comparing(Rule::getSize).reversed().thenComparing(Rule::getPattern);
 
         final Rule[] result = Arrays.copyOf(rules, rules.length);
-        parallelSort(result, c);
+        sort(result, c);
         return result;
     }
 
-    Filter[] buildFilters() {
-
+    List<Filter> buildFilters() {
         final List<Filter> result = new ArrayList<>();
 
         // Build filters for specific prefix constraints
@@ -115,11 +113,9 @@ class UserAgentParserImpl implements UserAgentParser {
         }
 
         // Build filters for specific contains constraints
-        final List<Filter> commonFilters =
-                Stream.of(COMMON).parallel().map(this::createContainsFilter).collect(toList());
-        result.addAll(commonFilters);
+        Stream.of(COMMON).map(this::createContainsFilter).forEach(result::add);
 
-        return result.toArray(new Filter[0]);
+        return result;
     }
 
     Filter createContainsFilter(final String pattern) {
@@ -154,7 +150,7 @@ class UserAgentParserImpl implements UserAgentParser {
         private final BitSet myMask;
 
         /**
-         * Creates a the filter.
+         * Creates a filter.
          * @param userAgentPredicate The predicate for matching user agents.
          * @param patternPredicate The corresponding predicate for matching rule
          */

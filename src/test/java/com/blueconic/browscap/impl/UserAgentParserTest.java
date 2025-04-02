@@ -17,6 +17,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+import java.util.Arrays;
 import java.util.BitSet;
 
 import com.blueconic.browscap.impl.UserAgentParserImpl.Filter;
@@ -80,7 +81,7 @@ class UserAgentParserTest {
         final Filter[] filters = {startsWithTest, containsTest, containsNumbers};
 
         final SearchableString useragent = domain.getSearchableString("useragent_test_string");
-        final BitSet includeRules = parser.getIncludeRules(useragent, filters);
+        final BitSet includeRules = parser.getIncludeRules(useragent, Arrays.asList(filters));
 
         // b should be checked
         assertEquals(1, includeRules.nextSetBit(0));
@@ -88,7 +89,7 @@ class UserAgentParserTest {
         assertEquals(-1, includeRules.nextSetBit(2));
 
         final SearchableString numberString = domain.getSearchableString("123456");
-        final BitSet numberIncludes = parser.getIncludeRules(numberString, filters);
+        final BitSet numberIncludes = parser.getIncludeRules(numberString, Arrays.asList(filters));
 
         // Only d should be checked
         assertEquals(3, numberIncludes.nextSetBit(0));

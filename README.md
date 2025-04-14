@@ -33,6 +33,10 @@ In short, this is how our algorithm works:
 * 1000+ user agents are tested in the unit tests.
 * GraalVM Native Image is supported since 1.4.0
 
+## Sorting the CSV file
+The BrowsCap source file is sorted when building via Maven, see `data-preprocessor.groovy`.
+When using your own source file, make sure to sort it as well to speed the startup performance.
+
 ## Future
 Possible new features we're thinking of (and are not yet present):
 * Auto-update the BrowsCap CSV
@@ -44,7 +48,7 @@ Add this to the dependencies in your pom.xml.
 <dependency>
   <groupId>com.blueconic</groupId>
   <artifactId>browscap-java</artifactId>
-  <version>1.4.5</version>
+  <version>1.5.0</version>
 </dependency>
 ```
 

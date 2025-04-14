@@ -1,3 +1,6 @@
+1.5.0 - 14 April 2025
+- Merged https://github.com/blueconic/browscap-java/pull/67, speeding up startup by using a sorted CSV. Thanks to @CaunCaran.
+
 1.4.5 - 20 February 2025
 - Updated to browscap 6001008 (https://github.com/browscap/browscap/releases/tag/6.1.8)
 - Add recent and future chrome, edge and firefox based versions, up until 145, based on changes in PR 3132

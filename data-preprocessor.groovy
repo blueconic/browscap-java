@@ -49,59 +49,61 @@ if(resources.isDirectory()) {
  * @throws RuntimeException If an {@link IOException} occurs while processing the ZIP or CSV files.
  */
 def sortRules(File rulesZip) {
-    def settings = new CsvParserSettings()
-    def zip = new ZipFile(rulesZip)
-    def entries = zip.entries()
-    def entryMap = new HashMap<String, List<Row>>()
-    def entryHashMap = new HashMap<String, byte[]>()
-    while (entries.hasMoreElements()) {
-        ZipEntry entry = entries.nextElement()
-        if(entry.getName().endsWith(".csv") && !entry.isDirectory()) {
-            log.info "\tSorting " + entry.getName()
-            def rows = new ArrayList<Row>()
-            MessageDigest md = MessageDigest.getInstance("MD5")
-            try (DigestInputStream dis = new DigestInputStream(zip.getInputStream(entry), md)
-                 def reader = new InputStreamReader(dis, UTF_8)
-                 def br = new BufferedReader(reader)) {
-
-                def csvParser = new CsvParser(settings)
-                csvParser.beginParsing(br)
-                Record record
-                while ((record = csvParser.parseNextRecord()) != null) {
-                    rows.add(new Row(record.getString(0), record))
-                }
-            } catch (IOException e) {
-                throw new RuntimeException(e)
-            }
-
-            // Sorting rows by pattern length in descending order, then by the pattern value
-            rows.sort { r1, r2 ->
-                r2.pattern.length() <=> r1.pattern.length() ?: r1.pattern <=> r2.pattern
-            }
-
-            entryMap.put(entry.getName(), rows)
-            entryHashMap.put(entry.getName(), md.digest())
-        }
-    }
-    def sortedZip = File.createTempFile("browscap-", ".zip")
-    def writerSettings = new CsvWriterSettings()
-    MessageDigest md = MessageDigest.getInstance("MD5")
+    def settings = new CsvParserSettings(lineSeparatorDetectionEnabled: true)
     boolean hasChanges = false
-    try(def fos = new FileOutputStream(sortedZip)
-        def zipOut = new ZipOutputStream(fos)
-        def dig = new DigestOutputStream(zipOut, md)
-        def writer = new OutputStreamWriter(dig, UTF_8)) {
-        for(def csvEntry : entryMap.entrySet()) {
-            def outCsv = new ZipEntry(csvEntry.getKey())
-            zipOut.putNextEntry(outCsv)
+    def sortedZip = File.createTempFile("browscap-", ".zip")
+    try(def zip = new ZipFile(rulesZip)) {
+        def entries = zip.entries()
+        def entryMap = new HashMap<String, List<Row>>()
+        def entryHashMap = new HashMap<String, byte[]>()
+        while (entries.hasMoreElements()) {
+            ZipEntry entry = entries.nextElement()
+            if (entry.getName().endsWith(".csv") && !entry.isDirectory()) {
+                log.info "\tSorting " + entry.getName()
+                def rows = new ArrayList<Row>()
+                MessageDigest md = MessageDigest.getInstance("MD5")
+                try (DigestInputStream dis = new DigestInputStream(zip.getInputStream(entry), md)
+                     def reader = new InputStreamReader(dis, UTF_8)
+                     def br = new BufferedReader(reader)) {
 
-            def csvWriter = new CsvWriter(writer, writerSettings)
-            csvEntry.getValue().each { row ->
-                csvWriter.writeRow(row.record.values)
+                    def csvParser = new CsvParser(settings)
+                    csvParser.beginParsing(br)
+                    Record record
+                    while ((record = csvParser.parseNextRecord()) != null) {
+                        rows.add(new Row(record.getString(0), record))
+                    }
+                } catch (IOException e) {
+                    throw new RuntimeException(e)
+                }
+
+                // Sorting rows by pattern length in descending order, then by the pattern value
+                rows.sort { r1, r2 ->
+                    r2.pattern.length() <=> r1.pattern.length() ?: r1.pattern <=> r2.pattern
+                }
+
+                entryMap.put(entry.getName(), rows)
+                entryHashMap.put(entry.getName(), md.digest())
             }
-            csvWriter.flush()
-            if(!Arrays.equals(entryHashMap.get(csvEntry.getKey()), md.digest())) {
-                hasChanges = true
+        }
+        def writerSettings = new CsvWriterSettings()
+        MessageDigest md = MessageDigest.getInstance("MD5")
+
+        try (def fos = new FileOutputStream(sortedZip)
+             def zipOut = new ZipOutputStream(fos)
+             def dig = new DigestOutputStream(zipOut, md)
+             def writer = new OutputStreamWriter(dig, UTF_8)) {
+            for (def csvEntry : entryMap.entrySet()) {
+                def outCsv = new ZipEntry(csvEntry.getKey())
+                zipOut.putNextEntry(outCsv)
+
+                def csvWriter = new CsvWriter(writer, writerSettings)
+                csvEntry.getValue().each { row ->
+                    csvWriter.writeRow(row.record.values)
+                }
+                csvWriter.flush()
+                if (!Arrays.equals(entryHashMap.get(csvEntry.getKey()), md.digest())) {
+                    hasChanges = true
+                }
             }
         }
     }

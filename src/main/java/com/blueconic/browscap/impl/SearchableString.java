@@ -1,6 +1,8 @@
 package com.blueconic.browscap.impl;
 
 import java.util.BitSet;
+import java.util.HashSet;
+import java.util.Set;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
@@ -147,7 +149,7 @@ class SearchableString {
         return new String(myChars);
     }
 
-    private static final int[][] getSingleValues() {
+    private static int[][] getSingleValues() {
         final int[][] result = new int[1024][];
         for (int i = 0; i < result.length; i++) {
             result[i] = new int[]{i};
@@ -207,6 +209,7 @@ class SearchableString {
 class Literal {
 
     // The actual string data
+    private final String myString;
     private final char[] myCharacters;
 
     // The unique index for this instance
@@ -218,6 +221,7 @@ class Literal {
      * @param index The unique index for this instance
      */
     Literal(final String value, final int index) {
+        myString = value;
         myCharacters = value.toCharArray();
         myIndex = index;
     }
@@ -244,7 +248,6 @@ class Literal {
      * @return <code>true</code> If the arguments represent a valid substring, <code>false</code> otherwise.
      */
     boolean matches(final char[] value, final int from) {
-
         // Check the bounds
         final int len = myCharacters.length;
         if (len + from > value.length || from < 0) {
@@ -272,9 +275,8 @@ class Literal {
     }
 
     private static boolean contains(final char[] characters, final char value) {
-
-        for (final char c : characters) {
-            if (c == value) {
+        for (int i = 0; i < characters.length; i++) {
+            if (characters[i] == value) {
                 return true;
             }
         }
@@ -291,7 +293,7 @@ class Literal {
             return false;
         }
 
-        return toString().contains(value);
+        return myString.contains(value);
     }
 
     /**
@@ -299,7 +301,7 @@ class Literal {
      */
     @Override
     public String toString() {
-        return new String(myCharacters);
+        return myString;
     }
 }
 

@@ -1,3 +1,6 @@
+1.5.1 - 21 May 2025
+- Moved to Central Publishing, no code changes.
+
 1.5.0 - 14 April 2025
 - Merged https://github.com/blueconic/browscap-java/pull/67, speeding up startup by using a sorted CSV. Thanks to @CaunCaran.
 
